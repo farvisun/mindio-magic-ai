@@ -1,0 +1,19 @@
+{
+	"name": "mindio-magic-ai",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Admin app for the Mindio Magic AI WordPress plugin.",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"build": "wp-scripts build",
+		"start": "wp-scripts start",
+		"lint:js": "wp-scripts lint-js assets/src",
+		"lint:css": "wp-scripts lint-style 'assets/src/**/*.scss'",
+		"test:unit": "wp-scripts test-unit-js assets/src"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^31.0.0",
+		"ajv": "^8.20.0"
+	},
+	"prettier": "@wordpress/prettier-config"
+}

@@ -1,0 +1,2328 @@
+# Copyright (C) 2026 Farvisun
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Mindio Magic AI 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/farvisun/mindio-magic-ai/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-06T17:39:41+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: mindio-magic-ai\n"
+
+#. Plugin Name of the plugin
+#: mindio-magic-ai.php:3
+#: src/Admin/SiteHealth.php:82
+msgid "Mindio Magic AI"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: mindio-magic-ai.php:4
+msgid "https://github.com/farvisun/mindio-magic-ai"
+msgstr ""
+
+#. Description of the plugin
+#: mindio-magic-ai.php:5
+msgid "Bring-your-own-key AI assistant for WordPress and WooCommerce admins, with reviewable changes, undo, budgets, and an audit trail."
+msgstr ""
+
+#. Author of the plugin
+#: mindio-magic-ai.php:9
+msgid "Farvisun"
+msgstr ""
+
+#. Author URI of the plugin
+#: mindio-magic-ai.php:10
+msgid "https://github.com/farvisun"
+msgstr ""
+
+#: mindio-magic-ai.php:33
+msgid "Mindio Magic AI requires PHP 8.1 or newer."
+msgstr ""
+
+#: src/Admin/Admin.php:42
+#: src/Admin/Admin.php:43
+#: assets/src/admin/App.js:97
+#: assets/src/drawer/index.js:61
+msgid "Mindio AI"
+msgstr ""
+
+#: src/Admin/Admin.php:52
+#: assets/src/admin/App.js:40
+#: assets/src/admin/pages/Settings.js:150
+msgid "Assistant"
+msgstr ""
+
+#: src/Admin/Admin.php:53
+#: src/Admin/Admin.php:264
+#: src/Admin/SiteHealth.php:89
+#: assets/src/admin/App.js:46
+#: assets/src/admin/pages/Connections.js:545
+#: assets/src/admin/pages/Logs.js:177
+msgid "Connections"
+msgstr ""
+
+#: src/Admin/Admin.php:54
+#: assets/src/admin/App.js:52
+#: assets/src/admin/pages/Usage.js:424
+msgid "Usage & budgets"
+msgstr ""
+
+#: src/Admin/Admin.php:55
+#: assets/src/admin/App.js:58
+#: assets/src/admin/pages/Logs.js:138
+msgid "Activity log"
+msgstr ""
+
+#: src/Admin/Admin.php:56
+#: assets/src/admin/App.js:64
+#: assets/src/admin/pages/Logs.js:181
+#: assets/src/admin/pages/Settings.js:142
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/Admin.php:71
+#: assets/src/admin/App.js:188
+msgid "Loading Mindio AI…"
+msgstr ""
+
+#: src/Admin/Admin.php:72
+msgid "Mindio AI needs JavaScript."
+msgstr ""
+
+#: src/Admin/Admin.php:221
+msgid "Ask AI"
+msgstr ""
+
+#: src/Admin/Admin.php:225
+msgid "Open the Mindio AI assistant"
+msgstr ""
+
+#: src/Admin/Admin.php:242
+msgid "Mindio AI cannot decrypt the saved API keys because the site’s security keys changed. Enter the provider keys again."
+msgstr ""
+
+#: src/Admin/Admin.php:244
+#: assets/src/admin/App.js:232
+msgid "Open Connections"
+msgstr ""
+
+#: src/Admin/Admin.php:250
+msgid "Mindio AI is paused: no AI requests are being sent."
+msgstr ""
+
+#: src/Admin/Admin.php:252
+msgid "Manage"
+msgstr ""
+
+#: src/Admin/Privacy.php:27
+msgid "This site uses Mindio Magic AI to help staff manage the site. When a staff member uses the assistant, their messages, any images they attach, and the site content the assistant reads to answer them are sent to the AI provider the site administrator configured (for example Anthropic, OpenAI, Google, or another compatible provider). The provider processes this data under its own terms and privacy policy."
+msgstr ""
+
+#: src/Admin/Privacy.php:28
+msgid "Assistant conversations are stored in this site’s database for the retention period set by the administrator and can be exported or erased on request."
+msgstr ""
+
+#: src/Admin/Privacy.php:38
+#: src/Admin/Privacy.php:50
+#: src/Admin/Privacy.php:78
+msgid "Mindio AI conversations"
+msgstr ""
+
+#: src/Admin/Privacy.php:82
+#: src/Agent/Tools/ContentTools.php:353
+#: src/Agent/Tools/ContentTools.php:407
+#: assets/src/admin/pages/Assistant.js:304
+msgid "Title"
+msgstr ""
+
+#: src/Admin/Privacy.php:86
+msgid "Started"
+msgstr ""
+
+#: src/Admin/Privacy.php:90
+msgid "Messages"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:31
+msgid "Mindio AI key encryption"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:35
+msgid "Mindio AI saved keys"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:45
+msgid "Provider keys are encrypted at rest"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:45
+msgid "Provider keys cannot be encrypted"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:48
+#: src/Admin/SiteHealth.php:67
+msgid "Security"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:53
+msgid "Keys are encrypted with the MINDIO_MAGIC_AI_SECRET_KEY constant."
+msgstr ""
+
+#: src/Admin/SiteHealth.php:53
+msgid "Keys are encrypted with a key derived from the site’s security salts. Define MINDIO_MAGIC_AI_SECRET_KEY in wp-config.php to keep keys readable if the salts are rotated."
+msgstr ""
+
+#: src/Admin/SiteHealth.php:54
+msgid "Install the sodium or OpenSSL PHP extension so Mindio AI can encrypt provider keys."
+msgstr ""
+
+#: src/Admin/SiteHealth.php:64
+msgid "Saved provider keys can be decrypted"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:64
+msgid "Saved provider keys can no longer be decrypted"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:70
+msgid "The encryption key has not changed since the keys were saved."
+msgstr ""
+
+#: src/Admin/SiteHealth.php:70
+msgid "The site’s security keys changed after provider keys were saved. Enter each key again under Mindio AI → Connections."
+msgstr ""
+
+#: src/Admin/SiteHealth.php:85
+msgid "Version"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:93
+#: assets/src/admin/App.js:130
+msgid "Paused"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:94
+msgid "Yes"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:94
+#: src/Admin/SiteHealth.php:98
+msgid "No"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:97
+msgid "Outbound proxy"
+msgstr ""
+
+#: src/Admin/SiteHealth.php:98
+msgid "Yes (DNS pinning is handled by the proxy)"
+msgstr ""
+
+#: src/Agent/ChangeRecorder.php:318
+msgid "Outbound HTTP is blocked while previewing a change."
+msgstr ""
+
+#: src/Agent/Changeset.php:155
+msgid "Unknown change record."
+msgstr ""
+
+#: src/Agent/Changeset.php:158
+msgid "This change has already been undone."
+msgstr ""
+
+#: src/Agent/Changeset.php:166
+msgid "This content was edited after the AI change. Undoing now would overwrite those edits."
+msgstr ""
+
+#: src/Agent/Changeset.php:238
+msgid "This kind of change cannot be undone automatically."
+msgstr ""
+
+#: src/Agent/Changeset.php:246
+msgid "You cannot delete the post this change created."
+msgstr ""
+
+#: src/Agent/Changeset.php:254
+#: src/Agent/Changeset.php:278
+#: src/Agent/Changeset.php:289
+msgid "You cannot edit the post this change modified."
+msgstr ""
+
+#: src/Agent/Changeset.php:296
+msgid "You cannot manage terms."
+msgstr ""
+
+#: src/Agent/Changeset.php:320
+#: src/Agent/Tools/CommentTools.php:19
+msgid "You cannot moderate comments."
+msgstr ""
+
+#: src/Agent/Changeset.php:347
+#: src/Agent/Tools/WooCommerceTools.php:161
+msgid "You cannot edit this product."
+msgstr ""
+
+#: src/Agent/ProposalQueue.php:92
+#: src/Agent/ProposalQueue.php:180
+#: src/Agent/ProposalQueue.php:196
+msgid "Proposal not found."
+msgstr ""
+
+#: src/Agent/ProposalQueue.php:95
+#: src/Agent/ProposalQueue.php:124
+#: src/Agent/ProposalQueue.php:186
+msgid "This proposal was already handled."
+msgstr ""
+
+#: src/Agent/ProposalQueue.php:99
+msgid "This proposal expired. Ask the assistant to propose it again."
+msgstr ""
+
+#: src/Agent/ProposalQueue.php:106
+msgid "This proposal can no longer be applied."
+msgstr ""
+
+#: src/Agent/ProposalQueue.php:111
+msgid "You are not allowed to make this change."
+msgstr ""
+
+#: src/Agent/ProposalQueue.php:116
+msgid "The content changed after this proposal was made, so it was not applied. Ask the assistant to propose the change again."
+msgstr ""
+
+#: src/Agent/ProposalQueue.php:199
+msgid "This change cannot be undone."
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:31
+msgid "does not match an allowed schema"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:36
+msgid "contains a value outside the allowed set"
+msgstr ""
+
+#. translators: %s: comma-separated JSON types.
+#: src/Agent/SchemaValidator.php:45
+#, php-format
+msgid "must be of type %s"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:54
+msgid "is shorter than allowed"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:57
+msgid "is longer than allowed"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:60
+msgid "has an invalid format"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:63
+msgid "must be a valid URL"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:66
+msgid "must be a valid date-time"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:72
+msgid "is below the minimum"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:75
+msgid "is above the maximum"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:82
+msgid "contains too few items"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:85
+msgid "contains too many items"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:88
+msgid "contains duplicate items"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:103
+msgid "is required"
+msgstr ""
+
+#: src/Agent/SchemaValidator.php:115
+msgid "is not an allowed property"
+msgstr ""
+
+#. translators: 1: JSON path, 2: validation error.
+#: src/Agent/SchemaValidator.php:151
+#, php-format
+msgid "%1$s %2$s."
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:24
+msgid "List comments"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:49
+msgid "Reply to a comment"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:73
+msgid "Moderate a comment"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:138
+msgid "No comment with that ID exists."
+msgstr ""
+
+#. translators: 1: comment author, 2: post title.
+#: src/Agent/Tools/CommentTools.php:148
+#, php-format
+msgid "Comment by %1$s on “%2$s”"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:164
+msgid "Post a public reply"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:169
+msgid "Original comment"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:175
+msgid "Reply"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:205
+msgid "The reply could not be saved."
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:220
+msgid "Approved"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:221
+msgid "Pending"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:222
+msgid "Spam"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:223
+msgid "Trash"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:228
+msgid "Change a comment’s status"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:233
+#: src/Agent/Tools/ContentTools.php:411
+msgid "Status"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:239
+msgid "Comment"
+msgstr ""
+
+#: src/Agent/Tools/CommentTools.php:256
+msgid "The comment status could not be changed."
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:24
+msgid "Search content"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:57
+#: assets/src/admin/tools.js:18
+msgid "Read content"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:76
+msgid "List categories and tags"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:100
+msgid "Create a draft"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:130
+msgid "You cannot create this kind of content."
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:142
+msgid "Edit content"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:168
+msgid "Schedule content"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:191
+msgid "Publish content"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:213
+msgid "Set categories or tags"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:239
+msgid "You cannot assign these terms."
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:307
+msgid "That taxonomy is not available on this site."
+msgstr ""
+
+#. translators: 1: content type, 2: title.
+#: src/Agent/Tools/ContentTools.php:346
+#, php-format
+msgid "Create a draft %1$s: “%2$s”"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:354
+#: src/Agent/Tools/ContentTools.php:409
+msgid "Excerpt"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:355
+#: src/Agent/Tools/ContentTools.php:408
+msgid "Content"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:356
+msgid "Categories"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:357
+msgid "Tags"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:369
+msgid "Only posts and pages can be drafted here."
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:410
+msgid "Slug"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:412
+msgid "Publish date"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:442
+msgid "No fields to change were provided."
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:446
+msgid "The proposed values match the current content."
+msgstr ""
+
+#. translators: %s: content title.
+#: src/Agent/Tools/ContentTools.php:451
+#, php-format
+msgid "Edit “%s”"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:479
+msgid "You cannot publish this content."
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:486
+msgid "The date is not valid."
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:490
+msgid "The schedule date must be in the future."
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:502
+#: src/Agent/Tools/ContentTools.php:553
+msgid "This content is already published."
+msgstr ""
+
+#. translators: 1: content title, 2: date and time.
+#: src/Agent/Tools/ContentTools.php:511
+#, php-format
+msgid "Schedule “%1$s” for %2$s"
+msgstr ""
+
+#. translators: %s: content title.
+#: src/Agent/Tools/ContentTools.php:558
+#, php-format
+msgid "Publish “%s” now"
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:563
+msgid "Visitors will be able to see this content as soon as it is published."
+msgstr ""
+
+#: src/Agent/Tools/ContentTools.php:602
+msgid "This content does not use that taxonomy."
+msgstr ""
+
+#. translators: 1: taxonomy label, 2: content title.
+#: src/Agent/Tools/ContentTools.php:617
+#, php-format
+msgid "Update %1$s on “%2$s”"
+msgstr ""
+
+#: src/Agent/Tools/SeoTools.php:49
+#: assets/src/admin/tools.js:58
+msgid "Read SEO fields"
+msgstr ""
+
+#: src/Agent/Tools/SeoTools.php:69
+msgid "Edit SEO fields"
+msgstr ""
+
+#: src/Agent/Tools/SeoTools.php:134
+msgid "No SEO fields to change were provided."
+msgstr ""
+
+#. translators: %s: content title.
+#: src/Agent/Tools/SeoTools.php:139
+#, php-format
+msgid "Update SEO fields for “%s”"
+msgstr ""
+
+#: src/Agent/Tools/SeoTools.php:147
+msgid "SEO title"
+msgstr ""
+
+#: src/Agent/Tools/SeoTools.php:148
+msgid "Meta description"
+msgstr ""
+
+#: src/Agent/Tools/SeoTools.php:149
+msgid "Focus keyword"
+msgstr ""
+
+#: src/Agent/Tools/SiteTools.php:22
+msgid "Read site overview"
+msgstr ""
+
+#: src/Agent/Tools/Support.php:49
+msgid "No content with that ID exists."
+msgstr ""
+
+#: src/Agent/Tools/Support.php:59
+msgid "You cannot edit this content."
+msgstr ""
+
+#. translators: 1: term name, 2: taxonomy name.
+#: src/Agent/Tools/Support.php:141
+#, php-format
+msgid "The term \"%1$s\" does not exist in %2$s."
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:24
+msgid "You cannot manage products."
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:25
+msgid "You cannot view store reports."
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:40
+msgid "Search products"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:69
+#: assets/src/admin/tools.js:70
+msgid "Read a product"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:89
+msgid "List low-stock products"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:109
+msgid "Summarize sales"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:127
+msgid "Rank best-selling products"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:145
+msgid "Edit a product"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:173
+msgid "Draft a product"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:204
+msgid "No product with that ID exists."
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:320
+msgid "Use dates in YYYY-MM-DD format, with from on or before to."
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:339
+#: src/Agent/Tools/WooCommerceTools.php:390
+msgid "WooCommerce Analytics tables are not available. Enable WooCommerce Analytics and import historical data."
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:414
+msgid "(deleted product)"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:455
+msgid "The sale price must be lower than the regular price."
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:468
+#: src/Agent/Tools/WooCommerceTools.php:534
+#: assets/src/admin/pages/Connections.js:235
+msgid "Name"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:469
+#: src/Agent/Tools/WooCommerceTools.php:537
+msgid "Description"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:470
+#: src/Agent/Tools/WooCommerceTools.php:536
+msgid "Short description"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:471
+#: src/Agent/Tools/WooCommerceTools.php:535
+msgid "Regular price"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:472
+msgid "Sale price"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:476
+msgid "The proposed values match the current product."
+msgstr ""
+
+#. translators: %s: product name.
+#: src/Agent/Tools/WooCommerceTools.php:481
+#, php-format
+msgid "Edit product “%s”"
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:488
+msgid "Price changes apply to the live store immediately."
+msgstr ""
+
+#: src/Agent/Tools/WooCommerceTools.php:529
+msgid "Another product already uses that SKU."
+msgstr ""
+
+#. translators: %s: product name.
+#: src/Agent/Tools/WooCommerceTools.php:551
+#, php-format
+msgid "Create a draft product: “%s”"
+msgstr ""
+
+#: src/AI/Connections.php:64
+msgid "Choose a provider."
+msgstr ""
+
+#: src/AI/Connections.php:105
+msgid "The connection could not be saved."
+msgstr ""
+
+#: src/AI/Connections.php:122
+#: src/Rest/Routes.php:237
+#: src/Rest/Routes.php:250
+#: src/Rest/Routes.php:280
+msgid "Connection not found."
+msgstr ""
+
+#: src/AI/Connections.php:276
+msgid "Enter the API base URL."
+msgstr ""
+
+#. translators: %s: HTTP header name.
+#: src/AI/Connections.php:335
+#, php-format
+msgid "The header \"%s\" is not allowed."
+msgstr ""
+
+#: src/AI/Connections.php:340
+msgid "Header values cannot contain line breaks or exceed 2048 characters."
+msgstr ""
+
+#: src/AI/Gateway.php:41
+#: src/Core/Budget.php:63
+#: src/Rest/Routes.php:509
+msgid "AI features are paused by an administrator."
+msgstr ""
+
+#: src/AI/Presets.php:118
+msgid "Anthropic-compatible (custom URL)"
+msgstr ""
+
+#: src/AI/Presets.php:130
+msgid "OpenAI-compatible (custom URL)"
+msgstr ""
+
+#: src/AI/Providers/AnthropicProvider.php:67
+msgid "Could not reach Anthropic. Check the server’s outbound connection and try again."
+msgstr ""
+
+#: src/AI/Providers/AnthropicProvider.php:99
+#: src/AI/Providers/OpenAICompatibleProvider.php:30
+#: src/AI/Providers/OpenAICompatibleProvider.php:223
+msgid "This connection has no API key."
+msgstr ""
+
+#: src/AI/Providers/AnthropicProvider.php:474
+msgid "Anthropic rejected the API key. Check the key in Connections."
+msgstr ""
+
+#: src/AI/Providers/AnthropicProvider.php:475
+msgid "Anthropic does not recognize this model. Choose another model for the connection."
+msgstr ""
+
+#: src/AI/Providers/AnthropicProvider.php:476
+msgid "Anthropic rate limit reached. Wait a moment and try again."
+msgstr ""
+
+#: src/AI/Providers/AnthropicProvider.php:477
+msgid "Anthropic is temporarily unavailable. Try again shortly."
+msgstr ""
+
+#: src/AI/Providers/AnthropicProvider.php:478
+msgid "Anthropic rejected the request."
+msgstr ""
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:76
+msgid "The provider returned an unreadable response."
+msgstr ""
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:417
+msgid "Could not reach the provider. Check the base URL and the server’s outbound connection."
+msgstr ""
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:433
+msgid "The provider rejected the API key. Check the key in Connections."
+msgstr ""
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:434
+msgid "The provider does not recognize this model or address."
+msgstr ""
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:435
+msgid "The provider’s rate limit or quota was reached. Wait a moment and try again."
+msgstr ""
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:436
+msgid "The provider is temporarily unavailable. Try again shortly."
+msgstr ""
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:437
+msgid "The provider rejected the request."
+msgstr ""
+
+#: src/AI/Transport/Http.php:105
+msgid "The provider did not respond."
+msgstr ""
+
+#: src/Assistant/Runs.php:63
+#: src/Rest/Routes.php:411
+msgid "Conversation not found."
+msgstr ""
+
+#: src/Assistant/Runs.php:66
+msgid "The assistant is still answering. Wait for it to finish or stop it."
+msgstr ""
+
+#: src/Assistant/Runs.php:71
+msgid "Write a message first."
+msgstr ""
+
+#: src/Assistant/Runs.php:74
+msgid "The message is too long."
+msgstr ""
+
+#: src/Assistant/Runs.php:95
+#: assets/src/admin/pages/assistant/Composer.js:80
+msgid "Images must be PNG, JPEG, WebP, or GIF and smaller than 3.75 MB."
+msgstr ""
+
+#: src/Assistant/Runs.php:99
+msgid "An attached file is not a valid image."
+msgstr ""
+
+#: src/Assistant/Runs.php:203
+msgid "The server stopped this run before it finished."
+msgstr ""
+
+#: src/Assistant/Runs.php:212
+msgid "The connection this conversation uses is missing or has no key. Start a new conversation or fix it in Connections."
+msgstr ""
+
+#: src/Assistant/Runs.php:254
+msgid "The run reached its time limit."
+msgstr ""
+
+#: src/Assistant/Runs.php:328
+#: assets/src/admin/pages/assistant/Thread.js:614
+msgid "The model declined to answer this request."
+msgstr ""
+
+#: src/Assistant/Runs.php:355
+msgid "The answer reached the output limit and may be cut off."
+msgstr ""
+
+#: src/Assistant/Runs.php:362
+msgid "The assistant reached its step limit for one message. Send another message to continue."
+msgstr ""
+
+#: src/Assistant/Runs.php:410
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: src/Core/Access.php:34
+msgid "Use the assistant"
+msgstr ""
+
+#: src/Core/Access.php:35
+msgid "Manage automations"
+msgstr ""
+
+#: src/Core/Access.php:36
+msgid "Review generated content"
+msgstr ""
+
+#: src/Core/Access.php:37
+msgid "Handle the chat inbox"
+msgstr ""
+
+#: src/Core/Access.php:38
+msgid "View usage, budgets, and logs"
+msgstr ""
+
+#: src/Core/Budget.php:73
+msgid "The daily token budget for this feature is used up. An administrator can raise it under Usage."
+msgstr ""
+
+#: src/Core/Budget.php:82
+msgid "The monthly cost budget for this feature is used up. An administrator can raise it under Usage."
+msgstr ""
+
+#. translators: %s: site name.
+#: src/Core/Budget.php:153
+#, php-format
+msgid "[%s] Mindio AI budget warning"
+msgstr ""
+
+#. translators: 1: feature name, 2: percentage used.
+#: src/Core/Budget.php:158
+#, php-format
+msgid "The %1$s feature has used %2$d%% of its budget. Review usage in WordPress under Mindio AI → Usage."
+msgstr ""
+
+#: src/Core/UrlGuard.php:62
+msgid "The URL is invalid."
+msgstr ""
+
+#: src/Core/UrlGuard.php:67
+msgid "Only HTTP and HTTPS URLs are allowed."
+msgstr ""
+
+#: src/Core/UrlGuard.php:70
+msgid "URLs containing credentials are not allowed."
+msgstr ""
+
+#: src/Core/UrlGuard.php:79
+msgid "Only HTTPS URLs are allowed. Add the host and port to the private hosts list to use HTTP on a trusted network."
+msgstr ""
+
+#: src/Core/UrlGuard.php:84
+msgid "The URL host could not be resolved."
+msgstr ""
+
+#: src/Core/UrlGuard.php:94
+msgid "Local and private network addresses are blocked. An administrator can allow a specific host and port in Settings."
+msgstr ""
+
+#: src/Rest/Routes.php:216
+msgid "This server cannot encrypt keys (needs the sodium or OpenSSL PHP extension)."
+msgstr ""
+
+#: src/Rest/Routes.php:379
+msgid "AI is paused by the MINDIO_MAGIC_AI_DISABLED constant in wp-config.php."
+msgstr ""
+
+#: src/Rest/Routes.php:420
+msgid "Run not found."
+msgstr ""
+
+#: src/Rest/Routes.php:440
+msgid "Add a provider connection with an API key before starting a conversation."
+msgstr ""
+
+#: src/Rest/Routes.php:448
+msgid "Choose a default model for this connection first."
+msgstr ""
+
+#: src/Rest/Routes.php:530
+msgid "This run has already started."
+msgstr ""
+
+#: src/Rest/Routes.php:599
+msgid "Too many requests. Wait a moment and try again."
+msgstr ""
+
+#: assets/src/admin/App.js:105
+msgid "Mindio AI sections"
+msgstr ""
+
+#: assets/src/admin/App.js:139
+msgid "Docs"
+msgstr ""
+
+#: assets/src/admin/App.js:169
+msgid "Mindio AI could not load"
+msgstr ""
+
+#: assets/src/admin/App.js:175
+msgid "Try again"
+msgstr ""
+
+#: assets/src/admin/App.js:207
+msgid "Saved API keys can no longer be decrypted"
+msgstr ""
+
+#: assets/src/admin/App.js:222
+msgid "I re-entered the keys"
+msgstr ""
+
+#: assets/src/admin/App.js:240
+msgid "The site’s security keys changed after the provider keys were saved. Enter each key again. Define MINDIO_MAGIC_AI_SECRET_KEY in wp-config.php to avoid this in future."
+msgstr ""
+
+#: assets/src/admin/components/ui.js:129
+msgid "Loading…"
+msgstr ""
+
+#: assets/src/admin/format.js:94
+msgid "just now"
+msgstr ""
+
+#. translators: %s: number of tokens.
+#: assets/src/admin/format.js:112
+#, js-format
+msgid "%s token"
+msgid_plural "%s tokens"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/src/admin/pages/Assistant.js:93
+#: assets/src/admin/pages/Assistant.js:274
+msgid "Conversations"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:102
+#: assets/src/admin/pages/assistant/Thread.js:468
+msgid "New conversation"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:110
+#: assets/src/admin/pages/Assistant.js:117
+msgid "Search conversations"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:129
+msgid "No conversations match."
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:133
+msgid "Your conversations will appear here."
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:166
+msgid "Untitled"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:177
+msgid "Conversation actions"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:204
+msgid "Unpin"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:208
+msgid "Pin"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:228
+msgid "Rename"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:246
+#: assets/src/admin/pages/Assistant.js:350
+#: assets/src/admin/pages/Connections.js:783
+#: assets/src/admin/pages/Connections.js:846
+msgid "Delete"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:264
+#: assets/src/drawer/index.js:75
+#: assets/src/drawer/index.js:77
+msgid "Open full page"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:290
+msgid "Rename conversation"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:317
+#: assets/src/admin/pages/Assistant.js:343
+#: assets/src/admin/pages/Connections.js:481
+#: assets/src/admin/pages/Connections.js:833
+#: assets/src/admin/pages/Usage.js:341
+#: assets/src/admin/pages/Usage.js:775
+msgid "Cancel"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:320
+msgid "Save"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:328
+msgid "Delete conversation?"
+msgstr ""
+
+#: assets/src/admin/pages/Assistant.js:333
+msgid "The conversation and its history are deleted. Changes you already applied stay on the site."
+msgstr ""
+
+#. translators: %d: maximum number of images.
+#: assets/src/admin/pages/assistant/Composer.js:69
+#, js-format
+msgid "You can attach up to %d images."
+msgstr ""
+
+#. translators: %s: file name.
+#: assets/src/admin/pages/assistant/Composer.js:122
+#, js-format
+msgid "Remove %s"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Composer.js:140
+msgid "Message the assistant"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Composer.js:150
+msgid "Ask anything about your site, or tell the assistant what to change…"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Composer.js:190
+msgid "Attach images"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Composer.js:206
+msgid "Stop"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Composer.js:219
+msgid "Send"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Composer.js:233
+msgid "Changes are proposed for your review before anything is saved. Enter to send, Shift+Enter for a new line."
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Composer.js:242
+msgid "Create drafts without review"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:16
+msgid "Waiting for review"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:19
+msgid "Applying…"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:22
+msgid "Applied"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:25
+msgid "Rejected"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:26
+msgid "Undone"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:27
+msgid "Expired"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:30
+msgid "Out of date"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:33
+#: assets/src/admin/pages/Logs.js:212
+msgid "Failed"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:55
+msgid "(empty)"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:78
+msgid "Show less"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:79
+msgid "Show all"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:160
+msgid "Open in editor"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:170
+msgid "Proposed changes"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:221
+msgid "Applied automatically because you allow drafts without review."
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:229
+msgid "The content changed after this was proposed. Ask the assistant to propose it again."
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:257
+msgid "Apply"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:265
+msgid "Reject"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:277
+msgid "Undo"
+msgstr ""
+
+#. translators: %s: relative time, for example "in 50 minutes".
+#: assets/src/admin/pages/assistant/ProposalCard.js:284
+#, js-format
+msgid "Expires %s"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:294
+msgid "Undo anyway?"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:299
+msgid "Someone edited this content after the change was applied. Undoing now restores the version from before the AI change and discards those later edits."
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:309
+msgid "Keep current version"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:317
+msgid "Undo and discard later edits"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:48
+msgid "Assistant activity"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:84
+msgid "Image"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:438
+msgid "Connect an AI provider to begin"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:444
+msgid "Mindio AI uses your own API key from Anthropic, OpenAI, Google Gemini, or any OpenAI-compatible gateway. Nothing is sent anywhere until you add one."
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:454
+#: assets/src/admin/pages/Connections.js:186
+msgid "Add a connection"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:483
+#: assets/src/admin/pages/Usage.js:578
+msgid "Model"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:521
+#: assets/src/admin/pages/Usage.js:458
+msgid "AI is paused"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:523
+msgid "An administrator paused all AI requests. You can read conversations, but the assistant cannot answer until AI is resumed."
+msgstr ""
+
+#. translators: %s: site name.
+#: assets/src/admin/pages/assistant/Thread.js:552
+#, js-format
+msgid "How can I help with %s today?"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:560
+msgid "I can look things up across your content and store, draft and edit posts, handle comments, and update products. Every change waits for your approval and can be undone."
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:636
+msgid "The assistant is thinking"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:662
+msgid "The assistant could not finish"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:677
+msgid "Something went wrong"
+msgstr ""
+
+#: assets/src/admin/pages/assistant/Thread.js:683
+msgid "Dismiss"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:17
+msgid "Ready"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:24
+msgid "Choose a model"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:30
+msgid "Needs a key"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:37
+msgid "From wp-config.php"
+msgstr ""
+
+#. translators: %s: last four characters of the key.
+#: assets/src/admin/pages/Connections.js:41
+#, js-format
+msgid "Saved, ends in %s"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:48
+msgid "No key"
+msgstr ""
+
+#. translators: %s: last four characters of the key.
+#: assets/src/admin/pages/Connections.js:62
+#, js-format
+msgid "A key ending in %s is saved. Leave this empty to keep it."
+msgstr ""
+
+#. translators: %s: PHP constant name.
+#: assets/src/admin/pages/Connections.js:72
+#, js-format
+msgid "Optional: %s is defined in wp-config.php and is used for this provider’s own address."
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:79
+msgid "Stored encrypted and never shown again. Only the last four characters are displayed."
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:185
+msgid "Edit connection"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:196
+msgid "Provider"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:222
+msgid "Key in wp-config.php"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:245
+msgid "API base URL"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:246
+msgid "HTTPS only. A private or local address works only after an administrator adds its host and port to Settings → Private hosts."
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:264
+msgid "API address"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:273
+msgid "The saved key will be removed"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:278
+msgid "Keys are tied to the address they were saved for. Enter the key again for the new address."
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:286
+msgid "API key"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:308
+msgid "Get a key"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:316
+#: assets/src/admin/pages/Connections.js:653
+#: assets/src/admin/pages/Settings.js:185
+msgid "Default model"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:326
+#: assets/src/admin/pages/Connections.js:343
+#: assets/src/admin/pages/Usage.js:243
+msgid "Model ID"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:330
+msgid "Fast model (optional)"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:362
+msgid "Load models from the provider"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:370
+msgid "Advanced"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:375
+msgid "Timeout (seconds)"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:382
+msgid "Extra headers"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:383
+msgid "For gateways that need extra headers. Values are encrypted and write-only: leave a value empty to keep the saved one."
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:393
+msgid "Header name"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:418
+msgid "Header value"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:440
+msgid "Remove header"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:465
+msgid "Add header"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:473
+msgid "Could not save"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:490
+msgid "Save changes"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:491
+#: assets/src/admin/pages/Connections.js:557
+msgid "Add connection"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:546
+msgid "Bring your own key. Each connection is a provider account; keys are encrypted, never shown again, and tied to the address they were saved for."
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:566
+msgid "Keys cannot be encrypted on this server"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:571
+msgid "Install the sodium or OpenSSL PHP extension before adding connections."
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:581
+msgid "No connections yet"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:588
+msgid "Add your first connection"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:597
+msgid "Connect Anthropic Claude, OpenAI, Google Gemini, OpenRouter, DeepSeek, or any OpenAI-compatible gateway. Nothing is sent to a provider until you add a connection and use the assistant."
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:601
+msgid "Ask a site administrator to add a provider connection."
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:636
+msgid "Address"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:647
+msgid "Key"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:665
+msgid "Models available"
+msgstr ""
+
+#. translators: 1: latency in milliseconds, 2: number of models.
+#: assets/src/admin/pages/Connections.js:704
+#, js-format
+msgid "Connected in %1$s ms · %2$s models"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:718
+msgid "the default model was not in the list"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:742
+msgid "Test"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:753
+msgid "Edit"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:770
+msgid "Use for the assistant"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:792
+msgid "Assistant default"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:818
+msgid "Delete connection?"
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:823
+msgid "The saved key is deleted. Conversations that use this connection can still be read but cannot continue."
+msgstr ""
+
+#: assets/src/admin/pages/Connections.js:853
+msgid "Requests go straight from your server to the provider you choose. Each provider handles data under its own terms; see the plugin readme for links."
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:14
+msgid "Connection added"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:15
+msgid "Connection changed"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:16
+msgid "Connection deleted"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:17
+msgid "Connection tested"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:18
+msgid "Settings changed"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:19
+msgid "Access changed"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:20
+msgid "Budget changed"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:21
+msgid "Prices changed"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:22
+msgid "Budget warning sent"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:23
+msgid "AI paused"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:24
+msgid "AI resumed"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:25
+msgid "Keys re-entered"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:26
+msgid "Change applied"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:27
+msgid "Change rejected"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:28
+msgid "Change undone"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:29
+msgid "Assistant answered"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:30
+msgid "Assistant stopped"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:31
+msgid "Assistant failed"
+msgstr ""
+
+#. translators: %s: token count.
+#: assets/src/admin/pages/Logs.js:48
+#: assets/src/admin/pages/Usage.js:145
+#, js-format
+msgid "%s tokens"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:63
+msgid "read untrusted content"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:67
+msgid "key removed after address change"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:139
+msgid "Who changed what: connections, settings, assistant runs, and every change applied or undone. Messages and keys are never logged."
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:150
+msgid "Export CSV"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:157
+#: assets/src/admin/pages/Logs.js:250
+msgid "Event"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:162
+msgid "All events"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:166
+msgid "Changes"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:170
+msgid "Assistant runs"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:185
+msgid "Pause and resume"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:199
+msgid "Outcome"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:204
+msgid "Any outcome"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:208
+msgid "Succeeded"
+msgstr ""
+
+#. translators: %s: number of entries.
+#: assets/src/admin/pages/Logs.js:225
+#, js-format
+msgid "%s entries"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:237
+msgid "No activity matches these filters."
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:248
+msgid "When"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:252
+msgid "User"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:254
+msgid "Details"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:285
+msgid "System"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:299
+msgid "failed"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:319
+msgid "Previous"
+msgstr ""
+
+#. translators: 1: current page, 2: total pages.
+#: assets/src/admin/pages/Logs.js:323
+#, js-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: assets/src/admin/pages/Logs.js:336
+msgid "Next"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:114
+msgid "Settings saved."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:143
+msgid "Site-wide rules for the assistant. Only administrators can change them."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:151
+msgid "Defaults for new conversations. Each conversation keeps the model it started with."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:158
+msgid "Default connection"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:163
+msgid "First available connection"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:188
+msgid "Leave empty to use the connection’s default model."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:202
+msgid "Reasoning effort"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:203
+msgid "For models that support it. Higher effort is slower and uses more tokens."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:211
+msgid "Low"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:215
+msgid "Medium (recommended)"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:222
+msgid "High"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:226
+msgid "Extra high"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:230
+msgid "Maximum"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:239
+msgid "Maximum answer length (tokens)"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:249
+msgid "Steps per message"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:250
+msgid "How many times the assistant may call tools before it must answer."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:259
+msgid "Time limit per message (seconds)"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:271
+msgid "Review"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:272
+msgid "Every change is a proposal the user applies. You can let users skip review for new drafts only."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:279
+msgid "Allow users to create drafts without review"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:283
+msgid "Each user still has to turn this on for themselves. Never applies after the assistant read comments or other untrusted text."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:293
+msgid "Proposals expire after (minutes)"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:305
+msgid "Access"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:306
+msgid "Administrators always have full access. Users only ever act within their own WordPress permissions: an editor cannot change products through the assistant, for example."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:316
+msgid "Role"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:362
+msgid "Privacy and retention"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:366
+msgid "Delete conversations after (days)"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:370
+msgid "0 keeps them until deleted. Pinned conversations are kept."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:379
+msgid "Keep the activity log for (days)"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:389
+msgid "Budget alert email"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:390
+msgid "Defaults to the site admin email."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:404
+msgid "Network and links"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:405
+msgid "Outbound requests are limited to public HTTPS addresses and pinned to the address that was checked."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:412
+msgid "WordPress sends requests through a proxy on this site, so the proxy resolves addresses."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:420
+msgid "Private hosts"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:421
+msgid "Exact host:port pairs allowed to use private networks or HTTP, one per line, for example a self-hosted model at 192.168.1.20:11434. Leave empty unless you need it."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:435
+msgid "Clickable link hosts"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:439
+msgid "Links in answers are clickable only for this site and these hosts (one per line, *.example.com for subdomains)."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:453
+msgid "Live answers"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:454
+msgid "Automatic streams answers and switches to checking every second if the host buffers the stream."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:462
+msgid "Automatic (recommended)"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:469
+msgid "Always stream"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:473
+msgid "Never stream (check periodically)"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:486
+msgid "Keys are encrypted with MINDIO_MAGIC_AI_SECRET_KEY."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:490
+msgid "Tip: define MINDIO_MAGIC_AI_SECRET_KEY in wp-config.php so saved keys survive a change of the site’s security salts."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:497
+msgid "Uninstall"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:499
+msgid "Delete all Mindio AI data when the plugin is deleted"
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:503
+msgid "Removes connections, keys, conversations, usage, and the activity log. Changes already made to your content stay."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:517
+msgid "You have unsaved changes."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:521
+msgid "All changes saved."
+msgstr ""
+
+#: assets/src/admin/pages/Settings.js:529
+msgid "Save settings"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:61
+#: assets/src/admin/pages/Usage.js:541
+msgid "Tokens per day"
+msgstr ""
+
+#. translators: %s: number of model calls.
+#: assets/src/admin/pages/Usage.js:154
+#, js-format
+msgid "%s calls"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:165
+msgid "Show as table"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:170
+msgid "Day"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:171
+msgid "Tokens"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:172
+#: assets/src/admin/pages/Usage.js:581
+msgid "Calls"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:173
+#: assets/src/admin/pages/Usage.js:593
+msgid "Cost"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:226
+msgid "Model prices"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:231
+msgid "US dollars per million tokens, used to estimate cost and enforce cost budgets. Check your provider’s pricing page; models without a price are counted at zero cost."
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:244
+#: assets/src/admin/pages/Usage.js:584
+msgid "Input"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:245
+#: assets/src/admin/pages/Usage.js:587
+msgid "Output"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:247
+msgid "Cache read"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:250
+msgid "Cache write"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:301
+msgid "Remove"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:337
+msgid "Add model"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:344
+msgid "Save prices"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:391
+msgid "Budget saved."
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:425
+msgid "Tokens and estimated cost of every AI call, with limits that stop spending before it happens."
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:431
+msgid "Period"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:437
+msgid "Last 7 days"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:441
+msgid "Last 30 days"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:445
+msgid "Last 90 days"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:466
+msgid "Resume AI"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:472
+msgid "Paused by the MINDIO_MAGIC_AI_DISABLED constant in wp-config.php."
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:476
+msgid "No AI requests are sent until an administrator resumes AI."
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:486
+msgid "Tokens today"
+msgstr ""
+
+#. translators: %s: percentage.
+#: assets/src/admin/pages/Usage.js:494
+#, js-format
+msgid "%s of daily budget"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:502
+msgid "No daily limit"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:508
+msgid "Cost this month"
+msgstr ""
+
+#. translators: %s: percentage.
+#: assets/src/admin/pages/Usage.js:513
+#, js-format
+msgid "%s of monthly budget"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:521
+msgid "Estimated from model prices"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:530
+msgid "Model calls this month"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:535
+msgid "Tokens this month"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:542
+msgid "Input, cached input, and output tokens across all features."
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:552
+msgid "By model"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:560
+msgid "Edit prices"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:567
+msgid "No usage in this period."
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:609
+msgid "estimated"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:638
+msgid "no price"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:653
+msgid "Some models have no price, so their cost is not counted toward cost budgets."
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:662
+msgid "Assistant budget"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:663
+msgid "Limits are reserved before each call, so concurrent requests cannot overspend. 0 means no limit. You get an email at 80%."
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:672
+msgid "Daily token limit"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:688
+msgid "Monthly cost limit (USD)"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:706
+msgid "Save budget"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:725
+msgid "Pause all AI"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:731
+msgid "Stops every AI request on this site immediately, for all users."
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:743
+#: assets/src/admin/pages/Usage.js:782
+msgid "Pause AI"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:760
+msgid "Pause all AI?"
+msgstr ""
+
+#: assets/src/admin/pages/Usage.js:765
+msgid "Running answers stop at their next step and no new requests are sent until you resume AI."
+msgstr ""
+
+#: assets/src/admin/tools.js:9
+msgid "Reading the site overview…"
+msgstr ""
+
+#: assets/src/admin/tools.js:10
+msgid "Read the site overview"
+msgstr ""
+
+#: assets/src/admin/tools.js:13
+msgid "Searching content…"
+msgstr ""
+
+#: assets/src/admin/tools.js:14
+msgid "Searched content"
+msgstr ""
+
+#: assets/src/admin/tools.js:17
+msgid "Reading content…"
+msgstr ""
+
+#: assets/src/admin/tools.js:21
+msgid "Listing categories and tags…"
+msgstr ""
+
+#: assets/src/admin/tools.js:22
+msgid "Listed categories and tags"
+msgstr ""
+
+#: assets/src/admin/tools.js:25
+msgid "Preparing a draft…"
+msgstr ""
+
+#: assets/src/admin/tools.js:26
+msgid "Prepared a draft"
+msgstr ""
+
+#: assets/src/admin/tools.js:29
+msgid "Preparing an edit…"
+msgstr ""
+
+#: assets/src/admin/tools.js:30
+msgid "Prepared an edit"
+msgstr ""
+
+#: assets/src/admin/tools.js:33
+msgid "Preparing a schedule…"
+msgstr ""
+
+#: assets/src/admin/tools.js:34
+msgid "Prepared a schedule"
+msgstr ""
+
+#: assets/src/admin/tools.js:37
+msgid "Preparing to publish…"
+msgstr ""
+
+#: assets/src/admin/tools.js:38
+msgid "Prepared to publish"
+msgstr ""
+
+#: assets/src/admin/tools.js:41
+msgid "Preparing categories and tags…"
+msgstr ""
+
+#: assets/src/admin/tools.js:42
+msgid "Prepared categories and tags"
+msgstr ""
+
+#: assets/src/admin/tools.js:45
+msgid "Reading comments…"
+msgstr ""
+
+#: assets/src/admin/tools.js:46
+msgid "Read comments"
+msgstr ""
+
+#: assets/src/admin/tools.js:49
+msgid "Preparing a reply…"
+msgstr ""
+
+#: assets/src/admin/tools.js:50
+msgid "Prepared a reply"
+msgstr ""
+
+#: assets/src/admin/tools.js:53
+msgid "Preparing moderation…"
+msgstr ""
+
+#: assets/src/admin/tools.js:54
+msgid "Prepared moderation"
+msgstr ""
+
+#: assets/src/admin/tools.js:57
+msgid "Reading SEO fields…"
+msgstr ""
+
+#: assets/src/admin/tools.js:61
+msgid "Preparing SEO changes…"
+msgstr ""
+
+#: assets/src/admin/tools.js:62
+msgid "Prepared SEO changes"
+msgstr ""
+
+#: assets/src/admin/tools.js:65
+msgid "Searching products…"
+msgstr ""
+
+#: assets/src/admin/tools.js:66
+msgid "Searched products"
+msgstr ""
+
+#: assets/src/admin/tools.js:69
+msgid "Reading a product…"
+msgstr ""
+
+#: assets/src/admin/tools.js:73
+msgid "Checking stock…"
+msgstr ""
+
+#: assets/src/admin/tools.js:74
+msgid "Checked stock"
+msgstr ""
+
+#: assets/src/admin/tools.js:77
+msgid "Summarizing sales…"
+msgstr ""
+
+#: assets/src/admin/tools.js:78
+msgid "Summarized sales"
+msgstr ""
+
+#: assets/src/admin/tools.js:81
+msgid "Ranking products…"
+msgstr ""
+
+#: assets/src/admin/tools.js:82
+msgid "Ranked products"
+msgstr ""
+
+#: assets/src/admin/tools.js:85
+msgid "Preparing a product edit…"
+msgstr ""
+
+#: assets/src/admin/tools.js:86
+msgid "Prepared a product edit"
+msgstr ""
+
+#: assets/src/admin/tools.js:89
+msgid "Preparing a product draft…"
+msgstr ""
+
+#: assets/src/admin/tools.js:90
+msgid "Prepared a product draft"
+msgstr ""
+
+#: assets/src/admin/tools.js:96
+msgid "Used a tool"
+msgstr ""
+
+#: assets/src/admin/tools.js:97
+msgid "Working…"
+msgstr ""
+
+#: assets/src/admin/tools.js:106
+msgid "Find drafts I haven’t touched in a month and summarize each one"
+msgstr ""
+
+#: assets/src/admin/tools.js:113
+msgid "Write a blog post outline about our most popular topic"
+msgstr ""
+
+#: assets/src/admin/tools.js:120
+msgid "Review comments waiting for moderation"
+msgstr ""
+
+#: assets/src/admin/tools.js:127
+msgid "Which published posts have no excerpt?"
+msgstr ""
+
+#: assets/src/admin/tools.js:136
+msgid "Summarize this month’s sales and top products"
+msgstr ""
+
+#: assets/src/admin/tools.js:143
+msgid "List products that are low in stock"
+msgstr ""
+
+#: assets/src/drawer/index.js:67
+msgid "Loading the assistant…"
+msgstr ""
+
+#: assets/src/drawer/index.js:80
+#: assets/src/drawer/index.js:81
+msgid "Close"
+msgstr ""
+
+#: assets/src/drawer/index.js:95
+msgid "Mindio AI assistant"
+msgstr ""
+
+#: assets/src/drawer/index.js:254
+msgid "Ask Mindio AI"
+msgstr ""
+
+#: assets/src/drawer/index.js:255
+msgid "Ask Mindio AI assistant chat"
+msgstr ""

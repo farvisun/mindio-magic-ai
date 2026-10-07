@@ -1,0 +1,48 @@
+{
+	"name": "farvisun/mindio-magic-ai",
+	"description": "Mindio Magic AI is a bring-your-own-key AI assistant, automation suite, and customer chat agent for WordPress and WooCommerce.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=8.1",
+		"anthropic-ai/sdk": "0.54.0",
+		"nyholm/psr7": "1.8.2"
+	},
+	"require-dev": {
+		"brianhenryie/strauss": "^0.22"
+	},
+	"provide": {
+		"psr/http-client-implementation": "1.0"
+	},
+	"config": {
+		"allow-plugins": {
+			"php-http/discovery": false
+		},
+		"platform": {
+			"php": "8.1.0"
+		},
+		"sort-packages": true
+	},
+	"extra": {
+		"strauss": {
+			"target_directory": "vendor-prefixed",
+			"namespace_prefix": "MindioMagicAI\\Vendor\\",
+			"classmap_prefix": "MindioMagicAI_Vendor_",
+			"constant_prefix": "MINDIO_MAGIC_AI_VENDOR_",
+			"packages": [
+				"anthropic-ai/sdk",
+				"nyholm/psr7"
+			],
+			"delete_vendor_packages": false,
+			"include_modified_date": false,
+			"include_author": false
+		}
+	},
+	"scripts": {
+		"prefix": "vendor/bin/strauss",
+		"lint": "find src tests mindio-magic-ai.php uninstall.php -type f -name '*.php' -print0 | xargs -0 -n1 php -l",
+		"build": "bash bin/build-release.sh",
+		"test": "bash bin/test.sh",
+		"i18n": "bash bin/i18n.sh"
+	}
+}

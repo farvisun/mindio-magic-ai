@@ -1,0 +1,2531 @@
+# Persian (Iran) translation for Mindio Magic AI.
+# Copyright (C) 2026 Farvisun
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Mindio Magic AI 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/farvisun/mindio-magic-ai/issues\n"
+"POT-Creation-Date: 2026-10-06T17:39:27+00:00\n"
+"PO-Revision-Date: 2026-10-06 21:30+0330\n"
+"Last-Translator: Mohammad Askari <farvisun@gmail.com>\n"
+"Language-Team: Persian\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Mindio Magic AI\n"
+"X-Domain: mindio-magic-ai\n"
+
+#. Plugin Name of the plugin
+#: mindio-magic-ai.php:3 src/Admin/SiteHealth.php:82
+msgid "Mindio Magic AI"
+msgstr "Mindio Magic AI"
+
+#. Plugin URI of the plugin
+#: mindio-magic-ai.php:4
+msgid "https://github.com/farvisun/mindio-magic-ai"
+msgstr "https://github.com/farvisun/mindio-magic-ai"
+
+#. Description of the plugin
+#: mindio-magic-ai.php:5
+msgid ""
+"Bring-your-own-key AI assistant for WordPress and WooCommerce admins, with "
+"reviewable changes, undo, budgets, and an audit trail."
+msgstr ""
+"دستیار هوش مصنوعی برای مدیران WordPress و WooCommerce با کلید API خودتان؛ "
+"همراه با تغییرهای قابل بررسی، امکان برگرداندن، بودجه‌بندی و ردپای ممیزی."
+
+#. Author of the plugin
+#: mindio-magic-ai.php:9
+msgid "Farvisun"
+msgstr "Farvisun"
+
+#. Author URI of the plugin
+#: mindio-magic-ai.php:10
+msgid "https://github.com/farvisun"
+msgstr "https://github.com/farvisun"
+
+#: mindio-magic-ai.php:33
+msgid "Mindio Magic AI requires PHP 8.1 or newer."
+msgstr "Mindio Magic AI به PHP نسخهٔ 8.1 یا جدیدتر نیاز دارد."
+
+#: src/Admin/Admin.php:42 src/Admin/Admin.php:43 assets/src/admin/App.js:97
+#: assets/src/drawer/index.js:61
+msgid "Mindio AI"
+msgstr "Mindio AI"
+
+#: src/Admin/Admin.php:52 assets/src/admin/App.js:40
+#: assets/src/admin/pages/Settings.js:150
+msgid "Assistant"
+msgstr "دستیار"
+
+#: src/Admin/Admin.php:53 src/Admin/Admin.php:264 src/Admin/SiteHealth.php:89
+#: assets/src/admin/App.js:46 assets/src/admin/pages/Connections.js:545
+#: assets/src/admin/pages/Logs.js:177
+msgid "Connections"
+msgstr "اتصال‌ها"
+
+#: src/Admin/Admin.php:54 assets/src/admin/App.js:52
+#: assets/src/admin/pages/Usage.js:424
+msgid "Usage & budgets"
+msgstr "مصرف و بودجه"
+
+#: src/Admin/Admin.php:55 assets/src/admin/App.js:58
+#: assets/src/admin/pages/Logs.js:138
+msgid "Activity log"
+msgstr "گزارش فعالیت"
+
+#: src/Admin/Admin.php:56 assets/src/admin/App.js:64
+#: assets/src/admin/pages/Logs.js:181 assets/src/admin/pages/Settings.js:142
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: src/Admin/Admin.php:71 assets/src/admin/App.js:188
+msgid "Loading Mindio AI…"
+msgstr "در حال بارگذاری Mindio AI…"
+
+#: src/Admin/Admin.php:72
+msgid "Mindio AI needs JavaScript."
+msgstr "Mindio AI برای کار به جاوااسکریپت نیاز دارد."
+
+#: src/Admin/Admin.php:221
+msgid "Ask AI"
+msgstr "از هوش مصنوعی بپرسید"
+
+#: src/Admin/Admin.php:225
+msgid "Open the Mindio AI assistant"
+msgstr "باز کردن دستیار Mindio AI"
+
+#: src/Admin/Admin.php:242
+msgid ""
+"Mindio AI cannot decrypt the saved API keys because the site’s security keys "
+"changed. Enter the provider keys again."
+msgstr ""
+"Mindio AI نمی‌تواند کلیدهای API ذخیره‌شده را رمزگشایی کند، زیرا کلیدهای امنیتی "
+"سایت تغییر کرده‌اند. کلیدهای ارائه‌دهنده‌ها را دوباره وارد کنید."
+
+#: src/Admin/Admin.php:244 assets/src/admin/App.js:232
+msgid "Open Connections"
+msgstr "باز کردن اتصال‌ها"
+
+#: src/Admin/Admin.php:250
+msgid "Mindio AI is paused: no AI requests are being sent."
+msgstr "Mindio AI متوقف است: هیچ درخواستی به هوش مصنوعی فرستاده نمی‌شود."
+
+#: src/Admin/Admin.php:252
+msgid "Manage"
+msgstr "مدیریت"
+
+#: src/Admin/Privacy.php:27
+msgid ""
+"This site uses Mindio Magic AI to help staff manage the site. When a staff "
+"member uses the assistant, their messages, any images they attach, and the "
+"site content the assistant reads to answer them are sent to the AI provider "
+"the site administrator configured (for example Anthropic, OpenAI, Google, or "
+"another compatible provider). The provider processes this data under its own "
+"terms and privacy policy."
+msgstr ""
+"این سایت از Mindio Magic AI برای کمک به کارکنان در مدیریت سایت استفاده "
+"می‌کند. وقتی یکی از کارکنان از دستیار استفاده می‌کند، پیام‌های او، تصاویری که "
+"پیوست می‌کند و محتوایی از سایت که دستیار برای پاسخ‌گویی می‌خواند، به ارائه‌دهندهٔ "
+"هوش مصنوعی که مدیر سایت پیکربندی کرده است فرستاده می‌شود (برای نمونه "
+"Anthropic، OpenAI، Google یا ارائه‌دهندهٔ سازگار دیگری). ارائه‌دهنده این داده‌ها "
+"را طبق شرایط و سیاست حریم خصوصی خودش پردازش می‌کند."
+
+#: src/Admin/Privacy.php:28
+msgid ""
+"Assistant conversations are stored in this site’s database for the retention "
+"period set by the administrator and can be exported or erased on request."
+msgstr ""
+"گفتگوهای دستیار در پایگاه‌دادهٔ این سایت و به مدت دورهٔ نگه‌داری‌ای که مدیر تعیین "
+"کرده است ذخیره می‌شوند و در صورت درخواست، قابل برون‌بری یا پاک‌سازی هستند."
+
+#: src/Admin/Privacy.php:38 src/Admin/Privacy.php:50 src/Admin/Privacy.php:78
+msgid "Mindio AI conversations"
+msgstr "گفتگوهای Mindio AI"
+
+#: src/Admin/Privacy.php:82 src/Agent/Tools/ContentTools.php:353
+#: src/Agent/Tools/ContentTools.php:407 assets/src/admin/pages/Assistant.js:304
+msgid "Title"
+msgstr "عنوان"
+
+#: src/Admin/Privacy.php:86
+msgid "Started"
+msgstr "زمان شروع"
+
+#: src/Admin/Privacy.php:90
+msgid "Messages"
+msgstr "پیام‌ها"
+
+#: src/Admin/SiteHealth.php:31
+msgid "Mindio AI key encryption"
+msgstr "رمزنگاری کلیدهای Mindio AI"
+
+#: src/Admin/SiteHealth.php:35
+msgid "Mindio AI saved keys"
+msgstr "کلیدهای ذخیره‌شدهٔ Mindio AI"
+
+#: src/Admin/SiteHealth.php:45
+msgid "Provider keys are encrypted at rest"
+msgstr "کلیدهای ارائه‌دهنده‌ها به‌صورت رمزنگاری‌شده ذخیره می‌شوند"
+
+#: src/Admin/SiteHealth.php:45
+msgid "Provider keys cannot be encrypted"
+msgstr "کلیدهای ارائه‌دهنده‌ها قابل رمزنگاری نیستند"
+
+#: src/Admin/SiteHealth.php:48 src/Admin/SiteHealth.php:67
+msgid "Security"
+msgstr "امنیت"
+
+#: src/Admin/SiteHealth.php:53
+msgid "Keys are encrypted with the MINDIO_MAGIC_AI_SECRET_KEY constant."
+msgstr "کلیدها با ثابت MINDIO_MAGIC_AI_SECRET_KEY رمزنگاری می‌شوند."
+
+#: src/Admin/SiteHealth.php:53
+msgid ""
+"Keys are encrypted with a key derived from the site’s security salts. Define "
+"MINDIO_MAGIC_AI_SECRET_KEY in wp-config.php to keep keys readable if the "
+"salts are rotated."
+msgstr ""
+"کلیدها با کلیدی رمزنگاری می‌شوند که از سالت‌های امنیتی سایت به دست می‌آید. ثابت "
+"MINDIO_MAGIC_AI_SECRET_KEY را در wp-config.php تعریف کنید تا اگر سالت‌ها عوض "
+"شدند، کلیدها همچنان خوانا بمانند."
+
+#: src/Admin/SiteHealth.php:54
+msgid ""
+"Install the sodium or OpenSSL PHP extension so Mindio AI can encrypt "
+"provider keys."
+msgstr ""
+"ماژول sodium یا OpenSSL را در PHP نصب کنید تا Mindio AI بتواند کلیدهای "
+"ارائه‌دهنده‌ها را رمزنگاری کند."
+
+#: src/Admin/SiteHealth.php:64
+msgid "Saved provider keys can be decrypted"
+msgstr "کلیدهای ذخیره‌شدهٔ ارائه‌دهنده‌ها قابل رمزگشایی هستند"
+
+#: src/Admin/SiteHealth.php:64
+msgid "Saved provider keys can no longer be decrypted"
+msgstr "کلیدهای ذخیره‌شدهٔ ارائه‌دهنده‌ها دیگر قابل رمزگشایی نیستند"
+
+#: src/Admin/SiteHealth.php:70
+msgid "The encryption key has not changed since the keys were saved."
+msgstr "کلید رمزنگاری از زمان ذخیرهٔ کلیدها تغییری نکرده است."
+
+#: src/Admin/SiteHealth.php:70
+msgid ""
+"The site’s security keys changed after provider keys were saved. Enter each "
+"key again under Mindio AI → Connections."
+msgstr ""
+"کلیدهای امنیتی سایت پس از ذخیرهٔ کلیدهای ارائه‌دهنده‌ها تغییر کرده‌اند. هر کلید "
+"را دوباره در Mindio AI ← اتصال‌ها وارد کنید."
+
+#: src/Admin/SiteHealth.php:85
+msgid "Version"
+msgstr "نسخه"
+
+#: src/Admin/SiteHealth.php:93 assets/src/admin/App.js:130
+msgid "Paused"
+msgstr "متوقف"
+
+#: src/Admin/SiteHealth.php:94
+msgid "Yes"
+msgstr "بله"
+
+#: src/Admin/SiteHealth.php:94 src/Admin/SiteHealth.php:98
+msgid "No"
+msgstr "خیر"
+
+#: src/Admin/SiteHealth.php:97
+msgid "Outbound proxy"
+msgstr "پراکسی خروجی"
+
+#: src/Admin/SiteHealth.php:98
+msgid "Yes (DNS pinning is handled by the proxy)"
+msgstr "بله (تثبیت DNS بر عهدهٔ پراکسی است)"
+
+#: src/Agent/ChangeRecorder.php:318
+msgid "Outbound HTTP is blocked while previewing a change."
+msgstr "درخواست‌های HTTP خروجی هنگام پیش‌نمایش تغییر مسدود می‌شوند."
+
+#: src/Agent/Changeset.php:155
+msgid "Unknown change record."
+msgstr "رکورد تغییر ناشناخته است."
+
+#: src/Agent/Changeset.php:158
+msgid "This change has already been undone."
+msgstr "این تغییر پیش‌تر برگردانده شده است."
+
+#: src/Agent/Changeset.php:166
+msgid ""
+"This content was edited after the AI change. Undoing now would overwrite "
+"those edits."
+msgstr ""
+"این محتوا پس از تغییر هوش مصنوعی ویرایش شده است. برگرداندن تغییر در این "
+"مرحله، آن ویرایش‌ها را از بین می‌برد."
+
+#: src/Agent/Changeset.php:238
+msgid "This kind of change cannot be undone automatically."
+msgstr "این نوع تغییر را نمی‌توان به‌طور خودکار برگرداند."
+
+#: src/Agent/Changeset.php:246
+msgid "You cannot delete the post this change created."
+msgstr "شما اجازهٔ حذف نوشته‌ای را که این تغییر ایجاد کرده است ندارید."
+
+#: src/Agent/Changeset.php:254 src/Agent/Changeset.php:278
+#: src/Agent/Changeset.php:289
+msgid "You cannot edit the post this change modified."
+msgstr "شما اجازهٔ ویرایش نوشته‌ای را که با این تغییر اصلاح شده است ندارید."
+
+#: src/Agent/Changeset.php:296
+msgid "You cannot manage terms."
+msgstr "شما اجازهٔ مدیریت عبارت‌های طبقه‌بندی را ندارید."
+
+#: src/Agent/Changeset.php:320 src/Agent/Tools/CommentTools.php:19
+msgid "You cannot moderate comments."
+msgstr "شما اجازهٔ مدیریت دیدگاه‌ها را ندارید."
+
+#: src/Agent/Changeset.php:347 src/Agent/Tools/WooCommerceTools.php:161
+msgid "You cannot edit this product."
+msgstr "شما اجازهٔ ویرایش این محصول را ندارید."
+
+#: src/Agent/ProposalQueue.php:92 src/Agent/ProposalQueue.php:180
+#: src/Agent/ProposalQueue.php:196
+msgid "Proposal not found."
+msgstr "تغییر پیشنهادی پیدا نشد."
+
+#: src/Agent/ProposalQueue.php:95 src/Agent/ProposalQueue.php:124
+#: src/Agent/ProposalQueue.php:186
+msgid "This proposal was already handled."
+msgstr "به این تغییر پیشنهادی قبلاً رسیدگی شده است."
+
+#: src/Agent/ProposalQueue.php:99
+msgid "This proposal expired. Ask the assistant to propose it again."
+msgstr ""
+"این تغییر پیشنهادی منقضی شده است. از دستیار بخواهید دوباره آن را پیشنهاد دهد."
+
+#: src/Agent/ProposalQueue.php:106
+msgid "This proposal can no longer be applied."
+msgstr "این تغییر پیشنهادی دیگر قابل اعمال نیست."
+
+#: src/Agent/ProposalQueue.php:111
+msgid "You are not allowed to make this change."
+msgstr "شما اجازهٔ اعمال این تغییر را ندارید."
+
+#: src/Agent/ProposalQueue.php:116
+msgid ""
+"The content changed after this proposal was made, so it was not applied. Ask "
+"the assistant to propose the change again."
+msgstr ""
+"محتوا پس از ارائهٔ این تغییر پیشنهادی تغییر کرده است، بنابراین اعمال نشد. از "
+"دستیار بخواهید تغییر را دوباره پیشنهاد دهد."
+
+#: src/Agent/ProposalQueue.php:199
+msgid "This change cannot be undone."
+msgstr "این تغییر قابل برگرداندن نیست."
+
+#: src/Agent/SchemaValidator.php:31
+msgid "does not match an allowed schema"
+msgstr "با هیچ ساختار مجازی مطابقت ندارد"
+
+#: src/Agent/SchemaValidator.php:36
+msgid "contains a value outside the allowed set"
+msgstr "مقداری خارج از مجموعهٔ مجاز دارد"
+
+#. translators: %s: comma-separated JSON types.
+#: src/Agent/SchemaValidator.php:45
+#, php-format
+msgid "must be of type %s"
+msgstr "باید از نوع %s باشد"
+
+#: src/Agent/SchemaValidator.php:54
+msgid "is shorter than allowed"
+msgstr "کوتاه‌تر از حد مجاز است"
+
+#: src/Agent/SchemaValidator.php:57
+msgid "is longer than allowed"
+msgstr "بلندتر از حد مجاز است"
+
+#: src/Agent/SchemaValidator.php:60
+msgid "has an invalid format"
+msgstr "قالب نامعتبر دارد"
+
+#: src/Agent/SchemaValidator.php:63
+msgid "must be a valid URL"
+msgstr "باید یک URL معتبر باشد"
+
+#: src/Agent/SchemaValidator.php:66
+msgid "must be a valid date-time"
+msgstr "باید تاریخ‌وزمان معتبر باشد"
+
+#: src/Agent/SchemaValidator.php:72
+msgid "is below the minimum"
+msgstr "کمتر از حداقل است"
+
+#: src/Agent/SchemaValidator.php:75
+msgid "is above the maximum"
+msgstr "بیشتر از حداکثر است"
+
+#: src/Agent/SchemaValidator.php:82
+msgid "contains too few items"
+msgstr "تعداد موارد آن کمتر از حد مجاز است"
+
+#: src/Agent/SchemaValidator.php:85
+msgid "contains too many items"
+msgstr "تعداد موارد آن بیشتر از حد مجاز است"
+
+#: src/Agent/SchemaValidator.php:88
+msgid "contains duplicate items"
+msgstr "موارد تکراری دارد"
+
+#: src/Agent/SchemaValidator.php:103
+msgid "is required"
+msgstr "الزامی است"
+
+#: src/Agent/SchemaValidator.php:115
+msgid "is not an allowed property"
+msgstr "ویژگی مجاز نیست"
+
+#. translators: 1: JSON path, 2: validation error.
+#: src/Agent/SchemaValidator.php:151
+#, php-format
+msgid "%1$s %2$s."
+msgstr "%1$s %2$s."
+
+#: src/Agent/Tools/CommentTools.php:24
+msgid "List comments"
+msgstr "فهرست دیدگاه‌ها"
+
+#: src/Agent/Tools/CommentTools.php:49
+msgid "Reply to a comment"
+msgstr "پاسخ به یک دیدگاه"
+
+#: src/Agent/Tools/CommentTools.php:73
+msgid "Moderate a comment"
+msgstr "مدیریت یک دیدگاه"
+
+#: src/Agent/Tools/CommentTools.php:138
+msgid "No comment with that ID exists."
+msgstr "دیدگاهی با این شناسه وجود ندارد."
+
+#. translators: 1: comment author, 2: post title.
+#: src/Agent/Tools/CommentTools.php:148
+#, php-format
+msgid "Comment by %1$s on “%2$s”"
+msgstr "دیدگاه %1$s در «%2$s»"
+
+#: src/Agent/Tools/CommentTools.php:164
+msgid "Post a public reply"
+msgstr "ارسال پاسخ عمومی"
+
+#: src/Agent/Tools/CommentTools.php:169
+msgid "Original comment"
+msgstr "دیدگاه اصلی"
+
+#: src/Agent/Tools/CommentTools.php:175
+msgid "Reply"
+msgstr "پاسخ"
+
+#: src/Agent/Tools/CommentTools.php:205
+msgid "The reply could not be saved."
+msgstr "پاسخ ذخیره نشد."
+
+#: src/Agent/Tools/CommentTools.php:220
+msgid "Approved"
+msgstr "تأییدشده"
+
+#: src/Agent/Tools/CommentTools.php:221
+msgid "Pending"
+msgstr "در انتظار"
+
+#: src/Agent/Tools/CommentTools.php:222
+msgid "Spam"
+msgstr "جفنگ"
+
+#: src/Agent/Tools/CommentTools.php:223
+msgid "Trash"
+msgstr "زباله‌دان"
+
+#: src/Agent/Tools/CommentTools.php:228
+msgid "Change a comment’s status"
+msgstr "تغییر وضعیت یک دیدگاه"
+
+#: src/Agent/Tools/CommentTools.php:233 src/Agent/Tools/ContentTools.php:411
+msgid "Status"
+msgstr "وضعیت"
+
+#: src/Agent/Tools/CommentTools.php:239
+msgid "Comment"
+msgstr "دیدگاه"
+
+#: src/Agent/Tools/CommentTools.php:256
+msgid "The comment status could not be changed."
+msgstr "تغییر وضعیت دیدگاه ممکن نشد."
+
+#: src/Agent/Tools/ContentTools.php:24
+msgid "Search content"
+msgstr "جست‌وجوی محتوا"
+
+#: src/Agent/Tools/ContentTools.php:57 assets/src/admin/tools.js:18
+msgid "Read content"
+msgstr "خواندن محتوا"
+
+#: src/Agent/Tools/ContentTools.php:76
+msgid "List categories and tags"
+msgstr "فهرست دسته‌ها و برچسب‌ها"
+
+#: src/Agent/Tools/ContentTools.php:100
+msgid "Create a draft"
+msgstr "ایجاد پیش‌نویس"
+
+#: src/Agent/Tools/ContentTools.php:130
+msgid "You cannot create this kind of content."
+msgstr "شما اجازهٔ ایجاد این نوع محتوا را ندارید."
+
+#: src/Agent/Tools/ContentTools.php:142
+msgid "Edit content"
+msgstr "ویرایش محتوا"
+
+#: src/Agent/Tools/ContentTools.php:168
+msgid "Schedule content"
+msgstr "زمان‌بندی محتوا"
+
+#: src/Agent/Tools/ContentTools.php:191
+msgid "Publish content"
+msgstr "انتشار محتوا"
+
+#: src/Agent/Tools/ContentTools.php:213
+msgid "Set categories or tags"
+msgstr "تعیین دسته‌ها یا برچسب‌ها"
+
+#: src/Agent/Tools/ContentTools.php:239
+msgid "You cannot assign these terms."
+msgstr "شما اجازهٔ اختصاص این عبارت‌ها را ندارید."
+
+#: src/Agent/Tools/ContentTools.php:307
+msgid "That taxonomy is not available on this site."
+msgstr "این طبقه‌بندی در این سایت در دسترس نیست."
+
+#. translators: 1: content type, 2: title.
+#: src/Agent/Tools/ContentTools.php:346
+#, php-format
+msgid "Create a draft %1$s: “%2$s”"
+msgstr "ایجاد پیش‌نویس %1$s: «%2$s»"
+
+#: src/Agent/Tools/ContentTools.php:354 src/Agent/Tools/ContentTools.php:409
+msgid "Excerpt"
+msgstr "چکیده"
+
+#: src/Agent/Tools/ContentTools.php:355 src/Agent/Tools/ContentTools.php:408
+msgid "Content"
+msgstr "محتوا"
+
+#: src/Agent/Tools/ContentTools.php:356
+msgid "Categories"
+msgstr "دسته‌ها"
+
+#: src/Agent/Tools/ContentTools.php:357
+msgid "Tags"
+msgstr "برچسب‌ها"
+
+#: src/Agent/Tools/ContentTools.php:369
+msgid "Only posts and pages can be drafted here."
+msgstr "در اینجا فقط می‌توان برای نوشته‌ها و برگه‌ها پیش‌نویس ساخت."
+
+#: src/Agent/Tools/ContentTools.php:410
+msgid "Slug"
+msgstr "نامک"
+
+#: src/Agent/Tools/ContentTools.php:412
+msgid "Publish date"
+msgstr "تاریخ انتشار"
+
+#: src/Agent/Tools/ContentTools.php:442
+msgid "No fields to change were provided."
+msgstr "هیچ فیلدی برای تغییر ارائه نشده است."
+
+#: src/Agent/Tools/ContentTools.php:446
+msgid "The proposed values match the current content."
+msgstr "مقدارهای پیشنهادی با محتوای فعلی یکسان هستند."
+
+#. translators: %s: content title.
+#: src/Agent/Tools/ContentTools.php:451
+#, php-format
+msgid "Edit “%s”"
+msgstr "ویرایش «%s»"
+
+#: src/Agent/Tools/ContentTools.php:479
+msgid "You cannot publish this content."
+msgstr "شما اجازهٔ انتشار این محتوا را ندارید."
+
+#: src/Agent/Tools/ContentTools.php:486
+msgid "The date is not valid."
+msgstr "تاریخ معتبر نیست."
+
+#: src/Agent/Tools/ContentTools.php:490
+msgid "The schedule date must be in the future."
+msgstr "تاریخ زمان‌بندی باید در آینده باشد."
+
+#: src/Agent/Tools/ContentTools.php:502 src/Agent/Tools/ContentTools.php:553
+msgid "This content is already published."
+msgstr "این محتوا قبلاً منتشر شده است."
+
+#. translators: 1: content title, 2: date and time.
+#: src/Agent/Tools/ContentTools.php:511
+#, php-format
+msgid "Schedule “%1$s” for %2$s"
+msgstr "زمان‌بندی «%1$s» برای %2$s"
+
+#. translators: %s: content title.
+#: src/Agent/Tools/ContentTools.php:558
+#, php-format
+msgid "Publish “%s” now"
+msgstr "انتشار فوری «%s»"
+
+#: src/Agent/Tools/ContentTools.php:563
+msgid "Visitors will be able to see this content as soon as it is published."
+msgstr "بازدیدکنندگان به‌محض انتشار، این محتوا را خواهند دید."
+
+#: src/Agent/Tools/ContentTools.php:602
+msgid "This content does not use that taxonomy."
+msgstr "این محتوا از آن طبقه‌بندی استفاده نمی‌کند."
+
+#. translators: 1: taxonomy label, 2: content title.
+#: src/Agent/Tools/ContentTools.php:617
+#, php-format
+msgid "Update %1$s on “%2$s”"
+msgstr "به‌روزرسانی %1$s در «%2$s»"
+
+#: src/Agent/Tools/SeoTools.php:49 assets/src/admin/tools.js:58
+msgid "Read SEO fields"
+msgstr "خواندن فیلدهای سئو"
+
+#: src/Agent/Tools/SeoTools.php:69
+msgid "Edit SEO fields"
+msgstr "ویرایش فیلدهای سئو"
+
+#: src/Agent/Tools/SeoTools.php:134
+msgid "No SEO fields to change were provided."
+msgstr "هیچ فیلد سئویی برای تغییر ارائه نشده است."
+
+#. translators: %s: content title.
+#: src/Agent/Tools/SeoTools.php:139
+#, php-format
+msgid "Update SEO fields for “%s”"
+msgstr "به‌روزرسانی فیلدهای سئوی «%s»"
+
+#: src/Agent/Tools/SeoTools.php:147
+msgid "SEO title"
+msgstr "عنوان سئو"
+
+#: src/Agent/Tools/SeoTools.php:148
+msgid "Meta description"
+msgstr "توضیحات متا"
+
+#: src/Agent/Tools/SeoTools.php:149
+msgid "Focus keyword"
+msgstr "کلیدواژهٔ کانونی"
+
+#: src/Agent/Tools/SiteTools.php:22
+msgid "Read site overview"
+msgstr "خواندن نمای کلی سایت"
+
+#: src/Agent/Tools/Support.php:49
+msgid "No content with that ID exists."
+msgstr "محتوایی با این شناسه وجود ندارد."
+
+#: src/Agent/Tools/Support.php:59
+msgid "You cannot edit this content."
+msgstr "شما اجازهٔ ویرایش این محتوا را ندارید."
+
+#. translators: 1: term name, 2: taxonomy name.
+#: src/Agent/Tools/Support.php:141
+#, php-format
+msgid "The term \"%1$s\" does not exist in %2$s."
+msgstr "عبارت «%1$s» در %2$s وجود ندارد."
+
+#: src/Agent/Tools/WooCommerceTools.php:24
+msgid "You cannot manage products."
+msgstr "شما اجازهٔ مدیریت محصولات را ندارید."
+
+#: src/Agent/Tools/WooCommerceTools.php:25
+msgid "You cannot view store reports."
+msgstr "شما اجازهٔ مشاهدهٔ گزارش‌های فروشگاه را ندارید."
+
+#: src/Agent/Tools/WooCommerceTools.php:40
+msgid "Search products"
+msgstr "جست‌وجوی محصولات"
+
+#: src/Agent/Tools/WooCommerceTools.php:69 assets/src/admin/tools.js:70
+msgid "Read a product"
+msgstr "خواندن یک محصول"
+
+#: src/Agent/Tools/WooCommerceTools.php:89
+msgid "List low-stock products"
+msgstr "فهرست محصولات کم‌موجودی"
+
+#: src/Agent/Tools/WooCommerceTools.php:109
+msgid "Summarize sales"
+msgstr "خلاصهٔ فروش"
+
+#: src/Agent/Tools/WooCommerceTools.php:127
+msgid "Rank best-selling products"
+msgstr "رتبه‌بندی پرفروش‌ترین محصولات"
+
+#: src/Agent/Tools/WooCommerceTools.php:145
+msgid "Edit a product"
+msgstr "ویرایش یک محصول"
+
+#: src/Agent/Tools/WooCommerceTools.php:173
+msgid "Draft a product"
+msgstr "پیش‌نویس یک محصول"
+
+#: src/Agent/Tools/WooCommerceTools.php:204
+msgid "No product with that ID exists."
+msgstr "محصولی با این شناسه وجود ندارد."
+
+#: src/Agent/Tools/WooCommerceTools.php:320
+msgid "Use dates in YYYY-MM-DD format, with from on or before to."
+msgstr ""
+"تاریخ‌ها را در قالب YYYY-MM-DD وارد کنید؛ تاریخ شروع (from) باید پیش از تاریخ "
+"پایان (to) یا برابر با آن باشد."
+
+#: src/Agent/Tools/WooCommerceTools.php:339
+#: src/Agent/Tools/WooCommerceTools.php:390
+msgid ""
+"WooCommerce Analytics tables are not available. Enable WooCommerce Analytics "
+"and import historical data."
+msgstr ""
+"جدول‌های تحلیل‌های WooCommerce در دسترس نیستند. تحلیل‌های WooCommerce را فعال "
+"کنید و داده‌های گذشته را درون‌ریزی کنید."
+
+#: src/Agent/Tools/WooCommerceTools.php:414
+msgid "(deleted product)"
+msgstr "(محصول حذف‌شده)"
+
+#: src/Agent/Tools/WooCommerceTools.php:455
+msgid "The sale price must be lower than the regular price."
+msgstr "قیمت فروش ویژه باید کمتر از قیمت عادی باشد."
+
+#: src/Agent/Tools/WooCommerceTools.php:468
+#: src/Agent/Tools/WooCommerceTools.php:534
+#: assets/src/admin/pages/Connections.js:235
+msgid "Name"
+msgstr "نام"
+
+#: src/Agent/Tools/WooCommerceTools.php:469
+#: src/Agent/Tools/WooCommerceTools.php:537
+msgid "Description"
+msgstr "توضیحات"
+
+#: src/Agent/Tools/WooCommerceTools.php:470
+#: src/Agent/Tools/WooCommerceTools.php:536
+msgid "Short description"
+msgstr "توضیح کوتاه"
+
+#: src/Agent/Tools/WooCommerceTools.php:471
+#: src/Agent/Tools/WooCommerceTools.php:535
+msgid "Regular price"
+msgstr "قیمت عادی"
+
+#: src/Agent/Tools/WooCommerceTools.php:472
+msgid "Sale price"
+msgstr "قیمت فروش ویژه"
+
+#: src/Agent/Tools/WooCommerceTools.php:476
+msgid "The proposed values match the current product."
+msgstr "مقدارهای پیشنهادی با محصول فعلی یکسان هستند."
+
+#. translators: %s: product name.
+#: src/Agent/Tools/WooCommerceTools.php:481
+#, php-format
+msgid "Edit product “%s”"
+msgstr "ویرایش محصول «%s»"
+
+#: src/Agent/Tools/WooCommerceTools.php:488
+msgid "Price changes apply to the live store immediately."
+msgstr "تغییر قیمت‌ها بلافاصله روی فروشگاه زنده اعمال می‌شود."
+
+#: src/Agent/Tools/WooCommerceTools.php:529
+msgid "Another product already uses that SKU."
+msgstr "این شناسهٔ محصول (SKU) پیش‌تر برای محصول دیگری استفاده شده است."
+
+#. translators: %s: product name.
+#: src/Agent/Tools/WooCommerceTools.php:551
+#, php-format
+msgid "Create a draft product: “%s”"
+msgstr "ایجاد پیش‌نویس محصول: «%s»"
+
+#: src/AI/Connections.php:64
+msgid "Choose a provider."
+msgstr "یک ارائه‌دهنده انتخاب کنید."
+
+#: src/AI/Connections.php:105
+msgid "The connection could not be saved."
+msgstr "اتصال ذخیره نشد."
+
+#: src/AI/Connections.php:122 src/Rest/Routes.php:237 src/Rest/Routes.php:250
+#: src/Rest/Routes.php:280
+msgid "Connection not found."
+msgstr "اتصال پیدا نشد."
+
+#: src/AI/Connections.php:276
+msgid "Enter the API base URL."
+msgstr "URL پایهٔ API را وارد کنید."
+
+#. translators: %s: HTTP header name.
+#: src/AI/Connections.php:335
+#, php-format
+msgid "The header \"%s\" is not allowed."
+msgstr "هدر «%s» مجاز نیست."
+
+#: src/AI/Connections.php:340
+msgid "Header values cannot contain line breaks or exceed 2048 characters."
+msgstr "مقدار هدرها نمی‌تواند شکست خط داشته باشد یا از ۲۰۴۸ نویسه بیشتر شود."
+
+#: src/AI/Gateway.php:41 src/Core/Budget.php:63 src/Rest/Routes.php:509
+msgid "AI features are paused by an administrator."
+msgstr "قابلیت‌های هوش مصنوعی توسط مدیر متوقف شده‌اند."
+
+#: src/AI/Presets.php:118
+msgid "Anthropic-compatible (custom URL)"
+msgstr "سازگار با Anthropic (نشانی سفارشی)"
+
+#: src/AI/Presets.php:130
+msgid "OpenAI-compatible (custom URL)"
+msgstr "سازگار با OpenAI (نشانی سفارشی)"
+
+#: src/AI/Providers/AnthropicProvider.php:67
+msgid ""
+"Could not reach Anthropic. Check the server’s outbound connection and try "
+"again."
+msgstr ""
+"ارتباط با Anthropic برقرار نشد. اتصال خروجی سرور را بررسی کنید و دوباره تلاش "
+"کنید."
+
+#: src/AI/Providers/AnthropicProvider.php:99
+#: src/AI/Providers/OpenAICompatibleProvider.php:30
+#: src/AI/Providers/OpenAICompatibleProvider.php:223
+msgid "This connection has no API key."
+msgstr "این اتصال کلید API ندارد."
+
+#: src/AI/Providers/AnthropicProvider.php:474
+msgid "Anthropic rejected the API key. Check the key in Connections."
+msgstr "Anthropic کلید API را نپذیرفت. کلید را در بخش اتصال‌ها بررسی کنید."
+
+#: src/AI/Providers/AnthropicProvider.php:475
+msgid ""
+"Anthropic does not recognize this model. Choose another model for the "
+"connection."
+msgstr "Anthropic این مدل را نمی‌شناسد. مدل دیگری برای این اتصال انتخاب کنید."
+
+#: src/AI/Providers/AnthropicProvider.php:476
+msgid "Anthropic rate limit reached. Wait a moment and try again."
+msgstr "به محدودیت نرخ Anthropic رسیده‌اید. کمی صبر کنید و دوباره تلاش کنید."
+
+#: src/AI/Providers/AnthropicProvider.php:477
+msgid "Anthropic is temporarily unavailable. Try again shortly."
+msgstr "Anthropic موقتاً در دسترس نیست. کمی بعد دوباره تلاش کنید."
+
+#: src/AI/Providers/AnthropicProvider.php:478
+msgid "Anthropic rejected the request."
+msgstr "Anthropic درخواست را رد کرد."
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:76
+msgid "The provider returned an unreadable response."
+msgstr "ارائه‌دهنده پاسخی برگرداند که قابل خواندن نیست."
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:417
+msgid ""
+"Could not reach the provider. Check the base URL and the server’s outbound "
+"connection."
+msgstr ""
+"ارتباط با ارائه‌دهنده برقرار نشد. URL پایه و اتصال خروجی سرور را بررسی کنید."
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:433
+msgid "The provider rejected the API key. Check the key in Connections."
+msgstr "ارائه‌دهنده کلید API را نپذیرفت. کلید را در بخش اتصال‌ها بررسی کنید."
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:434
+msgid "The provider does not recognize this model or address."
+msgstr "ارائه‌دهنده این مدل یا نشانی را نمی‌شناسد."
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:435
+msgid ""
+"The provider’s rate limit or quota was reached. Wait a moment and try again."
+msgstr ""
+"به محدودیت نرخ یا سهمیهٔ ارائه‌دهنده رسیده‌اید. کمی صبر کنید و دوباره تلاش کنید."
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:436
+msgid "The provider is temporarily unavailable. Try again shortly."
+msgstr "ارائه‌دهنده موقتاً در دسترس نیست. کمی بعد دوباره تلاش کنید."
+
+#: src/AI/Providers/OpenAICompatibleProvider.php:437
+msgid "The provider rejected the request."
+msgstr "ارائه‌دهنده درخواست را رد کرد."
+
+#: src/AI/Transport/Http.php:105
+msgid "The provider did not respond."
+msgstr "ارائه‌دهنده پاسخی نداد."
+
+#: src/Assistant/Runs.php:63 src/Rest/Routes.php:411
+msgid "Conversation not found."
+msgstr "گفتگو پیدا نشد."
+
+#: src/Assistant/Runs.php:66
+msgid "The assistant is still answering. Wait for it to finish or stop it."
+msgstr ""
+"دستیار هنوز در حال پاسخ دادن است. صبر کنید تا کارش تمام شود یا آن را متوقف "
+"کنید."
+
+#: src/Assistant/Runs.php:71
+msgid "Write a message first."
+msgstr "ابتدا یک پیام بنویسید."
+
+#: src/Assistant/Runs.php:74
+msgid "The message is too long."
+msgstr "پیام بیش از حد طولانی است."
+
+#: src/Assistant/Runs.php:95 assets/src/admin/pages/assistant/Composer.js:80
+msgid "Images must be PNG, JPEG, WebP, or GIF and smaller than 3.75 MB."
+msgstr ""
+"تصاویر باید در قالب PNG، JPEG، WebP یا GIF و کوچک‌تر از ۳٫۷۵ مگابایت باشند."
+
+#: src/Assistant/Runs.php:99
+msgid "An attached file is not a valid image."
+msgstr "یکی از فایل‌های پیوست‌شده تصویر معتبری نیست."
+
+#: src/Assistant/Runs.php:203
+msgid "The server stopped this run before it finished."
+msgstr "سرور این اجرا را پیش از پایان متوقف کرد."
+
+#: src/Assistant/Runs.php:212
+msgid ""
+"The connection this conversation uses is missing or has no key. Start a new "
+"conversation or fix it in Connections."
+msgstr ""
+"اتصالی که این گفتگو از آن استفاده می‌کند وجود ندارد یا کلید ندارد. یک گفتگوی "
+"جدید شروع کنید یا آن را در بخش اتصال‌ها اصلاح کنید."
+
+#: src/Assistant/Runs.php:254
+msgid "The run reached its time limit."
+msgstr "اجرا به محدودیت زمانی خود رسید."
+
+#: src/Assistant/Runs.php:328 assets/src/admin/pages/assistant/Thread.js:614
+msgid "The model declined to answer this request."
+msgstr "مدل از پاسخ دادن به این درخواست خودداری کرد."
+
+#: src/Assistant/Runs.php:355
+msgid "The answer reached the output limit and may be cut off."
+msgstr "پاسخ به محدودیت طول خروجی رسید و ممکن است ناقص باشد."
+
+#: src/Assistant/Runs.php:362
+msgid ""
+"The assistant reached its step limit for one message. Send another message "
+"to continue."
+msgstr ""
+"دستیار به حداکثر تعداد گام‌های مجاز برای یک پیام رسید. برای ادامه، پیام دیگری "
+"بفرستید."
+
+#: src/Assistant/Runs.php:410
+msgid "You are not allowed to do this."
+msgstr "شما اجازهٔ انجام این کار را ندارید."
+
+#: src/Core/Access.php:34
+msgid "Use the assistant"
+msgstr "استفاده از دستیار"
+
+#: src/Core/Access.php:35
+msgid "Manage automations"
+msgstr "مدیریت خودکارسازی‌ها"
+
+#: src/Core/Access.php:36
+msgid "Review generated content"
+msgstr "بررسی محتوای تولیدشده"
+
+#: src/Core/Access.php:37
+msgid "Handle the chat inbox"
+msgstr "رسیدگی به صندوق ورودی گفتگوها"
+
+#: src/Core/Access.php:38
+msgid "View usage, budgets, and logs"
+msgstr "مشاهدهٔ مصرف، بودجه‌ها و گزارش‌ها"
+
+#: src/Core/Budget.php:73
+msgid ""
+"The daily token budget for this feature is used up. An administrator can "
+"raise it under Usage."
+msgstr ""
+"بودجهٔ روزانهٔ توکن برای این قابلیت تمام شده است. مدیر می‌تواند آن را در بخش "
+"«مصرف و بودجه» افزایش دهد."
+
+#: src/Core/Budget.php:82
+msgid ""
+"The monthly cost budget for this feature is used up. An administrator can "
+"raise it under Usage."
+msgstr ""
+"بودجهٔ ماهانهٔ هزینه برای این قابلیت تمام شده است. مدیر می‌تواند آن را در بخش "
+"«مصرف و بودجه» افزایش دهد."
+
+#. translators: %s: site name.
+#: src/Core/Budget.php:153
+#, php-format
+msgid "[%s] Mindio AI budget warning"
+msgstr "[%s] هشدار بودجهٔ Mindio AI"
+
+#. translators: 1: feature name, 2: percentage used.
+#: src/Core/Budget.php:158
+#, php-format
+msgid ""
+"The %1$s feature has used %2$d%% of its budget. Review usage in WordPress "
+"under Mindio AI → Usage."
+msgstr ""
+"قابلیت %1$s تاکنون %2$d%% از بودجهٔ خود را مصرف کرده است. مصرف را در "
+"WordPress از مسیر Mindio AI ← مصرف و بودجه بررسی کنید."
+
+#: src/Core/UrlGuard.php:62
+msgid "The URL is invalid."
+msgstr "URL نامعتبر است."
+
+#: src/Core/UrlGuard.php:67
+msgid "Only HTTP and HTTPS URLs are allowed."
+msgstr "فقط نشانی‌های HTTP و HTTPS مجاز هستند."
+
+#: src/Core/UrlGuard.php:70
+msgid "URLs containing credentials are not allowed."
+msgstr "نشانی‌های دارای اعتبارنامه مجاز نیستند."
+
+#: src/Core/UrlGuard.php:79
+msgid ""
+"Only HTTPS URLs are allowed. Add the host and port to the private hosts list "
+"to use HTTP on a trusted network."
+msgstr ""
+"فقط نشانی‌های HTTPS مجاز هستند. برای استفاده از HTTP در یک شبکهٔ مورد اعتماد، "
+"میزبان و پورت را به فهرست میزبان‌های خصوصی اضافه کنید."
+
+#: src/Core/UrlGuard.php:84
+msgid "The URL host could not be resolved."
+msgstr "میزبان URL قابل شناسایی نبود."
+
+#: src/Core/UrlGuard.php:94
+msgid ""
+"Local and private network addresses are blocked. An administrator can allow "
+"a specific host and port in Settings."
+msgstr ""
+"نشانی‌های شبکهٔ محلی و خصوصی مسدود هستند. مدیر می‌تواند یک میزبان و پورت مشخص "
+"را در تنظیمات مجاز کند."
+
+#: src/Rest/Routes.php:216
+msgid ""
+"This server cannot encrypt keys (needs the sodium or OpenSSL PHP extension)."
+msgstr ""
+"این سرور نمی‌تواند کلیدها را رمزنگاری کند (به ماژول sodium یا OpenSSL در PHP "
+"نیاز است)."
+
+#: src/Rest/Routes.php:379
+msgid "AI is paused by the MINDIO_MAGIC_AI_DISABLED constant in wp-config.php."
+msgstr ""
+"هوش مصنوعی با ثابت MINDIO_MAGIC_AI_DISABLED در wp-config.php متوقف شده است."
+
+#: src/Rest/Routes.php:420
+msgid "Run not found."
+msgstr "اجرا پیدا نشد."
+
+#: src/Rest/Routes.php:440
+msgid ""
+"Add a provider connection with an API key before starting a conversation."
+msgstr "پیش از شروع گفتگو، یک اتصال ارائه‌دهنده با کلید API اضافه کنید."
+
+#: src/Rest/Routes.php:448
+msgid "Choose a default model for this connection first."
+msgstr "ابتدا یک مدل پیش‌فرض برای این اتصال انتخاب کنید."
+
+#: src/Rest/Routes.php:530
+msgid "This run has already started."
+msgstr "این اجرا قبلاً آغاز شده است."
+
+#: src/Rest/Routes.php:599
+msgid "Too many requests. Wait a moment and try again."
+msgstr "تعداد درخواست‌ها بیش از حد است. کمی صبر کنید و دوباره تلاش کنید."
+
+#: assets/src/admin/App.js:105
+msgid "Mindio AI sections"
+msgstr "بخش‌های Mindio AI"
+
+#: assets/src/admin/App.js:139
+msgid "Docs"
+msgstr "مستندات"
+
+#: assets/src/admin/App.js:169
+msgid "Mindio AI could not load"
+msgstr "Mindio AI بارگذاری نشد"
+
+#: assets/src/admin/App.js:175
+msgid "Try again"
+msgstr "تلاش دوباره"
+
+#: assets/src/admin/App.js:207
+msgid "Saved API keys can no longer be decrypted"
+msgstr "کلیدهای API ذخیره‌شده دیگر قابل رمزگشایی نیستند"
+
+#: assets/src/admin/App.js:222
+msgid "I re-entered the keys"
+msgstr "کلیدها را دوباره وارد کردم"
+
+#: assets/src/admin/App.js:240
+msgid ""
+"The site’s security keys changed after the provider keys were saved. Enter "
+"each key again. Define MINDIO_MAGIC_AI_SECRET_KEY in wp-config.php to avoid "
+"this in future."
+msgstr ""
+"کلیدهای امنیتی سایت پس از ذخیرهٔ کلیدهای ارائه‌دهنده‌ها تغییر کرده‌اند. هر کلید "
+"را دوباره وارد کنید. برای جلوگیری از تکرار این مشکل، "
+"MINDIO_MAGIC_AI_SECRET_KEY را در wp-config.php تعریف کنید."
+
+#: assets/src/admin/components/ui.js:129
+msgid "Loading…"
+msgstr "در حال بارگذاری…"
+
+#: assets/src/admin/format.js:94
+msgid "just now"
+msgstr "همین حالا"
+
+#. translators: %s: number of tokens.
+#: assets/src/admin/format.js:112
+msgid "%s token"
+msgid_plural "%s tokens"
+msgstr[0] "%s توکن"
+msgstr[1] "%s توکن"
+
+#: assets/src/admin/pages/Assistant.js:93
+#: assets/src/admin/pages/Assistant.js:274
+msgid "Conversations"
+msgstr "گفتگوها"
+
+#: assets/src/admin/pages/Assistant.js:102
+#: assets/src/admin/pages/assistant/Thread.js:468
+msgid "New conversation"
+msgstr "گفتگوی جدید"
+
+#: assets/src/admin/pages/Assistant.js:110
+#: assets/src/admin/pages/Assistant.js:117
+msgid "Search conversations"
+msgstr "جست‌وجوی گفتگوها"
+
+#: assets/src/admin/pages/Assistant.js:129
+msgid "No conversations match."
+msgstr "هیچ گفتگوی مطابقی پیدا نشد."
+
+#: assets/src/admin/pages/Assistant.js:133
+msgid "Your conversations will appear here."
+msgstr "گفتگوهای شما اینجا نمایش داده می‌شوند."
+
+#: assets/src/admin/pages/Assistant.js:166
+msgid "Untitled"
+msgstr "بدون عنوان"
+
+#: assets/src/admin/pages/Assistant.js:177
+msgid "Conversation actions"
+msgstr "عملیات گفتگو"
+
+#: assets/src/admin/pages/Assistant.js:204
+msgid "Unpin"
+msgstr "برداشتن سنجاق"
+
+#: assets/src/admin/pages/Assistant.js:208
+msgid "Pin"
+msgstr "سنجاق کردن"
+
+#: assets/src/admin/pages/Assistant.js:228
+msgid "Rename"
+msgstr "تغییر نام"
+
+#: assets/src/admin/pages/Assistant.js:246
+#: assets/src/admin/pages/Assistant.js:350
+#: assets/src/admin/pages/Connections.js:783
+#: assets/src/admin/pages/Connections.js:846
+msgid "Delete"
+msgstr "حذف"
+
+#: assets/src/admin/pages/Assistant.js:264 assets/src/drawer/index.js:75
+#: assets/src/drawer/index.js:77
+msgid "Open full page"
+msgstr "باز کردن در صفحهٔ کامل"
+
+#: assets/src/admin/pages/Assistant.js:290
+msgid "Rename conversation"
+msgstr "تغییر نام گفتگو"
+
+#: assets/src/admin/pages/Assistant.js:317
+#: assets/src/admin/pages/Assistant.js:343
+#: assets/src/admin/pages/Connections.js:481
+#: assets/src/admin/pages/Connections.js:833
+#: assets/src/admin/pages/Usage.js:341 assets/src/admin/pages/Usage.js:775
+msgid "Cancel"
+msgstr "انصراف"
+
+#: assets/src/admin/pages/Assistant.js:320
+msgid "Save"
+msgstr "ذخیره"
+
+#: assets/src/admin/pages/Assistant.js:328
+msgid "Delete conversation?"
+msgstr "گفتگو حذف شود؟"
+
+#: assets/src/admin/pages/Assistant.js:333
+msgid ""
+"The conversation and its history are deleted. Changes you already applied "
+"stay on the site."
+msgstr ""
+"گفتگو و تاریخچهٔ آن حذف می‌شود. تغییرهایی که پیش‌تر اعمال کرده‌اید روی سایت باقی "
+"می‌مانند."
+
+#. translators: %d: maximum number of images.
+#: assets/src/admin/pages/assistant/Composer.js:69
+msgid "You can attach up to %d images."
+msgstr "می‌توانید حداکثر %d تصویر پیوست کنید."
+
+#. translators: %s: file name.
+#: assets/src/admin/pages/assistant/Composer.js:122
+msgid "Remove %s"
+msgstr "حذف %s"
+
+#: assets/src/admin/pages/assistant/Composer.js:140
+msgid "Message the assistant"
+msgstr "پیام به دستیار"
+
+#: assets/src/admin/pages/assistant/Composer.js:150
+msgid "Ask anything about your site, or tell the assistant what to change…"
+msgstr ""
+"هر سؤالی دربارهٔ سایتتان دارید بپرسید، یا به دستیار بگویید چه چیزی را تغییر "
+"دهد…"
+
+#: assets/src/admin/pages/assistant/Composer.js:190
+msgid "Attach images"
+msgstr "پیوست تصویر"
+
+#: assets/src/admin/pages/assistant/Composer.js:206
+msgid "Stop"
+msgstr "توقف"
+
+#: assets/src/admin/pages/assistant/Composer.js:219
+msgid "Send"
+msgstr "ارسال"
+
+#: assets/src/admin/pages/assistant/Composer.js:233
+msgid ""
+"Changes are proposed for your review before anything is saved. Enter to "
+"send, Shift+Enter for a new line."
+msgstr ""
+"پیش از ذخیرهٔ هر چیزی، تغییرها برای بررسی شما پیشنهاد می‌شوند. برای ارسال "
+"Enter و برای رفتن به خط بعد Shift+Enter را بزنید."
+
+#: assets/src/admin/pages/assistant/Composer.js:242
+msgid "Create drafts without review"
+msgstr "ساخت پیش‌نویس بدون بررسی"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:16
+msgid "Waiting for review"
+msgstr "در انتظار بررسی"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:19
+msgid "Applying…"
+msgstr "در حال اعمال…"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:22
+msgid "Applied"
+msgstr "اعمال‌شده"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:25
+msgid "Rejected"
+msgstr "ردشده"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:26
+msgid "Undone"
+msgstr "برگردانده‌شده"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:27
+msgid "Expired"
+msgstr "منقضی‌شده"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:30
+msgid "Out of date"
+msgstr "قدیمی‌شده"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:33
+#: assets/src/admin/pages/Logs.js:212
+msgid "Failed"
+msgstr "ناموفق"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:55
+msgid "(empty)"
+msgstr "(خالی)"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:78
+msgid "Show less"
+msgstr "نمایش کمتر"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:79
+msgid "Show all"
+msgstr "نمایش همه"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:160
+msgid "Open in editor"
+msgstr "باز کردن در ویرایشگر"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:170
+msgid "Proposed changes"
+msgstr "تغییرهای پیشنهادی"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:221
+msgid "Applied automatically because you allow drafts without review."
+msgstr "به‌طور خودکار اعمال شد، چون ساخت پیش‌نویس بدون بررسی را مجاز کرده‌اید."
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:229
+msgid ""
+"The content changed after this was proposed. Ask the assistant to propose it "
+"again."
+msgstr ""
+"محتوا پس از ارائهٔ این پیشنهاد تغییر کرده است. از دستیار بخواهید دوباره آن را "
+"پیشنهاد دهد."
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:257
+msgid "Apply"
+msgstr "اعمال"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:265
+msgid "Reject"
+msgstr "رد کردن"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:277
+msgid "Undo"
+msgstr "برگرداندن"
+
+#. translators: %s: relative time, for example "in 50 minutes".
+#: assets/src/admin/pages/assistant/ProposalCard.js:284
+msgid "Expires %s"
+msgstr "انقضا: %s"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:294
+msgid "Undo anyway?"
+msgstr "با این حال برگردانده شود؟"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:299
+msgid ""
+"Someone edited this content after the change was applied. Undoing now "
+"restores the version from before the AI change and discards those later "
+"edits."
+msgstr ""
+"کسی پس از اعمال تغییر، این محتوا را ویرایش کرده است. برگرداندن در این مرحله، "
+"نسخهٔ پیش از تغییر هوش مصنوعی را بازمی‌گرداند و ویرایش‌های بعدی را از بین می‌برد."
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:309
+msgid "Keep current version"
+msgstr "نگه‌داشتن نسخهٔ فعلی"
+
+#: assets/src/admin/pages/assistant/ProposalCard.js:317
+msgid "Undo and discard later edits"
+msgstr "برگرداندن و حذف ویرایش‌های بعدی"
+
+#: assets/src/admin/pages/assistant/Thread.js:48
+msgid "Assistant activity"
+msgstr "فعالیت دستیار"
+
+#: assets/src/admin/pages/assistant/Thread.js:84
+msgid "Image"
+msgstr "تصویر"
+
+#: assets/src/admin/pages/assistant/Thread.js:438
+msgid "Connect an AI provider to begin"
+msgstr "برای شروع، یک ارائه‌دهندهٔ هوش مصنوعی متصل کنید"
+
+#: assets/src/admin/pages/assistant/Thread.js:444
+msgid ""
+"Mindio AI uses your own API key from Anthropic, OpenAI, Google Gemini, or "
+"any OpenAI-compatible gateway. Nothing is sent anywhere until you add one."
+msgstr ""
+"Mindio AI از کلید API خود شما از Anthropic، OpenAI، Google Gemini یا هر "
+"درگاه سازگار با OpenAI استفاده می‌کند. تا زمانی که کلیدی اضافه نکنید، هیچ "
+"داده‌ای به جایی فرستاده نمی‌شود."
+
+#: assets/src/admin/pages/assistant/Thread.js:454
+#: assets/src/admin/pages/Connections.js:186
+msgid "Add a connection"
+msgstr "افزودن اتصال"
+
+#: assets/src/admin/pages/assistant/Thread.js:483
+#: assets/src/admin/pages/Usage.js:578
+msgid "Model"
+msgstr "مدل"
+
+#: assets/src/admin/pages/assistant/Thread.js:521
+#: assets/src/admin/pages/Usage.js:458
+msgid "AI is paused"
+msgstr "هوش مصنوعی متوقف است"
+
+#: assets/src/admin/pages/assistant/Thread.js:523
+msgid ""
+"An administrator paused all AI requests. You can read conversations, but the "
+"assistant cannot answer until AI is resumed."
+msgstr ""
+"مدیر همهٔ درخواست‌های هوش مصنوعی را متوقف کرده است. می‌توانید گفتگوها را "
+"بخوانید، اما تا ازسرگیری هوش مصنوعی، دستیار نمی‌تواند پاسخ دهد."
+
+#. translators: %s: site name.
+#: assets/src/admin/pages/assistant/Thread.js:552
+msgid "How can I help with %s today?"
+msgstr "امروز چطور می‌توانم در %s به شما کمک کنم؟"
+
+#: assets/src/admin/pages/assistant/Thread.js:560
+msgid ""
+"I can look things up across your content and store, draft and edit posts, "
+"handle comments, and update products. Every change waits for your approval "
+"and can be undone."
+msgstr ""
+"می‌توانم در محتوا و فروشگاه شما جست‌وجو کنم، نوشته‌ها را پیش‌نویس و ویرایش کنم، "
+"به دیدگاه‌ها رسیدگی کنم و محصولات را به‌روزرسانی کنم. هر تغییر منتظر تأیید شما "
+"می‌ماند و قابل برگرداندن است."
+
+#: assets/src/admin/pages/assistant/Thread.js:636
+msgid "The assistant is thinking"
+msgstr "دستیار در حال فکر کردن است"
+
+#: assets/src/admin/pages/assistant/Thread.js:662
+msgid "The assistant could not finish"
+msgstr "دستیار نتوانست کار را تمام کند"
+
+#: assets/src/admin/pages/assistant/Thread.js:677
+msgid "Something went wrong"
+msgstr "مشکلی پیش آمد"
+
+#: assets/src/admin/pages/assistant/Thread.js:683
+msgid "Dismiss"
+msgstr "بستن"
+
+#: assets/src/admin/pages/Connections.js:17
+msgid "Ready"
+msgstr "آماده"
+
+#: assets/src/admin/pages/Connections.js:24
+msgid "Choose a model"
+msgstr "انتخاب مدل"
+
+#: assets/src/admin/pages/Connections.js:30
+msgid "Needs a key"
+msgstr "نیازمند کلید"
+
+#: assets/src/admin/pages/Connections.js:37
+msgid "From wp-config.php"
+msgstr "از wp-config.php"
+
+#. translators: %s: last four characters of the key.
+#: assets/src/admin/pages/Connections.js:41
+msgid "Saved, ends in %s"
+msgstr "ذخیره‌شده، ختم به %s"
+
+#: assets/src/admin/pages/Connections.js:48
+msgid "No key"
+msgstr "بدون کلید"
+
+#. translators: %s: last four characters of the key.
+#: assets/src/admin/pages/Connections.js:62
+msgid "A key ending in %s is saved. Leave this empty to keep it."
+msgstr ""
+"کلیدی که به %s ختم می‌شود ذخیره شده است. برای نگه‌داشتن آن، این فیلد را خالی "
+"بگذارید."
+
+#. translators: %s: PHP constant name.
+#: assets/src/admin/pages/Connections.js:72
+msgid ""
+"Optional: %s is defined in wp-config.php and is used for this provider’s own "
+"address."
+msgstr ""
+"اختیاری: %s در wp-config.php تعریف شده است و برای نشانی اختصاصی این "
+"ارائه‌دهنده به کار می‌رود."
+
+#: assets/src/admin/pages/Connections.js:79
+msgid ""
+"Stored encrypted and never shown again. Only the last four characters are "
+"displayed."
+msgstr ""
+"به‌صورت رمزنگاری‌شده ذخیره می‌شود و دیگر هرگز نمایش داده نمی‌شود. فقط چهار نویسهٔ "
+"آخر نشان داده می‌شود."
+
+#: assets/src/admin/pages/Connections.js:185
+msgid "Edit connection"
+msgstr "ویرایش اتصال"
+
+#: assets/src/admin/pages/Connections.js:196
+msgid "Provider"
+msgstr "ارائه‌دهنده"
+
+#: assets/src/admin/pages/Connections.js:222
+msgid "Key in wp-config.php"
+msgstr "کلید در wp-config.php"
+
+#: assets/src/admin/pages/Connections.js:245
+msgid "API base URL"
+msgstr "URL پایهٔ API"
+
+#: assets/src/admin/pages/Connections.js:246
+msgid ""
+"HTTPS only. A private or local address works only after an administrator "
+"adds its host and port to Settings → Private hosts."
+msgstr ""
+"فقط HTTPS. نشانی خصوصی یا محلی تنها زمانی کار می‌کند که مدیر، میزبان و پورت "
+"آن را در تنظیمات ← میزبان‌های خصوصی اضافه کرده باشد."
+
+#: assets/src/admin/pages/Connections.js:264
+msgid "API address"
+msgstr "نشانی API"
+
+#: assets/src/admin/pages/Connections.js:273
+msgid "The saved key will be removed"
+msgstr "کلید ذخیره‌شده حذف خواهد شد"
+
+#: assets/src/admin/pages/Connections.js:278
+msgid ""
+"Keys are tied to the address they were saved for. Enter the key again for "
+"the new address."
+msgstr ""
+"هر کلید به نشانی‌ای وابسته است که برای آن ذخیره شده است. کلید را برای نشانی "
+"جدید دوباره وارد کنید."
+
+#: assets/src/admin/pages/Connections.js:286
+msgid "API key"
+msgstr "کلید API"
+
+#: assets/src/admin/pages/Connections.js:308
+msgid "Get a key"
+msgstr "دریافت کلید"
+
+#: assets/src/admin/pages/Connections.js:316
+#: assets/src/admin/pages/Connections.js:653
+#: assets/src/admin/pages/Settings.js:185
+msgid "Default model"
+msgstr "مدل پیش‌فرض"
+
+#: assets/src/admin/pages/Connections.js:326
+#: assets/src/admin/pages/Connections.js:343
+#: assets/src/admin/pages/Usage.js:243
+msgid "Model ID"
+msgstr "شناسهٔ مدل"
+
+#: assets/src/admin/pages/Connections.js:330
+msgid "Fast model (optional)"
+msgstr "مدل سریع (اختیاری)"
+
+#: assets/src/admin/pages/Connections.js:362
+msgid "Load models from the provider"
+msgstr "دریافت مدل‌ها از ارائه‌دهنده"
+
+#: assets/src/admin/pages/Connections.js:370
+msgid "Advanced"
+msgstr "پیشرفته"
+
+#: assets/src/admin/pages/Connections.js:375
+msgid "Timeout (seconds)"
+msgstr "مهلت پاسخ (ثانیه)"
+
+#: assets/src/admin/pages/Connections.js:382
+msgid "Extra headers"
+msgstr "هدرهای اضافی"
+
+#: assets/src/admin/pages/Connections.js:383
+msgid ""
+"For gateways that need extra headers. Values are encrypted and write-only: "
+"leave a value empty to keep the saved one."
+msgstr ""
+"برای درگاه‌هایی که به هدرهای اضافی نیاز دارند. مقدارها رمزنگاری می‌شوند و "
+"فقط‌نوشتنی هستند: برای نگه‌داشتن مقدار ذخیره‌شده، آن را خالی بگذارید."
+
+#: assets/src/admin/pages/Connections.js:393
+msgid "Header name"
+msgstr "نام هدر"
+
+#: assets/src/admin/pages/Connections.js:418
+msgid "Header value"
+msgstr "مقدار هدر"
+
+#: assets/src/admin/pages/Connections.js:440
+msgid "Remove header"
+msgstr "حذف هدر"
+
+#: assets/src/admin/pages/Connections.js:465
+msgid "Add header"
+msgstr "افزودن هدر"
+
+#: assets/src/admin/pages/Connections.js:473
+msgid "Could not save"
+msgstr "ذخیره نشد"
+
+#: assets/src/admin/pages/Connections.js:490
+msgid "Save changes"
+msgstr "ذخیرهٔ تغییرات"
+
+#: assets/src/admin/pages/Connections.js:491
+#: assets/src/admin/pages/Connections.js:557
+msgid "Add connection"
+msgstr "افزودن اتصال"
+
+#: assets/src/admin/pages/Connections.js:546
+msgid ""
+"Bring your own key. Each connection is a provider account; keys are "
+"encrypted, never shown again, and tied to the address they were saved for."
+msgstr ""
+"از کلید خودتان استفاده کنید. هر اتصال یک حساب ارائه‌دهنده است؛ کلیدها "
+"رمزنگاری می‌شوند، دیگر هرگز نمایش داده نمی‌شوند و به نشانی‌ای که برای آن ذخیره "
+"شده‌اند وابسته‌اند."
+
+#: assets/src/admin/pages/Connections.js:566
+msgid "Keys cannot be encrypted on this server"
+msgstr "کلیدها در این سرور قابل رمزنگاری نیستند"
+
+#: assets/src/admin/pages/Connections.js:571
+msgid "Install the sodium or OpenSSL PHP extension before adding connections."
+msgstr "پیش از افزودن اتصال، ماژول sodium یا OpenSSL را در PHP نصب کنید."
+
+#: assets/src/admin/pages/Connections.js:581
+msgid "No connections yet"
+msgstr "هنوز اتصالی وجود ندارد"
+
+#: assets/src/admin/pages/Connections.js:588
+msgid "Add your first connection"
+msgstr "نخستین اتصال خود را اضافه کنید"
+
+#: assets/src/admin/pages/Connections.js:597
+msgid ""
+"Connect Anthropic Claude, OpenAI, Google Gemini, OpenRouter, DeepSeek, or "
+"any OpenAI-compatible gateway. Nothing is sent to a provider until you add a "
+"connection and use the assistant."
+msgstr ""
+"به Anthropic Claude، OpenAI، Google Gemini، OpenRouter، DeepSeek یا هر درگاه "
+"سازگار با OpenAI متصل شوید. تا زمانی که اتصالی اضافه نکنید و از دستیار "
+"استفاده نکنید، هیچ داده‌ای به ارائه‌دهنده فرستاده نمی‌شود."
+
+#: assets/src/admin/pages/Connections.js:601
+msgid "Ask a site administrator to add a provider connection."
+msgstr "از مدیر سایت بخواهید یک اتصال ارائه‌دهنده اضافه کند."
+
+#: assets/src/admin/pages/Connections.js:636
+msgid "Address"
+msgstr "نشانی"
+
+#: assets/src/admin/pages/Connections.js:647
+msgid "Key"
+msgstr "کلید"
+
+#: assets/src/admin/pages/Connections.js:665
+msgid "Models available"
+msgstr "مدل‌های در دسترس"
+
+#. translators: 1: latency in milliseconds, 2: number of models.
+#: assets/src/admin/pages/Connections.js:704
+msgid "Connected in %1$s ms · %2$s models"
+msgstr "اتصال در %1$s میلی‌ثانیه · %2$s مدل"
+
+#: assets/src/admin/pages/Connections.js:718
+msgid "the default model was not in the list"
+msgstr "مدل پیش‌فرض در فهرست نبود"
+
+#: assets/src/admin/pages/Connections.js:742
+msgid "Test"
+msgstr "آزمایش"
+
+#: assets/src/admin/pages/Connections.js:753
+msgid "Edit"
+msgstr "ویرایش"
+
+#: assets/src/admin/pages/Connections.js:770
+msgid "Use for the assistant"
+msgstr "استفاده برای دستیار"
+
+#: assets/src/admin/pages/Connections.js:792
+msgid "Assistant default"
+msgstr "پیش‌فرض دستیار"
+
+#: assets/src/admin/pages/Connections.js:818
+msgid "Delete connection?"
+msgstr "اتصال حذف شود؟"
+
+#: assets/src/admin/pages/Connections.js:823
+msgid ""
+"The saved key is deleted. Conversations that use this connection can still "
+"be read but cannot continue."
+msgstr ""
+"کلید ذخیره‌شده حذف می‌شود. گفتگوهایی که از این اتصال استفاده می‌کنند همچنان "
+"قابل خواندن هستند، اما نمی‌توان آن‌ها را ادامه داد."
+
+#: assets/src/admin/pages/Connections.js:853
+msgid ""
+"Requests go straight from your server to the provider you choose. Each "
+"provider handles data under its own terms; see the plugin readme for links."
+msgstr ""
+"درخواست‌ها مستقیماً از سرور شما به ارائه‌دهنده‌ای که انتخاب می‌کنید فرستاده "
+"می‌شوند. هر ارائه‌دهنده داده‌ها را طبق شرایط خودش پردازش می‌کند؛ پیوندها را در "
+"فایل readme افزونه ببینید."
+
+#: assets/src/admin/pages/Logs.js:14
+msgid "Connection added"
+msgstr "اتصال اضافه شد"
+
+#: assets/src/admin/pages/Logs.js:15
+msgid "Connection changed"
+msgstr "اتصال تغییر کرد"
+
+#: assets/src/admin/pages/Logs.js:16
+msgid "Connection deleted"
+msgstr "اتصال حذف شد"
+
+#: assets/src/admin/pages/Logs.js:17
+msgid "Connection tested"
+msgstr "اتصال آزمایش شد"
+
+#: assets/src/admin/pages/Logs.js:18
+msgid "Settings changed"
+msgstr "تنظیمات تغییر کرد"
+
+#: assets/src/admin/pages/Logs.js:19
+msgid "Access changed"
+msgstr "دسترسی تغییر کرد"
+
+#: assets/src/admin/pages/Logs.js:20
+msgid "Budget changed"
+msgstr "بودجه تغییر کرد"
+
+#: assets/src/admin/pages/Logs.js:21
+msgid "Prices changed"
+msgstr "قیمت‌ها تغییر کرد"
+
+#: assets/src/admin/pages/Logs.js:22
+msgid "Budget warning sent"
+msgstr "هشدار بودجه ارسال شد"
+
+#: assets/src/admin/pages/Logs.js:23
+msgid "AI paused"
+msgstr "هوش مصنوعی متوقف شد"
+
+#: assets/src/admin/pages/Logs.js:24
+msgid "AI resumed"
+msgstr "هوش مصنوعی از سر گرفته شد"
+
+#: assets/src/admin/pages/Logs.js:25
+msgid "Keys re-entered"
+msgstr "کلیدها دوباره وارد شدند"
+
+#: assets/src/admin/pages/Logs.js:26
+msgid "Change applied"
+msgstr "تغییر اعمال شد"
+
+#: assets/src/admin/pages/Logs.js:27
+msgid "Change rejected"
+msgstr "تغییر رد شد"
+
+#: assets/src/admin/pages/Logs.js:28
+msgid "Change undone"
+msgstr "تغییر برگردانده شد"
+
+#: assets/src/admin/pages/Logs.js:29
+msgid "Assistant answered"
+msgstr "دستیار پاسخ داد"
+
+#: assets/src/admin/pages/Logs.js:30
+msgid "Assistant stopped"
+msgstr "دستیار متوقف شد"
+
+#: assets/src/admin/pages/Logs.js:31
+msgid "Assistant failed"
+msgstr "دستیار ناموفق بود"
+
+#. translators: %s: token count.
+#: assets/src/admin/pages/Logs.js:48 assets/src/admin/pages/Usage.js:145
+msgid "%s tokens"
+msgstr "%s توکن"
+
+#: assets/src/admin/pages/Logs.js:63
+msgid "read untrusted content"
+msgstr "محتوای نامطمئن خوانده شد"
+
+#: assets/src/admin/pages/Logs.js:67
+msgid "key removed after address change"
+msgstr "کلید پس از تغییر نشانی حذف شد"
+
+#: assets/src/admin/pages/Logs.js:139
+msgid ""
+"Who changed what: connections, settings, assistant runs, and every change "
+"applied or undone. Messages and keys are never logged."
+msgstr ""
+"چه کسی چه چیزی را تغییر داد: اتصال‌ها، تنظیمات، اجراهای دستیار و هر تغییری که "
+"اعمال یا برگردانده شده است. پیام‌ها و کلیدها هرگز ثبت نمی‌شوند."
+
+#: assets/src/admin/pages/Logs.js:150
+msgid "Export CSV"
+msgstr "خروجی CSV"
+
+#: assets/src/admin/pages/Logs.js:157 assets/src/admin/pages/Logs.js:250
+msgid "Event"
+msgstr "رویداد"
+
+#: assets/src/admin/pages/Logs.js:162
+msgid "All events"
+msgstr "همهٔ رویدادها"
+
+#: assets/src/admin/pages/Logs.js:166
+msgid "Changes"
+msgstr "تغییرها"
+
+#: assets/src/admin/pages/Logs.js:170
+msgid "Assistant runs"
+msgstr "اجراهای دستیار"
+
+#: assets/src/admin/pages/Logs.js:185
+msgid "Pause and resume"
+msgstr "توقف و ازسرگیری"
+
+#: assets/src/admin/pages/Logs.js:199
+msgid "Outcome"
+msgstr "نتیجه"
+
+#: assets/src/admin/pages/Logs.js:204
+msgid "Any outcome"
+msgstr "هر نتیجه‌ای"
+
+#: assets/src/admin/pages/Logs.js:208
+msgid "Succeeded"
+msgstr "موفق"
+
+#. translators: %s: number of entries.
+#: assets/src/admin/pages/Logs.js:225
+msgid "%s entries"
+msgstr "%s مورد"
+
+#: assets/src/admin/pages/Logs.js:237
+msgid "No activity matches these filters."
+msgstr "هیچ فعالیتی با این فیلترها مطابقت ندارد."
+
+#: assets/src/admin/pages/Logs.js:248
+msgid "When"
+msgstr "زمان"
+
+#: assets/src/admin/pages/Logs.js:252
+msgid "User"
+msgstr "کاربر"
+
+#: assets/src/admin/pages/Logs.js:254
+msgid "Details"
+msgstr "جزئیات"
+
+#: assets/src/admin/pages/Logs.js:285
+msgid "System"
+msgstr "سامانه"
+
+#: assets/src/admin/pages/Logs.js:299
+msgid "failed"
+msgstr "ناموفق"
+
+#: assets/src/admin/pages/Logs.js:319
+msgid "Previous"
+msgstr "قبلی"
+
+#. translators: 1: current page, 2: total pages.
+#: assets/src/admin/pages/Logs.js:323
+msgid "Page %1$s of %2$s"
+msgstr "صفحهٔ %1$s از %2$s"
+
+#: assets/src/admin/pages/Logs.js:336
+msgid "Next"
+msgstr "بعدی"
+
+#: assets/src/admin/pages/Settings.js:114
+msgid "Settings saved."
+msgstr "تنظیمات ذخیره شد."
+
+#: assets/src/admin/pages/Settings.js:143
+msgid "Site-wide rules for the assistant. Only administrators can change them."
+msgstr ""
+"قوانین سراسری سایت برای دستیار. فقط مدیران می‌توانند آن‌ها را تغییر دهند."
+
+#: assets/src/admin/pages/Settings.js:151
+msgid ""
+"Defaults for new conversations. Each conversation keeps the model it started "
+"with."
+msgstr ""
+"پیش‌فرض‌های گفتگوهای جدید. هر گفتگو با همان مدلی که با آن شروع شده است ادامه "
+"می‌یابد."
+
+#: assets/src/admin/pages/Settings.js:158
+msgid "Default connection"
+msgstr "اتصال پیش‌فرض"
+
+#: assets/src/admin/pages/Settings.js:163
+msgid "First available connection"
+msgstr "نخستین اتصال در دسترس"
+
+#: assets/src/admin/pages/Settings.js:188
+msgid "Leave empty to use the connection’s default model."
+msgstr "برای استفاده از مدل پیش‌فرض اتصال، خالی بگذارید."
+
+#: assets/src/admin/pages/Settings.js:202
+msgid "Reasoning effort"
+msgstr "میزان استدلال"
+
+#: assets/src/admin/pages/Settings.js:203
+msgid ""
+"For models that support it. Higher effort is slower and uses more tokens."
+msgstr ""
+"برای مدل‌هایی که از آن پشتیبانی می‌کنند. میزان بالاتر کندتر است و توکن بیشتری "
+"مصرف می‌کند."
+
+#: assets/src/admin/pages/Settings.js:211
+msgid "Low"
+msgstr "کم"
+
+#: assets/src/admin/pages/Settings.js:215
+msgid "Medium (recommended)"
+msgstr "متوسط (توصیه‌شده)"
+
+#: assets/src/admin/pages/Settings.js:222
+msgid "High"
+msgstr "زیاد"
+
+#: assets/src/admin/pages/Settings.js:226
+msgid "Extra high"
+msgstr "بسیار زیاد"
+
+#: assets/src/admin/pages/Settings.js:230
+msgid "Maximum"
+msgstr "حداکثر"
+
+#: assets/src/admin/pages/Settings.js:239
+msgid "Maximum answer length (tokens)"
+msgstr "حداکثر طول پاسخ (توکن)"
+
+#: assets/src/admin/pages/Settings.js:249
+msgid "Steps per message"
+msgstr "تعداد گام در هر پیام"
+
+#: assets/src/admin/pages/Settings.js:250
+msgid "How many times the assistant may call tools before it must answer."
+msgstr ""
+"تعداد دفعاتی که دستیار می‌تواند پیش از ارائهٔ پاسخ، ابزارها را فراخوانی کند."
+
+#: assets/src/admin/pages/Settings.js:259
+msgid "Time limit per message (seconds)"
+msgstr "محدودیت زمانی هر پیام (ثانیه)"
+
+#: assets/src/admin/pages/Settings.js:271
+msgid "Review"
+msgstr "بررسی"
+
+#: assets/src/admin/pages/Settings.js:272
+msgid ""
+"Every change is a proposal the user applies. You can let users skip review "
+"for new drafts only."
+msgstr ""
+"هر تغییر، یک تغییر پیشنهادی است که کاربر آن را اعمال می‌کند. می‌توانید فقط "
+"برای پیش‌نویس‌های جدید به کاربران اجازه دهید از بررسی صرف‌نظر کنند."
+
+#: assets/src/admin/pages/Settings.js:279
+msgid "Allow users to create drafts without review"
+msgstr "اجازه به کاربران برای ساخت پیش‌نویس بدون بررسی"
+
+#: assets/src/admin/pages/Settings.js:283
+msgid ""
+"Each user still has to turn this on for themselves. Never applies after the "
+"assistant read comments or other untrusted text."
+msgstr ""
+"هر کاربر همچنان باید این گزینه را برای خودش روشن کند. پس از اینکه دستیار "
+"دیدگاه‌ها یا متن‌های نامطمئن دیگری را خوانده باشد، هرگز اعمال نمی‌شود."
+
+#: assets/src/admin/pages/Settings.js:293
+msgid "Proposals expire after (minutes)"
+msgstr "انقضای تغییرهای پیشنهادی پس از (دقیقه)"
+
+#: assets/src/admin/pages/Settings.js:305
+msgid "Access"
+msgstr "دسترسی"
+
+#: assets/src/admin/pages/Settings.js:306
+msgid ""
+"Administrators always have full access. Users only ever act within their own "
+"WordPress permissions: an editor cannot change products through the "
+"assistant, for example."
+msgstr ""
+"مدیران همیشه دسترسی کامل دارند. کاربران همواره فقط در محدودهٔ مجوزهای "
+"WordPress خودشان عمل می‌کنند؛ برای نمونه، ویرایشگر نمی‌تواند از طریق دستیار "
+"محصولات را تغییر دهد."
+
+#: assets/src/admin/pages/Settings.js:316
+msgid "Role"
+msgstr "نقش"
+
+#: assets/src/admin/pages/Settings.js:362
+msgid "Privacy and retention"
+msgstr "حریم خصوصی و نگه‌داری"
+
+#: assets/src/admin/pages/Settings.js:366
+msgid "Delete conversations after (days)"
+msgstr "حذف گفتگوها پس از (روز)"
+
+#: assets/src/admin/pages/Settings.js:370
+msgid "0 keeps them until deleted. Pinned conversations are kept."
+msgstr "مقدار ۰ آن‌ها را تا زمان حذف نگه می‌دارد. گفتگوهای سنجاق‌شده حفظ می‌شوند."
+
+#: assets/src/admin/pages/Settings.js:379
+msgid "Keep the activity log for (days)"
+msgstr "نگه‌داری گزارش فعالیت به مدت (روز)"
+
+#: assets/src/admin/pages/Settings.js:389
+msgid "Budget alert email"
+msgstr "ایمیل هشدار بودجه"
+
+#: assets/src/admin/pages/Settings.js:390
+msgid "Defaults to the site admin email."
+msgstr "پیش‌فرض: ایمیل مدیر سایت."
+
+#: assets/src/admin/pages/Settings.js:404
+msgid "Network and links"
+msgstr "شبکه و پیوندها"
+
+#: assets/src/admin/pages/Settings.js:405
+msgid ""
+"Outbound requests are limited to public HTTPS addresses and pinned to the "
+"address that was checked."
+msgstr ""
+"درخواست‌های خروجی به نشانی‌های عمومی HTTPS محدود هستند و به همان نشانی‌ای که "
+"بررسی شده است تثبیت می‌شوند."
+
+#: assets/src/admin/pages/Settings.js:412
+msgid ""
+"WordPress sends requests through a proxy on this site, so the proxy resolves "
+"addresses."
+msgstr ""
+"WordPress در این سایت درخواست‌ها را از طریق یک پراکسی می‌فرستد، بنابراین تشخیص "
+"نشانی‌ها بر عهدهٔ پراکسی است."
+
+#: assets/src/admin/pages/Settings.js:420
+msgid "Private hosts"
+msgstr "میزبان‌های خصوصی"
+
+#: assets/src/admin/pages/Settings.js:421
+msgid ""
+"Exact host:port pairs allowed to use private networks or HTTP, one per line, "
+"for example a self-hosted model at 192.168.1.20:11434. Leave empty unless "
+"you need it."
+msgstr ""
+"جفت‌های دقیق host:port که اجازهٔ استفاده از شبکه‌های خصوصی یا HTTP را دارند، هر "
+"کدام در یک خط؛ برای نمونه یک مدل خودمیزبان در 192.168.1.20:11434. اگر به آن "
+"نیازی ندارید، خالی بگذارید."
+
+#: assets/src/admin/pages/Settings.js:435
+msgid "Clickable link hosts"
+msgstr "میزبان‌های مجاز برای پیوند قابل کلیک"
+
+#: assets/src/admin/pages/Settings.js:439
+msgid ""
+"Links in answers are clickable only for this site and these hosts (one per "
+"line, *.example.com for subdomains)."
+msgstr ""
+"پیوندهای درون پاسخ‌ها فقط برای این سایت و این میزبان‌ها قابل کلیک هستند (هر "
+"کدام در یک خط؛ برای زیردامنه‌ها از *.example.com استفاده کنید)."
+
+#: assets/src/admin/pages/Settings.js:453
+msgid "Live answers"
+msgstr "پاسخ‌های زنده"
+
+#: assets/src/admin/pages/Settings.js:454
+msgid ""
+"Automatic streams answers and switches to checking every second if the host "
+"buffers the stream."
+msgstr ""
+"در حالت خودکار، پاسخ‌ها به‌صورت جریانی (استریم) نمایش داده می‌شوند و اگر میزبان "
+"جریان را بافر کند، به بررسی ثانیه‌به‌ثانیه تغییر می‌کند."
+
+#: assets/src/admin/pages/Settings.js:462
+msgid "Automatic (recommended)"
+msgstr "خودکار (توصیه‌شده)"
+
+#: assets/src/admin/pages/Settings.js:469
+msgid "Always stream"
+msgstr "همیشه جریانی"
+
+#: assets/src/admin/pages/Settings.js:473
+msgid "Never stream (check periodically)"
+msgstr "هرگز جریانی نباشد (بررسی دوره‌ای)"
+
+#: assets/src/admin/pages/Settings.js:486
+msgid "Keys are encrypted with MINDIO_MAGIC_AI_SECRET_KEY."
+msgstr "کلیدها با MINDIO_MAGIC_AI_SECRET_KEY رمزنگاری می‌شوند."
+
+#: assets/src/admin/pages/Settings.js:490
+msgid ""
+"Tip: define MINDIO_MAGIC_AI_SECRET_KEY in wp-config.php so saved keys "
+"survive a change of the site’s security salts."
+msgstr ""
+"نکته: MINDIO_MAGIC_AI_SECRET_KEY را در wp-config.php تعریف کنید تا کلیدهای "
+"ذخیره‌شده با تغییر سالت‌های امنیتی سایت از دست نروند."
+
+#: assets/src/admin/pages/Settings.js:497
+msgid "Uninstall"
+msgstr "حذف افزونه"
+
+#: assets/src/admin/pages/Settings.js:499
+msgid "Delete all Mindio AI data when the plugin is deleted"
+msgstr "حذف همهٔ داده‌های Mindio AI هنگام حذف افزونه"
+
+#: assets/src/admin/pages/Settings.js:503
+msgid ""
+"Removes connections, keys, conversations, usage, and the activity log. "
+"Changes already made to your content stay."
+msgstr ""
+"اتصال‌ها، کلیدها، گفتگوها، داده‌های مصرف و گزارش فعالیت حذف می‌شوند. تغییرهایی "
+"که پیش‌تر در محتوای شما اعمال شده‌اند باقی می‌مانند."
+
+#: assets/src/admin/pages/Settings.js:517
+msgid "You have unsaved changes."
+msgstr "تغییرهای ذخیره‌نشده دارید."
+
+#: assets/src/admin/pages/Settings.js:521
+msgid "All changes saved."
+msgstr "همهٔ تغییرها ذخیره شد."
+
+#: assets/src/admin/pages/Settings.js:529
+msgid "Save settings"
+msgstr "ذخیرهٔ تنظیمات"
+
+#: assets/src/admin/pages/Usage.js:61 assets/src/admin/pages/Usage.js:541
+msgid "Tokens per day"
+msgstr "مصرف روزانهٔ توکن"
+
+#. translators: %s: number of model calls.
+#: assets/src/admin/pages/Usage.js:154
+msgid "%s calls"
+msgstr "%s فراخوانی"
+
+#: assets/src/admin/pages/Usage.js:165
+msgid "Show as table"
+msgstr "نمایش به‌صورت جدول"
+
+#: assets/src/admin/pages/Usage.js:170
+msgid "Day"
+msgstr "روز"
+
+#: assets/src/admin/pages/Usage.js:171
+msgid "Tokens"
+msgstr "توکن‌ها"
+
+#: assets/src/admin/pages/Usage.js:172 assets/src/admin/pages/Usage.js:581
+msgid "Calls"
+msgstr "فراخوانی‌ها"
+
+#: assets/src/admin/pages/Usage.js:173 assets/src/admin/pages/Usage.js:593
+msgid "Cost"
+msgstr "هزینه"
+
+#: assets/src/admin/pages/Usage.js:226
+msgid "Model prices"
+msgstr "قیمت مدل‌ها"
+
+#: assets/src/admin/pages/Usage.js:231
+msgid ""
+"US dollars per million tokens, used to estimate cost and enforce cost "
+"budgets. Check your provider’s pricing page; models without a price are "
+"counted at zero cost."
+msgstr ""
+"دلار آمریکا به‌ازای هر یک میلیون توکن؛ برای برآورد هزینه و اعمال بودجهٔ هزینه "
+"به کار می‌رود. صفحهٔ قیمت‌گذاری ارائه‌دهندهٔ خود را بررسی کنید؛ هزینهٔ مدل‌های بدون "
+"قیمت صفر در نظر گرفته می‌شود."
+
+#: assets/src/admin/pages/Usage.js:244 assets/src/admin/pages/Usage.js:584
+msgid "Input"
+msgstr "ورودی"
+
+#: assets/src/admin/pages/Usage.js:245 assets/src/admin/pages/Usage.js:587
+msgid "Output"
+msgstr "خروجی"
+
+#: assets/src/admin/pages/Usage.js:247
+msgid "Cache read"
+msgstr "خواندن از حافظهٔ نهان"
+
+#: assets/src/admin/pages/Usage.js:250
+msgid "Cache write"
+msgstr "نوشتن در حافظهٔ نهان"
+
+#: assets/src/admin/pages/Usage.js:301
+msgid "Remove"
+msgstr "حذف"
+
+#: assets/src/admin/pages/Usage.js:337
+msgid "Add model"
+msgstr "افزودن مدل"
+
+#: assets/src/admin/pages/Usage.js:344
+msgid "Save prices"
+msgstr "ذخیرهٔ قیمت‌ها"
+
+#: assets/src/admin/pages/Usage.js:391
+msgid "Budget saved."
+msgstr "بودجه ذخیره شد."
+
+#: assets/src/admin/pages/Usage.js:425
+msgid ""
+"Tokens and estimated cost of every AI call, with limits that stop spending "
+"before it happens."
+msgstr ""
+"توکن‌ها و هزینهٔ برآوردی هر فراخوانی هوش مصنوعی، همراه با محدودیت‌هایی که پیش "
+"از وقوع هزینه جلوی آن را می‌گیرند."
+
+#: assets/src/admin/pages/Usage.js:431
+msgid "Period"
+msgstr "بازهٔ زمانی"
+
+#: assets/src/admin/pages/Usage.js:437
+msgid "Last 7 days"
+msgstr "۷ روز گذشته"
+
+#: assets/src/admin/pages/Usage.js:441
+msgid "Last 30 days"
+msgstr "۳۰ روز گذشته"
+
+#: assets/src/admin/pages/Usage.js:445
+msgid "Last 90 days"
+msgstr "۹۰ روز گذشته"
+
+#: assets/src/admin/pages/Usage.js:466
+msgid "Resume AI"
+msgstr "ازسرگیری هوش مصنوعی"
+
+#: assets/src/admin/pages/Usage.js:472
+msgid "Paused by the MINDIO_MAGIC_AI_DISABLED constant in wp-config.php."
+msgstr "با ثابت MINDIO_MAGIC_AI_DISABLED در wp-config.php متوقف شده است."
+
+#: assets/src/admin/pages/Usage.js:476
+msgid "No AI requests are sent until an administrator resumes AI."
+msgstr ""
+"تا زمانی که مدیر هوش مصنوعی را از سر نگیرد، هیچ درخواستی به هوش مصنوعی "
+"فرستاده نمی‌شود."
+
+#: assets/src/admin/pages/Usage.js:486
+msgid "Tokens today"
+msgstr "توکن‌های امروز"
+
+#. translators: %s: percentage.
+#: assets/src/admin/pages/Usage.js:494
+msgid "%s of daily budget"
+msgstr "%s از بودجهٔ روزانه"
+
+#: assets/src/admin/pages/Usage.js:502
+msgid "No daily limit"
+msgstr "بدون محدودیت روزانه"
+
+#: assets/src/admin/pages/Usage.js:508
+msgid "Cost this month"
+msgstr "هزینهٔ این ماه"
+
+#. translators: %s: percentage.
+#: assets/src/admin/pages/Usage.js:513
+msgid "%s of monthly budget"
+msgstr "%s از بودجهٔ ماهانه"
+
+#: assets/src/admin/pages/Usage.js:521
+msgid "Estimated from model prices"
+msgstr "برآوردشده بر پایهٔ قیمت مدل‌ها"
+
+#: assets/src/admin/pages/Usage.js:530
+msgid "Model calls this month"
+msgstr "فراخوانی‌های مدل در این ماه"
+
+#: assets/src/admin/pages/Usage.js:535
+msgid "Tokens this month"
+msgstr "توکن‌های این ماه"
+
+#: assets/src/admin/pages/Usage.js:542
+msgid "Input, cached input, and output tokens across all features."
+msgstr "توکن‌های ورودی، ورودی ذخیره‌شده در حافظهٔ نهان و خروجی در همهٔ قابلیت‌ها."
+
+#: assets/src/admin/pages/Usage.js:552
+msgid "By model"
+msgstr "به تفکیک مدل"
+
+#: assets/src/admin/pages/Usage.js:560
+msgid "Edit prices"
+msgstr "ویرایش قیمت‌ها"
+
+#: assets/src/admin/pages/Usage.js:567
+msgid "No usage in this period."
+msgstr "در این بازه مصرفی ثبت نشده است."
+
+#: assets/src/admin/pages/Usage.js:609
+msgid "estimated"
+msgstr "برآوردی"
+
+#: assets/src/admin/pages/Usage.js:638
+msgid "no price"
+msgstr "بدون قیمت"
+
+#: assets/src/admin/pages/Usage.js:653
+msgid ""
+"Some models have no price, so their cost is not counted toward cost budgets."
+msgstr ""
+"برخی مدل‌ها قیمت ندارند، بنابراین هزینهٔ آن‌ها در بودجهٔ هزینه محاسبه نمی‌شود."
+
+#: assets/src/admin/pages/Usage.js:662
+msgid "Assistant budget"
+msgstr "بودجهٔ دستیار"
+
+#: assets/src/admin/pages/Usage.js:663
+msgid ""
+"Limits are reserved before each call, so concurrent requests cannot "
+"overspend. 0 means no limit. You get an email at 80%."
+msgstr ""
+"محدودیت‌ها پیش از هر فراخوانی رزرو می‌شوند تا درخواست‌های هم‌زمان نتوانند بیش از "
+"حد هزینه کنند. مقدار ۰ یعنی بدون محدودیت. با رسیدن به ۸۰٪ برایتان ایمیل "
+"فرستاده می‌شود."
+
+#: assets/src/admin/pages/Usage.js:672
+msgid "Daily token limit"
+msgstr "سقف روزانهٔ توکن"
+
+#: assets/src/admin/pages/Usage.js:688
+msgid "Monthly cost limit (USD)"
+msgstr "سقف ماهانهٔ هزینه (دلار آمریکا)"
+
+#: assets/src/admin/pages/Usage.js:706
+msgid "Save budget"
+msgstr "ذخیرهٔ بودجه"
+
+#: assets/src/admin/pages/Usage.js:725
+msgid "Pause all AI"
+msgstr "توقف کامل هوش مصنوعی"
+
+#: assets/src/admin/pages/Usage.js:731
+msgid "Stops every AI request on this site immediately, for all users."
+msgstr ""
+"همهٔ درخواست‌های هوش مصنوعی در این سایت را بلافاصله و برای همهٔ کاربران متوقف "
+"می‌کند."
+
+#: assets/src/admin/pages/Usage.js:743 assets/src/admin/pages/Usage.js:782
+msgid "Pause AI"
+msgstr "توقف هوش مصنوعی"
+
+#: assets/src/admin/pages/Usage.js:760
+msgid "Pause all AI?"
+msgstr "هوش مصنوعی به‌طور کامل متوقف شود؟"
+
+#: assets/src/admin/pages/Usage.js:765
+msgid ""
+"Running answers stop at their next step and no new requests are sent until "
+"you resume AI."
+msgstr ""
+"پاسخ‌های در حال اجرا در گام بعدی متوقف می‌شوند و تا زمانی که هوش مصنوعی را از "
+"سر نگیرید، درخواست جدیدی فرستاده نمی‌شود."
+
+#: assets/src/admin/tools.js:9
+msgid "Reading the site overview…"
+msgstr "در حال خواندن نمای کلی سایت…"
+
+#: assets/src/admin/tools.js:10
+msgid "Read the site overview"
+msgstr "نمای کلی سایت خوانده شد"
+
+#: assets/src/admin/tools.js:13
+msgid "Searching content…"
+msgstr "در حال جست‌وجوی محتوا…"
+
+#: assets/src/admin/tools.js:14
+msgid "Searched content"
+msgstr "محتوا جست‌وجو شد"
+
+#: assets/src/admin/tools.js:17
+msgid "Reading content…"
+msgstr "در حال خواندن محتوا…"
+
+#: assets/src/admin/tools.js:21
+msgid "Listing categories and tags…"
+msgstr "در حال فهرست کردن دسته‌ها و برچسب‌ها…"
+
+#: assets/src/admin/tools.js:22
+msgid "Listed categories and tags"
+msgstr "دسته‌ها و برچسب‌ها فهرست شدند"
+
+#: assets/src/admin/tools.js:25
+msgid "Preparing a draft…"
+msgstr "در حال آماده‌سازی پیش‌نویس…"
+
+#: assets/src/admin/tools.js:26
+msgid "Prepared a draft"
+msgstr "پیش‌نویس آماده شد"
+
+#: assets/src/admin/tools.js:29
+msgid "Preparing an edit…"
+msgstr "در حال آماده‌سازی ویرایش…"
+
+#: assets/src/admin/tools.js:30
+msgid "Prepared an edit"
+msgstr "ویرایش آماده شد"
+
+#: assets/src/admin/tools.js:33
+msgid "Preparing a schedule…"
+msgstr "در حال آماده‌سازی زمان‌بندی…"
+
+#: assets/src/admin/tools.js:34
+msgid "Prepared a schedule"
+msgstr "زمان‌بندی آماده شد"
+
+#: assets/src/admin/tools.js:37
+msgid "Preparing to publish…"
+msgstr "در حال آماده‌سازی انتشار…"
+
+#: assets/src/admin/tools.js:38
+msgid "Prepared to publish"
+msgstr "انتشار آماده شد"
+
+#: assets/src/admin/tools.js:41
+msgid "Preparing categories and tags…"
+msgstr "در حال آماده‌سازی دسته‌ها و برچسب‌ها…"
+
+#: assets/src/admin/tools.js:42
+msgid "Prepared categories and tags"
+msgstr "دسته‌ها و برچسب‌ها آماده شدند"
+
+#: assets/src/admin/tools.js:45
+msgid "Reading comments…"
+msgstr "در حال خواندن دیدگاه‌ها…"
+
+#: assets/src/admin/tools.js:46
+msgid "Read comments"
+msgstr "دیدگاه‌ها خوانده شدند"
+
+#: assets/src/admin/tools.js:49
+msgid "Preparing a reply…"
+msgstr "در حال آماده‌سازی پاسخ…"
+
+#: assets/src/admin/tools.js:50
+msgid "Prepared a reply"
+msgstr "پاسخ آماده شد"
+
+#: assets/src/admin/tools.js:53
+msgid "Preparing moderation…"
+msgstr "در حال آماده‌سازی مدیریت دیدگاه…"
+
+#: assets/src/admin/tools.js:54
+msgid "Prepared moderation"
+msgstr "مدیریت دیدگاه آماده شد"
+
+#: assets/src/admin/tools.js:57
+msgid "Reading SEO fields…"
+msgstr "در حال خواندن فیلدهای سئو…"
+
+#: assets/src/admin/tools.js:61
+msgid "Preparing SEO changes…"
+msgstr "در حال آماده‌سازی تغییرهای سئو…"
+
+#: assets/src/admin/tools.js:62
+msgid "Prepared SEO changes"
+msgstr "تغییرهای سئو آماده شدند"
+
+#: assets/src/admin/tools.js:65
+msgid "Searching products…"
+msgstr "در حال جست‌وجوی محصولات…"
+
+#: assets/src/admin/tools.js:66
+msgid "Searched products"
+msgstr "محصولات جست‌وجو شدند"
+
+#: assets/src/admin/tools.js:69
+msgid "Reading a product…"
+msgstr "در حال خواندن محصول…"
+
+#: assets/src/admin/tools.js:73
+msgid "Checking stock…"
+msgstr "در حال بررسی موجودی…"
+
+#: assets/src/admin/tools.js:74
+msgid "Checked stock"
+msgstr "موجودی بررسی شد"
+
+#: assets/src/admin/tools.js:77
+msgid "Summarizing sales…"
+msgstr "در حال خلاصه‌سازی فروش…"
+
+#: assets/src/admin/tools.js:78
+msgid "Summarized sales"
+msgstr "فروش خلاصه شد"
+
+#: assets/src/admin/tools.js:81
+msgid "Ranking products…"
+msgstr "در حال رتبه‌بندی محصولات…"
+
+#: assets/src/admin/tools.js:82
+msgid "Ranked products"
+msgstr "محصولات رتبه‌بندی شدند"
+
+#: assets/src/admin/tools.js:85
+msgid "Preparing a product edit…"
+msgstr "در حال آماده‌سازی ویرایش محصول…"
+
+#: assets/src/admin/tools.js:86
+msgid "Prepared a product edit"
+msgstr "ویرایش محصول آماده شد"
+
+#: assets/src/admin/tools.js:89
+msgid "Preparing a product draft…"
+msgstr "در حال آماده‌سازی پیش‌نویس محصول…"
+
+#: assets/src/admin/tools.js:90
+msgid "Prepared a product draft"
+msgstr "پیش‌نویس محصول آماده شد"
+
+#: assets/src/admin/tools.js:96
+msgid "Used a tool"
+msgstr "از یک ابزار استفاده شد"
+
+#: assets/src/admin/tools.js:97
+msgid "Working…"
+msgstr "در حال انجام…"
+
+#: assets/src/admin/tools.js:106
+msgid "Find drafts I haven’t touched in a month and summarize each one"
+msgstr ""
+"پیش‌نویس‌هایی را که یک ماه است سراغشان نرفته‌ام پیدا کن و هر کدام را خلاصه کن"
+
+#: assets/src/admin/tools.js:113
+msgid "Write a blog post outline about our most popular topic"
+msgstr "طرح کلی یک نوشتهٔ وبلاگ دربارهٔ پرطرفدارترین موضوع ما را بنویس"
+
+#: assets/src/admin/tools.js:120
+msgid "Review comments waiting for moderation"
+msgstr "دیدگاه‌های در انتظار بررسی را مرور کن"
+
+#: assets/src/admin/tools.js:127
+msgid "Which published posts have no excerpt?"
+msgstr "کدام نوشته‌های منتشرشده چکیده ندارند؟"
+
+#: assets/src/admin/tools.js:136
+msgid "Summarize this month’s sales and top products"
+msgstr "فروش این ماه و پرفروش‌ترین محصولات را خلاصه کن"
+
+#: assets/src/admin/tools.js:143
+msgid "List products that are low in stock"
+msgstr "محصولاتی را که موجودی‌شان کم است فهرست کن"
+
+#: assets/src/drawer/index.js:67
+msgid "Loading the assistant…"
+msgstr "در حال بارگذاری دستیار…"
+
+#: assets/src/drawer/index.js:80 assets/src/drawer/index.js:81
+msgid "Close"
+msgstr "بستن"
+
+#: assets/src/drawer/index.js:95
+msgid "Mindio AI assistant"
+msgstr "دستیار Mindio AI"
+
+#: assets/src/drawer/index.js:254
+msgid "Ask Mindio AI"
+msgstr "از Mindio AI بپرسید"
+
+#: assets/src/drawer/index.js:255
+msgid "Ask Mindio AI assistant chat"
+msgstr "گفتگو با دستیار Mindio AI"

@@ -1,0 +1,11 @@
+/*
+ * Vazirmatn v33.0.3, variable weight. https://github.com/rastikerdar/vazirmatn
+ * Copyright 2015 The Vazirmatn Project Authors. SIL Open Font License 1.1, see Vazirmatn-OFL.txt.
+ */
+@font-face {
+	font-family: Vazirmatn;
+	src: url("Vazirmatn-Variable.woff2") format("woff2-variations"), url("Vazirmatn-Variable.woff2") format("woff2");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}

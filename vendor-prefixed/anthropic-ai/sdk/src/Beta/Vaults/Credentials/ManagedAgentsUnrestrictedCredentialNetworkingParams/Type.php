@@ -1,0 +1,10 @@
+<?php
+
+declare(strict_types=1);
+
+namespace MindioMagicAI\Vendor\Anthropic\Beta\Vaults\Credentials\ManagedAgentsUnrestrictedCredentialNetworkingParams;
+
+enum Type: string
+{
+    case UNRESTRICTED = 'unrestricted';
+}
