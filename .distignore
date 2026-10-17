@@ -19,3 +19,6 @@
 /RELEASING.md
 **/.DS_Store
 **/*.test.js
+/languages/*.po
+/languages/*.mo
+/languages/*.json

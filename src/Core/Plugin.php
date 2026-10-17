@@ -28,7 +28,6 @@ final class Plugin {
 		Installer::maybe_upgrade();
 		Access::register();
 
-		add_action( 'init', array( self::class, 'load_textdomain' ) );
 		add_action( 'rest_api_init', array( Routes::class, 'register' ) );
 		add_action( Installer::CLEANUP_HOOK, array( Installer::class, 'cleanup' ) );
 		add_action( 'wp_initialize_site', array( Installer::class, 'initialize_site' ), 20 );
@@ -40,10 +39,6 @@ final class Plugin {
 			Privacy::register();
 		}
 		add_action( 'admin_bar_menu', array( Admin::class, 'admin_bar' ), 80 );
-	}
-
-	public static function load_textdomain(): void {
-		load_plugin_textdomain( 'mindio-magic-ai', false, dirname( plugin_basename( MINDIO_MAGIC_AI_FILE ) ) . '/languages' );
 	}
 
 	public static function declare_woocommerce_compatibility(): void {

@@ -53,6 +53,10 @@ final class Budget {
 		return $current;
 	}
 
+	public static function has_cost_limit( string $feature ): bool {
+		return ( self::all()[ $feature ]['monthly_cost'] ?? 0.0 ) > 0;
+	}
+
 	/**
 	 * Reserve the worst case for one call.
 	 *

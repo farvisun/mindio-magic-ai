@@ -17,25 +17,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 final class Access {
 	public const OPTION = 'mindio_magic_ai_access';
 
-	public const USE_ASSISTANT       = 'mindio_ai_use_assistant';
-	public const MANAGE_AUTOMATIONS  = 'mindio_ai_manage_automations';
-	public const REVIEW              = 'mindio_ai_review';
-	public const HANDLE_INBOX        = 'mindio_ai_handle_inbox';
-	public const MANAGE_SETTINGS     = 'mindio_ai_manage_settings';
+	public const USE_ASSISTANT   = 'mindio_ai_use_assistant';
+	public const MANAGE_SETTINGS = 'mindio_ai_manage_settings';
 
 	/** @return array<int,string> */
 	public static function capabilities(): array {
-		return array( self::USE_ASSISTANT, self::MANAGE_AUTOMATIONS, self::REVIEW, self::HANDLE_INBOX, self::MANAGE_SETTINGS );
+		return array( self::USE_ASSISTANT, self::MANAGE_SETTINGS );
 	}
 
 	/** @return array<string,string> */
 	public static function capability_labels(): array {
 		return array(
-			self::USE_ASSISTANT      => __( 'Use the assistant', 'mindio-magic-ai' ),
-			self::MANAGE_AUTOMATIONS => __( 'Manage automations', 'mindio-magic-ai' ),
-			self::REVIEW             => __( 'Review generated content', 'mindio-magic-ai' ),
-			self::HANDLE_INBOX       => __( 'Handle the chat inbox', 'mindio-magic-ai' ),
-			self::MANAGE_SETTINGS    => __( 'View usage, budgets, and logs', 'mindio-magic-ai' ),
+			self::USE_ASSISTANT   => __( 'Use the assistant', 'mindio-magic-ai' ),
+			self::MANAGE_SETTINGS => __( 'View usage, budgets, and logs', 'mindio-magic-ai' ),
 		);
 	}
 

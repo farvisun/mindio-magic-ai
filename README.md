@@ -1,6 +1,6 @@
 # Mindio Magic AI
 
-An AI assistant for WordPress and WooCommerce admins. It works with your own API key from Anthropic, OpenAI, Google Gemini, or any OpenAI- or Anthropic-compatible gateway, and every change it makes is shown for review first and can be undone.
+An AI assistant for WordPress and WooCommerce admins. It works with your own API key from Anthropic, OpenAI, Google Gemini, DeepSeek, or any OpenAI-compatible service, and every change it makes is shown for review first and can be undone.
 
 - **Assistant** page, an **Ask AI** side panel on every admin screen, and an **Ask Mindio AI** Command Palette command.
 - **21 tools** for content, comments, SEO (Yoast SEO, Rank Math), and WooCommerce. Writes become proposals with a before-and-after view; Apply, Reject, and Undo with conflict detection.
@@ -50,13 +50,25 @@ npm run build && composer i18n
 
 `bin/i18n.sh` regenerates the POT, merges it into each PO, and compiles the MO files and the JSON files for the scripts. It needs WP-CLI and gettext.
 
+Only the POT ships in the release zip. WordPress.org delivers translations from translate.wordpress.org, so import `languages/mindio-magic-ai-fa_IR.po` there after each release. To see the Persian interface on a local site, copy `languages/*-fa_IR*.{mo,json}` into `wp-content/languages/plugins/`.
+
 ### Release
 
 ```sh
 npm run build && composer i18n && composer build
 ```
 
-`bin/build-release.sh` checks that the version and the readme's Stable tag match, then writes `dist/mindio-magic-ai-<version>.zip` using `.distignore`. Run Plugin Check on the result before uploading.
+`bin/build-release.sh` checks that the version and the readme's Stable tag match, then writes `dist/mindio-magic-ai-<version>.zip` using `.distignore`. It also leaves out the SDK's unused cloud-platform clients. Run Plugin Check on the result before uploading.
+
+After WordPress.org approves the plugin, publish each release through SVN:
+
+```sh
+svn checkout https://plugins.svn.wordpress.org/mindio-magic-ai/ ../wordpress-org-mindio-magic-ai
+bin/prepare-wordpress-org.sh ../wordpress-org-mindio-magic-ai
+svn commit ../wordpress-org-mindio-magic-ai -m "Release X.Y.Z" --username <wordpress.org user>
+```
+
+The script copies the zip's contents to `trunk/`, the directory artwork in `.wordpress-org/` to `assets/`, and creates `tags/<version>`. SVN uses its own password, set in your WordPress.org profile.
 
 ## Architecture
 

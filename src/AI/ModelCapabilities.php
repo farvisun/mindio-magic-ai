@@ -27,6 +27,7 @@ final class ModelCapabilities {
 				str_starts_with( $model, 'claude-fable-5' ) => self::row( 'always', true, true, true, true, 128000 ),
 				str_starts_with( $model, 'claude-opus-5' ), str_starts_with( $model, 'claude-sonnet-5' ) => self::row( 'adaptive_default', true, true, true, false, 128000 ),
 				str_starts_with( $model, 'claude-opus-4-' ), str_starts_with( $model, 'claude-sonnet-4-6' ) => self::row( 'adaptive', true, true, true, false, 64000 ),
+				str_starts_with( $model, 'claude-haiku-5-5' ) => self::row( 'adaptive_default', true, true, true, false, 128000 ),
 				str_starts_with( $model, 'claude-haiku-4-5' ) => self::row( 'none', false, true, true, false, 64000 ),
 				default => self::row( 'none', false, true, true, false, 8192 ),
 			};

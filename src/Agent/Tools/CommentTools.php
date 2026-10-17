@@ -16,7 +16,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 final class CommentTools {
 	public static function register( ToolRegistry $registry ): void {
-		$can_moderate = static fn(): bool|\WP_Error => current_user_can( 'moderate_comments' ) ? true : new \WP_Error( 'forbidden', __( 'You cannot moderate comments.', 'mindio-magic-ai' ) );
+		$can_moderate     = static fn(): bool|\WP_Error => current_user_can( 'moderate_comments' ) ? true : new \WP_Error( 'forbidden', __( 'You cannot moderate comments.', 'mindio-magic-ai' ) );
+		$can_edit_comment = static function ( array $args ) use ( $can_moderate ): bool|\WP_Error {
+			$allowed = $can_moderate();
+			if ( true !== $allowed ) {
+				return $allowed;
+			}
+			$comment = self::comment( (int) ( $args['comment_id'] ?? 0 ) );
+			return is_wp_error( $comment ) ? $comment : true;
+		};
 
 		$registry->register(
 			new Tool(
@@ -58,7 +66,7 @@ final class CommentTools {
 					'additionalProperties' => false,
 				),
 				risk: Tool::RISK_WRITE,
-				permission: $can_moderate,
+				permission: $can_edit_comment,
 				handler: array( self::class, 'reply' ),
 				preview: array( self::class, 'preview_reply' ),
 				fingerprint: static fn( array $args ): string => self::fingerprint( (int) $args['comment_id'] ),
@@ -85,7 +93,7 @@ final class CommentTools {
 					'additionalProperties' => false,
 				),
 				risk: Tool::RISK_WRITE,
-				permission: $can_moderate,
+				permission: $can_edit_comment,
 				handler: array( self::class, 'moderate' ),
 				preview: array( self::class, 'preview_moderate' ),
 				fingerprint: static fn( array $args ): string => self::fingerprint( (int) $args['comment_id'] ),
@@ -133,9 +141,19 @@ final class CommentTools {
 		return $comment instanceof \WP_Comment ? md5( $comment->comment_approved . "\0" . $comment->comment_content ) : 'missing';
 	}
 
+	/**
+	 * Only visitor comments and product reviews. Other comment types hold private records, such as
+	 * WooCommerce order notes, that site-wide moderation rights must not reach.
+	 */
 	private static function comment( int $id ): \WP_Comment|\WP_Error {
 		$comment = get_comment( $id );
-		return $comment instanceof \WP_Comment ? $comment : new \WP_Error( 'not_found', __( 'No comment with that ID exists.', 'mindio-magic-ai' ) );
+		if ( ! $comment instanceof \WP_Comment || ! in_array( (string) $comment->comment_type, array( '', 'comment', 'review' ), true ) ) {
+			return new \WP_Error( 'not_found', __( 'No comment with that ID exists.', 'mindio-magic-ai' ) );
+		}
+		if ( ! current_user_can( 'edit_comment', (int) $comment->comment_ID ) ) {
+			return new \WP_Error( 'forbidden', __( 'You cannot moderate this comment.', 'mindio-magic-ai' ) );
+		}
+		return $comment;
 	}
 
 	/** @return array<string,mixed> */

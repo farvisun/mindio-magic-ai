@@ -595,7 +595,7 @@ export default function Connections() {
 				>
 					{ canManage
 						? __(
-								'Connect Anthropic Claude, OpenAI, Google Gemini, OpenRouter, DeepSeek, or any OpenAI-compatible gateway. Nothing is sent to a provider until you add a connection and use the assistant.',
+								'Connect Anthropic Claude, OpenAI, Google Gemini, DeepSeek, or any OpenAI-compatible gateway. Nothing is sent to a provider until you add a connection and use the assistant.',
 								'mindio-magic-ai'
 						  )
 						: __(

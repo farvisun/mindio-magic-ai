@@ -9,38 +9,38 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-06T17:39:41+00:00\n"
+"POT-Creation-Date: 2026-10-17T11:41:59+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: mindio-magic-ai\n"
 
 #. Plugin Name of the plugin
-#: mindio-magic-ai.php:3
+#: mindio-magic-ai.php
 #: src/Admin/SiteHealth.php:82
 msgid "Mindio Magic AI"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: mindio-magic-ai.php:4
+#: mindio-magic-ai.php
 msgid "https://github.com/farvisun/mindio-magic-ai"
 msgstr ""
 
 #. Description of the plugin
-#: mindio-magic-ai.php:5
+#: mindio-magic-ai.php
 msgid "Bring-your-own-key AI assistant for WordPress and WooCommerce admins, with reviewable changes, undo, budgets, and an audit trail."
 msgstr ""
 
 #. Author of the plugin
-#: mindio-magic-ai.php:9
+#: mindio-magic-ai.php
 msgid "Farvisun"
 msgstr ""
 
 #. Author URI of the plugin
-#: mindio-magic-ai.php:10
+#: mindio-magic-ai.php
 msgid "https://github.com/farvisun"
 msgstr ""
 
-#: mindio-magic-ai.php:33
+#: mindio-magic-ai.php:35
 msgid "Mindio Magic AI requires PHP 8.1 or newer."
 msgstr ""
 
@@ -263,6 +263,7 @@ msgid "You cannot moderate comments."
 msgstr ""
 
 #: src/Agent/Changeset.php:347
+#: src/Agent/Tools/WooCommerceTools.php:80
 #: src/Agent/Tools/WooCommerceTools.php:161
 msgid "You cannot edit this product."
 msgstr ""
@@ -367,74 +368,78 @@ msgstr ""
 msgid "%1$s %2$s."
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:24
+#: src/Agent/Tools/CommentTools.php:32
 msgid "List comments"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:49
+#: src/Agent/Tools/CommentTools.php:57
 msgid "Reply to a comment"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:73
+#: src/Agent/Tools/CommentTools.php:81
 msgid "Moderate a comment"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:138
+#: src/Agent/Tools/CommentTools.php:151
 msgid "No comment with that ID exists."
 msgstr ""
 
+#: src/Agent/Tools/CommentTools.php:154
+msgid "You cannot moderate this comment."
+msgstr ""
+
 #. translators: 1: comment author, 2: post title.
-#: src/Agent/Tools/CommentTools.php:148
+#: src/Agent/Tools/CommentTools.php:166
 #, php-format
 msgid "Comment by %1$s on “%2$s”"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:164
+#: src/Agent/Tools/CommentTools.php:182
 msgid "Post a public reply"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:169
+#: src/Agent/Tools/CommentTools.php:187
 msgid "Original comment"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:175
+#: src/Agent/Tools/CommentTools.php:193
 msgid "Reply"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:205
+#: src/Agent/Tools/CommentTools.php:223
 msgid "The reply could not be saved."
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:220
+#: src/Agent/Tools/CommentTools.php:238
 msgid "Approved"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:221
+#: src/Agent/Tools/CommentTools.php:239
 msgid "Pending"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:222
+#: src/Agent/Tools/CommentTools.php:240
 msgid "Spam"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:223
+#: src/Agent/Tools/CommentTools.php:241
 msgid "Trash"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:228
+#: src/Agent/Tools/CommentTools.php:246
 msgid "Change a comment’s status"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:233
+#: src/Agent/Tools/CommentTools.php:251
 #: src/Agent/Tools/ContentTools.php:411
 msgid "Status"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:239
+#: src/Agent/Tools/CommentTools.php:257
 msgid "Comment"
 msgstr ""
 
-#: src/Agent/Tools/CommentTools.php:256
+#: src/Agent/Tools/CommentTools.php:274
 msgid "The comment status could not be changed."
 msgstr ""
 
@@ -615,12 +620,12 @@ msgstr ""
 msgid "No content with that ID exists."
 msgstr ""
 
-#: src/Agent/Tools/Support.php:59
+#: src/Agent/Tools/Support.php:75
 msgid "You cannot edit this content."
 msgstr ""
 
 #. translators: 1: term name, 2: taxonomy name.
-#: src/Agent/Tools/Support.php:141
+#: src/Agent/Tools/Support.php:157
 #, php-format
 msgid "The term \"%1$s\" does not exist in %2$s."
 msgstr ""
@@ -662,72 +667,72 @@ msgstr ""
 msgid "Draft a product"
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:204
+#: src/Agent/Tools/WooCommerceTools.php:214
 msgid "No product with that ID exists."
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:320
+#: src/Agent/Tools/WooCommerceTools.php:330
 msgid "Use dates in YYYY-MM-DD format, with from on or before to."
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:339
-#: src/Agent/Tools/WooCommerceTools.php:390
+#: src/Agent/Tools/WooCommerceTools.php:349
+#: src/Agent/Tools/WooCommerceTools.php:400
 msgid "WooCommerce Analytics tables are not available. Enable WooCommerce Analytics and import historical data."
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:414
+#: src/Agent/Tools/WooCommerceTools.php:424
 msgid "(deleted product)"
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:455
+#: src/Agent/Tools/WooCommerceTools.php:465
 msgid "The sale price must be lower than the regular price."
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:468
-#: src/Agent/Tools/WooCommerceTools.php:534
+#: src/Agent/Tools/WooCommerceTools.php:478
+#: src/Agent/Tools/WooCommerceTools.php:544
 #: assets/src/admin/pages/Connections.js:235
 msgid "Name"
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:469
-#: src/Agent/Tools/WooCommerceTools.php:537
+#: src/Agent/Tools/WooCommerceTools.php:479
+#: src/Agent/Tools/WooCommerceTools.php:547
 msgid "Description"
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:470
-#: src/Agent/Tools/WooCommerceTools.php:536
+#: src/Agent/Tools/WooCommerceTools.php:480
+#: src/Agent/Tools/WooCommerceTools.php:546
 msgid "Short description"
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:471
-#: src/Agent/Tools/WooCommerceTools.php:535
+#: src/Agent/Tools/WooCommerceTools.php:481
+#: src/Agent/Tools/WooCommerceTools.php:545
 msgid "Regular price"
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:472
+#: src/Agent/Tools/WooCommerceTools.php:482
 msgid "Sale price"
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:476
+#: src/Agent/Tools/WooCommerceTools.php:486
 msgid "The proposed values match the current product."
 msgstr ""
 
 #. translators: %s: product name.
-#: src/Agent/Tools/WooCommerceTools.php:481
+#: src/Agent/Tools/WooCommerceTools.php:491
 #, php-format
 msgid "Edit product “%s”"
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:488
+#: src/Agent/Tools/WooCommerceTools.php:498
 msgid "Price changes apply to the live store immediately."
 msgstr ""
 
-#: src/Agent/Tools/WooCommerceTools.php:529
+#: src/Agent/Tools/WooCommerceTools.php:539
 msgid "Another product already uses that SKU."
 msgstr ""
 
 #. translators: %s: product name.
-#: src/Agent/Tools/WooCommerceTools.php:551
+#: src/Agent/Tools/WooCommerceTools.php:561
 #, php-format
 msgid "Create a draft product: “%s”"
 msgstr ""
@@ -762,16 +767,16 @@ msgid "Header values cannot contain line breaks or exceed 2048 characters."
 msgstr ""
 
 #: src/AI/Gateway.php:41
-#: src/Core/Budget.php:63
+#: src/Core/Budget.php:67
 #: src/Rest/Routes.php:509
 msgid "AI features are paused by an administrator."
 msgstr ""
 
-#: src/AI/Presets.php:118
-msgid "Anthropic-compatible (custom URL)"
+#: src/AI/Gateway.php:55
+msgid "This model has no price, so the monthly cost budget cannot be enforced. An administrator can add its price under Usage."
 msgstr ""
 
-#: src/AI/Presets.php:130
+#: src/AI/Presets.php:82
 msgid "OpenAI-compatible (custom URL)"
 msgstr ""
 
@@ -809,27 +814,27 @@ msgstr ""
 msgid "The provider returned an unreadable response."
 msgstr ""
 
-#: src/AI/Providers/OpenAICompatibleProvider.php:417
+#: src/AI/Providers/OpenAICompatibleProvider.php:413
 msgid "Could not reach the provider. Check the base URL and the server’s outbound connection."
 msgstr ""
 
-#: src/AI/Providers/OpenAICompatibleProvider.php:433
+#: src/AI/Providers/OpenAICompatibleProvider.php:429
 msgid "The provider rejected the API key. Check the key in Connections."
 msgstr ""
 
-#: src/AI/Providers/OpenAICompatibleProvider.php:434
+#: src/AI/Providers/OpenAICompatibleProvider.php:430
 msgid "The provider does not recognize this model or address."
 msgstr ""
 
-#: src/AI/Providers/OpenAICompatibleProvider.php:435
+#: src/AI/Providers/OpenAICompatibleProvider.php:431
 msgid "The provider’s rate limit or quota was reached. Wait a moment and try again."
 msgstr ""
 
-#: src/AI/Providers/OpenAICompatibleProvider.php:436
+#: src/AI/Providers/OpenAICompatibleProvider.php:432
 msgid "The provider is temporarily unavailable. Try again shortly."
 msgstr ""
 
-#: src/AI/Providers/OpenAICompatibleProvider.php:437
+#: src/AI/Providers/OpenAICompatibleProvider.php:433
 msgid "The provider rejected the request."
 msgstr ""
 
@@ -892,42 +897,30 @@ msgstr ""
 msgid "You are not allowed to do this."
 msgstr ""
 
-#: src/Core/Access.php:34
+#: src/Core/Access.php:31
 msgid "Use the assistant"
 msgstr ""
 
-#: src/Core/Access.php:35
-msgid "Manage automations"
-msgstr ""
-
-#: src/Core/Access.php:36
-msgid "Review generated content"
-msgstr ""
-
-#: src/Core/Access.php:37
-msgid "Handle the chat inbox"
-msgstr ""
-
-#: src/Core/Access.php:38
+#: src/Core/Access.php:32
 msgid "View usage, budgets, and logs"
 msgstr ""
 
-#: src/Core/Budget.php:73
+#: src/Core/Budget.php:77
 msgid "The daily token budget for this feature is used up. An administrator can raise it under Usage."
 msgstr ""
 
-#: src/Core/Budget.php:82
+#: src/Core/Budget.php:86
 msgid "The monthly cost budget for this feature is used up. An administrator can raise it under Usage."
 msgstr ""
 
 #. translators: %s: site name.
-#: src/Core/Budget.php:153
+#: src/Core/Budget.php:157
 #, php-format
 msgid "[%s] Mindio AI budget warning"
 msgstr ""
 
 #. translators: 1: feature name, 2: percentage used.
-#: src/Core/Budget.php:158
+#: src/Core/Budget.php:162
 #, php-format
 msgid "The %1$s feature has used %2$d%% of its budget. Review usage in WordPress under Mindio AI → Usage."
 msgstr ""
@@ -1473,7 +1466,7 @@ msgid "Add your first connection"
 msgstr ""
 
 #: assets/src/admin/pages/Connections.js:597
-msgid "Connect Anthropic Claude, OpenAI, Google Gemini, OpenRouter, DeepSeek, or any OpenAI-compatible gateway. Nothing is sent to a provider until you add a connection and use the assistant."
+msgid "Connect Anthropic Claude, OpenAI, Google Gemini, DeepSeek, or any OpenAI-compatible gateway. Nothing is sent to a provider until you add a connection and use the assistant."
 msgstr ""
 
 #: assets/src/admin/pages/Connections.js:601

@@ -45,10 +45,26 @@ final class Support {
 
 	public static function post( int $id ): \WP_Post|\WP_Error {
 		$post = get_post( $id );
-		if ( ! $post instanceof \WP_Post || in_array( $post->post_type, array( 'revision', 'nav_menu_item', 'customize_changeset', 'wp_global_styles', 'wp_template', 'wp_template_part' ), true ) ) {
+		if ( ! $post instanceof \WP_Post || ! self::allowed_type( $post->post_type ) ) {
 			return new \WP_Error( 'not_found', __( 'No content with that ID exists.', 'mindio-magic-ai' ) );
 		}
 		return $post;
+	}
+
+	/**
+	 * Posts, pages, products, and other types with an admin screen. Internal types such as privacy requests
+	 * often fall back to the post capabilities, so a capability check alone would expose them.
+	 */
+	public static function allowed_type( string $type ): bool {
+		if ( in_array( $type, array( 'post', 'page', 'product' ), true ) ) {
+			return true;
+		}
+		$blocked = array( 'revision', 'attachment', 'nav_menu_item', 'customize_changeset', 'custom_css', 'oembed_cache', 'user_request', 'wp_block', 'wp_global_styles', 'wp_template', 'wp_template_part', 'wp_navigation', 'wp_font_family', 'wp_font_face', 'shop_order', 'shop_order_refund', 'shop_order_placehold', 'shop_coupon', 'shop_webhook', 'product_variation', 'scheduled-action' );
+		if ( in_array( $type, $blocked, true ) ) {
+			return false;
+		}
+		$object = get_post_type_object( $type );
+		return $object instanceof \WP_Post_Type && $object->show_ui && ! $object->_builtin;
 	}
 
 	public static function can_edit( int $id ): bool|\WP_Error {

@@ -20,8 +20,11 @@ final class Pricing {
 	/** @return array<string,array{input:float,output:float,cache_read:float,cache_write:float}> */
 	public static function defaults(): array {
 		return array(
+			'claude-fable-5-1'  => array( 'input' => 10.0, 'output' => 50.0, 'cache_read' => 0.25, 'cache_write' => 12.5 ),
 			'claude-opus-5-5'   => array( 'input' => 4.0, 'output' => 20.0, 'cache_read' => 0.2, 'cache_write' => 5.0 ),
 			'claude-sonnet-5-5' => array( 'input' => 2.0, 'output' => 10.0, 'cache_read' => 0.2, 'cache_write' => 2.5 ),
+			// Prompts up to 100K tokens; longer prompts cost more, so estimates for them run low.
+			'claude-haiku-5-5'  => array( 'input' => 0.1, 'output' => 0.5, 'cache_read' => 0.01, 'cache_write' => 0.125 ),
 			'claude-haiku-4-5'  => array( 'input' => 1.0, 'output' => 5.0, 'cache_read' => 0.1, 'cache_write' => 1.25 ),
 		);
 	}

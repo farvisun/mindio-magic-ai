@@ -19,4 +19,5 @@ for po in languages/*.po; do
 	msgmerge --quiet --update --backup=none --no-fuzzy-matching "$po" languages/mindio-magic-ai.pot
 	msgfmt -c --statistics -o "${po%.po}.mo" "$po"
 done
-$WP i18n make-json languages --use-map="$map"
+$WP i18n make-json languages --no-purge --use-map="$map"
+php bin/i18n-fix-json.php

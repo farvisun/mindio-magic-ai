@@ -78,5 +78,17 @@ Mindio_Test::run(
 		$editor = Mindio_Test::user( 'editor' );
 		Mindio_Test::as( $editor );
 		Mindio_Test::assert( true !== $tool->permitted( array( 'id' => $id ) ), 'editors cannot edit products' );
+
+		// Roles that may edit only their own products (as multi-vendor plugins set up) see only those.
+		add_role( 'mindio_test_vendor', 'Vendor', array( 'read' => true, 'edit_products' => true ) );
+		$vendor = Mindio_Test::user( 'mindio_test_vendor' );
+		Mindio_Test::as( $vendor );
+		Mindio_Test::assert( true !== $registry->get( 'get_product' )->permitted( array( 'id' => $id ) ), 'vendors cannot read other vendors\' products' );
+		$found = $registry->get( 'search_products' )->run( array( 'query' => 'Mindio test mug' ) );
+		Mindio_Test::assert( ! in_array( $id, array_column( $found['items'], 'id' ), true ), 'search hides products the user cannot edit' );
+		$low = $registry->get( 'low_stock_products' )->run( array( 'threshold' => 2 ) );
+		Mindio_Test::assert( ! in_array( $id, array_column( $low['items'], 'id' ), true ), 'low stock hides products the user cannot edit' );
+		Mindio_Test::as( $admin );
+		remove_role( 'mindio_test_vendor' );
 	}
 );

@@ -66,7 +66,7 @@ final class Prompt {
 		$post_id = absint( $screen['post_id'] ?? 0 );
 		if ( $post_id && current_user_can( 'edit_post', $post_id ) ) {
 			$post = get_post( $post_id );
-			if ( $post instanceof \WP_Post ) {
+			if ( $post instanceof \WP_Post && \MindioMagicAI\Agent\Tools\Support::allowed_type( $post->post_type ) ) {
 				$lines[] = sprintf(
 					'The user is editing %s ID %d: "%s" (status: %s).',
 					$post->post_type,

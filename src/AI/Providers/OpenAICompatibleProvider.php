@@ -1,6 +1,6 @@
 <?php
 /**
- * OpenAI Chat Completions and compatible gateways (OpenRouter, DeepSeek, Gemini's OpenAI endpoint, and others).
+ * OpenAI Chat Completions and compatible APIs (DeepSeek, Gemini's OpenAI endpoint, and custom gateways).
  *
  * @package MindioMagicAI
  */
@@ -399,10 +399,6 @@ final class OpenAICompatibleProvider implements Provider {
 				'Accept'        => 'application/json, text/event-stream',
 			)
 		);
-		if ( 'openrouter' === $this->connection->preset ) {
-			$headers['HTTP-Referer'] = home_url( '/' );
-			$headers['X-Title']      = 'Mindio Magic AI';
-		}
 		return $headers;
 	}
 

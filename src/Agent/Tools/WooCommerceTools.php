@@ -77,7 +77,7 @@ final class WooCommerceTools {
 					'additionalProperties' => false,
 				),
 				risk: Tool::RISK_READ,
-				permission: $can_edit_products,
+				permission: static fn( array $args ): bool|\WP_Error => current_user_can( 'edit_product', (int) $args['id'] ) ? true : new \WP_Error( 'forbidden', __( 'You cannot edit this product.', 'mindio-magic-ai' ) ),
 				handler: array( self::class, 'get' ),
 				group: 'woocommerce',
 			)
@@ -199,6 +199,16 @@ final class WooCommerceTools {
 		);
 	}
 
+	/**
+	 * Products the current user may edit, so roles with partial product rights see only their own.
+	 *
+	 * @param array<int,mixed> $products
+	 * @return array<int,\WC_Product>
+	 */
+	private static function editable( array $products ): array {
+		return array_values( array_filter( $products, static fn( $product ): bool => $product instanceof \WC_Product && current_user_can( 'edit_product', $product->get_id() ) ) );
+	}
+
 	private static function product( int $id ): \WC_Product|\WP_Error {
 		$product = wc_get_product( $id );
 		return $product instanceof \WC_Product ? $product : new \WP_Error( 'not_found', __( 'No product with that ID exists.', 'mindio-magic-ai' ) );
@@ -254,7 +264,7 @@ final class WooCommerceTools {
 		$products = wc_get_products( $query );
 		return array(
 			'currency' => get_woocommerce_currency(),
-			'items'    => array_map( array( self::class, 'summary' ), is_array( $products ) ? $products : array() ),
+			'items'    => array_map( array( self::class, 'summary' ), self::editable( is_array( $products ) ? $products : array() ) ),
 		);
 	}
 
@@ -299,8 +309,8 @@ final class WooCommerceTools {
 			)
 		);
 		$items = array();
-		foreach ( is_array( $products ) ? $products : array() as $product ) {
-			if ( $product instanceof \WC_Product && null !== $product->get_stock_quantity() && $product->get_stock_quantity() <= $threshold ) {
+		foreach ( self::editable( is_array( $products ) ? $products : array() ) as $product ) {
+			if ( null !== $product->get_stock_quantity() && $product->get_stock_quantity() <= $threshold ) {
 				$items[] = self::summary( $product );
 			}
 		}

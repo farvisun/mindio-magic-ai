@@ -1412,6 +1412,7 @@ html[dir="rtl"] .mindio-ai-field__label {
 
 .mindio-ai-msg__body {
 	display: grid;
+	grid-template-columns: minmax(0, 1fr);
 	flex: 1;
 	gap: 12px;
 	min-inline-size: 0;
@@ -1616,6 +1617,7 @@ html[dir="rtl"] .mindio-ai-field__label {
 
 .mindio-ai-proposal {
 	display: grid;
+	grid-template-columns: minmax(0, 1fr);
 	gap: 12px;
 	padding: 14px 16px;
 	border: 1px solid var(--mindio-accent-border);
@@ -1671,7 +1673,8 @@ html[dir="rtl"] .mindio-ai-field__label {
 
 .mindio-ai-proposal__meta {
 	display: flex;
-	gap: 6px;
+	flex-wrap: wrap;
+	gap: 0 6px;
 	color: var(--mindio-text-3);
 	font-size: 12px;
 }

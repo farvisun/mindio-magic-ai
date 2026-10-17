@@ -30,19 +30,19 @@ final class Presets {
 	/** @return array<string,array<string,mixed>> */
 	private static function defaults(): array {
 		return array(
-			'anthropic'  => array(
+			'anthropic' => array(
 				'label'            => 'Anthropic Claude',
 				'provider'         => self::PROVIDER_ANTHROPIC,
 				'base_url'         => 'https://api.anthropic.com',
 				'editable_url'     => false,
 				'constant'         => 'MINDIO_MAGIC_AI_ANTHROPIC_KEY',
 				'default_model'    => 'claude-opus-5-5',
-				'fast_model'       => 'claude-haiku-4-5',
-				'suggested'        => array( 'claude-opus-5-5', 'claude-sonnet-5-5', 'claude-haiku-4-5' ),
+				'fast_model'       => 'claude-haiku-5-5',
+				'suggested'        => array( 'claude-opus-5-5', 'claude-sonnet-5-5', 'claude-haiku-5-5' ),
 				'keys_url'         => 'https://console.anthropic.com/settings/keys',
 				'max_tokens_param' => 'max_tokens',
 			),
-			'openai'     => array(
+			'openai'    => array(
 				'label'            => 'OpenAI',
 				'provider'         => self::PROVIDER_OPENAI,
 				'base_url'         => 'https://api.openai.com/v1',
@@ -54,7 +54,7 @@ final class Presets {
 				'keys_url'         => 'https://platform.openai.com/api-keys',
 				'max_tokens_param' => 'max_completion_tokens',
 			),
-			'gemini'     => array(
+			'gemini'    => array(
 				'label'            => 'Google Gemini',
 				'provider'         => self::PROVIDER_OPENAI,
 				'base_url'         => 'https://generativelanguage.googleapis.com/v1beta/openai',
@@ -66,19 +66,7 @@ final class Presets {
 				'keys_url'         => 'https://aistudio.google.com/app/apikey',
 				'max_tokens_param' => 'max_tokens',
 			),
-			'openrouter' => array(
-				'label'            => 'OpenRouter',
-				'provider'         => self::PROVIDER_OPENAI,
-				'base_url'         => 'https://openrouter.ai/api/v1',
-				'editable_url'     => false,
-				'constant'         => 'MINDIO_MAGIC_AI_OPENROUTER_KEY',
-				'default_model'    => '',
-				'fast_model'       => '',
-				'suggested'        => array(),
-				'keys_url'         => 'https://openrouter.ai/keys',
-				'max_tokens_param' => 'max_tokens',
-			),
-			'deepseek'   => array(
+			'deepseek'  => array(
 				'label'            => 'DeepSeek',
 				'provider'         => self::PROVIDER_OPENAI,
 				'base_url'         => 'https://api.deepseek.com/v1',
@@ -90,43 +78,7 @@ final class Presets {
 				'keys_url'         => 'https://platform.deepseek.com/api_keys',
 				'max_tokens_param' => 'max_tokens',
 			),
-			'avalai'     => array(
-				'label'            => 'AvalAI',
-				'provider'         => self::PROVIDER_OPENAI,
-				'base_url'         => 'https://api.avalai.ir/v1',
-				'editable_url'     => true,
-				'constant'         => 'MINDIO_MAGIC_AI_AVALAI_KEY',
-				'default_model'    => '',
-				'fast_model'       => '',
-				'suggested'        => array(),
-				'keys_url'         => 'https://avalai.ir',
-				'max_tokens_param' => 'max_tokens',
-			),
-			'gapgpt'     => array(
-				'label'            => 'GapGPT',
-				'provider'         => self::PROVIDER_OPENAI,
-				'base_url'         => 'https://api.gapgpt.app/v1',
-				'editable_url'     => true,
-				'constant'         => 'MINDIO_MAGIC_AI_GAPGPT_KEY',
-				'default_model'    => '',
-				'fast_model'       => '',
-				'suggested'        => array(),
-				'keys_url'         => 'https://gapgpt.app',
-				'max_tokens_param' => 'max_tokens',
-			),
-			'anthropic_custom' => array(
-				'label'            => __( 'Anthropic-compatible (custom URL)', 'mindio-magic-ai' ),
-				'provider'         => self::PROVIDER_ANTHROPIC,
-				'base_url'         => '',
-				'editable_url'     => true,
-				'constant'         => '',
-				'default_model'    => 'claude-opus-5-5',
-				'fast_model'       => 'claude-haiku-4-5',
-				'suggested'        => array( 'claude-opus-5-5', 'claude-sonnet-5-5', 'claude-haiku-4-5' ),
-				'keys_url'         => '',
-				'max_tokens_param' => 'max_tokens',
-			),
-			'custom'     => array(
+			'custom'    => array(
 				'label'            => __( 'OpenAI-compatible (custom URL)', 'mindio-magic-ai' ),
 				'provider'         => self::PROVIDER_OPENAI,
 				'base_url'         => '',

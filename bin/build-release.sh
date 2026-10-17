@@ -32,6 +32,12 @@ trap 'rm -rf "${staging_root}"' EXIT
 mkdir -p "${release_dir}" "${staging_root}/mindio-magic-ai"
 rsync -a --delete --exclude-from="${plugin_dir}/.distignore" "${plugin_dir}/" "${staging_root}/mindio-magic-ai/"
 
+# The SDK's cloud-platform clients and the Composer plugin of php-http/discovery are never loaded:
+# the plugin talks to api.anthropic.com only, and Composer is not used at runtime.
+sdk="${staging_root}/mindio-magic-ai/vendor-prefixed/anthropic-ai/sdk/src"
+rm -rf "${sdk}/Aws" "${sdk}/Bedrock" "${sdk}/Foundry" "${sdk}/GoogleCloud" "${sdk}/Vertex" \
+	"${staging_root}/mindio-magic-ai/vendor-prefixed/php-http/discovery/src/Composer"
+
 rm -f "${archive}"
 (
 	cd "${staging_root}"

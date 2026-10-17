@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 require __DIR__ . '/bootstrap.php';
 
+use MindioMagicAI\Agent\ToolRegistry;
 use MindioMagicAI\Core\Access;
 use MindioMagicAI\Core\Budget;
 use MindioMagicAI\Core\Counters;
@@ -175,5 +176,35 @@ Mindio_Test::run(
 		$row = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM %i WHERE status = 'pending' LIMIT 1", \MindioMagicAI\Core\Installer::table( 'proposals' ) ), ARRAY_A );
 		$wpdb->update( \MindioMagicAI\Core\Installer::table( 'proposals' ), array( 'arguments' => wp_json_encode( array( 'post_type' => 'post', 'title' => 'Tampered', 'content' => 'x' ) ) ), array( 'id' => $row['id'] ) );
 		Mindio_Test::same( 409, Mindio_Test::rest( 'POST', '/proposals/' . $row['public_id'] . '/apply' )['status'], 'tampered arguments are refused' );
+
+		// A cost budget cannot be bypassed with a model that has no price.
+		Budget::update( array( 'assistant' => array( 'daily_tokens' => 0, 'monthly_cost' => 5 ) ) );
+		$unpriced = \MindioMagicAI\AI\Gateway::chat( $conn, new \MindioMagicAI\AI\ChatRequest( 'mystery-model-1', 's', array( array( 'role' => 'user', 'content' => array( array( 'type' => 'text', 'text' => 'x' ) ) ) ) ), 'assistant' );
+		Mindio_Test::same( 'unpriced_model', is_wp_error( $unpriced ) ? $unpriced->get_error_code() : '', 'unpriced models are refused under a cost budget' );
+		Budget::update( array( 'assistant' => array( 'daily_tokens' => 0, 'monthly_cost' => 0 ) ) );
+
+		// Internal post types and private comment types stay out of reach of editors.
+		$editor = Mindio_Test::user( 'editor' );
+		Mindio_Test::as( $editor );
+		$registry = ToolRegistry::instance();
+		$request  = Mindio_Test::post( array( 'post_type' => 'user_request', 'post_title' => 'someone@example.test', 'post_name' => 'export_personal_data', 'post_status' => 'request-confirmed' ) );
+		Mindio_Test::assert( true !== $registry->get( 'get_content' )->permitted( array( 'id' => $request ) ), 'privacy requests cannot be read' );
+		Mindio_Test::assert( true !== $registry->get( 'update_content' )->permitted( array( 'id' => $request, 'title' => 'x' ) ), 'privacy requests cannot be edited' );
+		$article = Mindio_Test::post( array( 'post_title' => 'Editor-visible post', 'post_author' => $admin ) );
+		Mindio_Test::same( true, $registry->get( 'get_content' )->permitted( array( 'id' => $article ) ), 'ordinary posts stay readable' );
+
+		$note    = (int) wp_insert_comment( array( 'comment_post_ID' => $article, 'comment_content' => 'Refund issued to card ending 4242', 'comment_type' => 'order_note', 'comment_approved' => 1 ) );
+		$comment = (int) wp_insert_comment( array( 'comment_post_ID' => $article, 'comment_content' => 'Nice post', 'comment_approved' => 0 ) );
+		foreach ( array( 'reply_to_comment' => array( 'content' => 'x' ), 'moderate_comment' => array( 'action' => 'trash' ) ) as $name => $extra ) {
+			$tool = $registry->get( $name );
+			Mindio_Test::assert( true !== $tool->permitted( array( 'comment_id' => $note ) + $extra ), $name . ' refuses order notes' );
+			Mindio_Test::assert( is_wp_error( $tool->preview( array( 'comment_id' => $note ) + $extra ) ), $name . ' preview hides order notes' );
+			Mindio_Test::same( true, $tool->permitted( array( 'comment_id' => $comment ) + $extra ), $name . ' allows visitor comments' );
+		}
+		$author = Mindio_Test::user( 'author' );
+		Mindio_Test::as( $author );
+		Mindio_Test::assert( true !== $registry->get( 'moderate_comment' )->permitted( array( 'comment_id' => $comment, 'action' => 'approve' ) ), 'comments on posts the user cannot edit are refused' );
+		wp_delete_comment( $note, true );
+		wp_delete_comment( $comment, true );
 	}
 );

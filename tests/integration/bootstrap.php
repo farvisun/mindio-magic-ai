@@ -24,6 +24,24 @@ if ( ! class_exists( '\MindioMagicAI\Core\Plugin' ) ) {
 
 const MINDIO_TEST_MOCK = '127.0.0.1:8766';
 
+// The shipped Anthropic preset has a fixed address, so the tests add one that can point at the mock.
+add_filter(
+	'mindio_magic_ai_presets',
+	static function ( array $presets ): array {
+		$presets['anthropic_custom'] = array_merge(
+			$presets['anthropic'],
+			array(
+				'label'        => 'Anthropic (test)',
+				'base_url'     => '',
+				'editable_url' => true,
+				'constant'     => '',
+				'keys_url'     => '',
+			)
+		);
+		return $presets;
+	}
+);
+
 final class Mindio_Test {
 	public static int $assertions = 0;
 

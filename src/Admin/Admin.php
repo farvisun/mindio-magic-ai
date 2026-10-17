@@ -74,7 +74,7 @@ final class Admin {
 	}
 
 	private static function is_embed(): bool {
-		return isset( $_GET['mindio_embed'] ) && '1' === $_GET['mindio_embed']; // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Display mode only.
+		return isset( $_GET['mindio_embed'] ) && '1' === sanitize_key( wp_unslash( $_GET['mindio_embed'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Display mode only.
 	}
 
 	public static function body_class( string $classes ): string {
@@ -114,7 +114,7 @@ final class Admin {
 			return;
 		}
 		wp_enqueue_script( 'mindio-ai-admin', MINDIO_MAGIC_AI_URL . 'build/admin.js', $asset['dependencies'], $asset['version'], true );
-		wp_set_script_translations( 'mindio-ai-admin', 'mindio-magic-ai', MINDIO_MAGIC_AI_DIR . 'languages' );
+		wp_set_script_translations( 'mindio-ai-admin', 'mindio-magic-ai' );
 		wp_enqueue_style( 'wp-components' );
 		wp_enqueue_style( 'mindio-ai-admin', MINDIO_MAGIC_AI_URL . 'build/admin.css', array( 'wp-components' ), $asset['version'] );
 		wp_style_add_data( 'mindio-ai-admin', 'rtl', 'replace' );
@@ -157,13 +157,13 @@ final class Admin {
 		// The Command Palette is optional: the loader registers its command only if WordPress already loaded it.
 		$deps = array_values( array_diff( $asset['dependencies'], array( 'wp-commands', 'wp-data' ) ) );
 		wp_enqueue_script( 'mindio-ai-drawer', MINDIO_MAGIC_AI_URL . 'build/drawer.js', $deps, $asset['version'], true );
-		wp_set_script_translations( 'mindio-ai-drawer', 'mindio-magic-ai', MINDIO_MAGIC_AI_DIR . 'languages' );
+		wp_set_script_translations( 'mindio-ai-drawer', 'mindio-magic-ai' );
 		wp_enqueue_style( 'mindio-ai-drawer', MINDIO_MAGIC_AI_URL . 'build/drawer.css', array(), $asset['version'] );
 		wp_style_add_data( 'mindio-ai-drawer', 'rtl', 'replace' );
 
 		$post_id = 0;
 		if ( in_array( $hook, array( 'post.php', 'post-new.php' ), true ) ) {
-			$post_id = isset( $_GET['post'] ) ? absint( $_GET['post'] ) : 0; // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Context only; the server re-checks access.
+			$post_id = isset( $_GET['post'] ) ? absint( wp_unslash( $_GET['post'] ) ) : 0; // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Context only; the server re-checks access.
 		}
 		$screen = get_current_screen();
 

@@ -18,11 +18,11 @@ You bring your own API key from the provider you choose. Requests go straight fr
 
 = Providers =
 
-* Anthropic Claude (Claude Opus 5.5, Sonnet 5.5, Haiku 4.5), using the official Anthropic PHP SDK
+* Anthropic Claude (Claude Opus 5.5, Sonnet 5.5, Haiku 5.5), using the official Anthropic PHP SDK
 * OpenAI
 * Google Gemini (through its OpenAI-compatible endpoint)
-* OpenRouter, DeepSeek, AvalAI, and GapGPT
-* Any OpenAI-compatible or Anthropic-compatible gateway at an address you enter, including a model server on your own network once an administrator allows its address
+* DeepSeek
+* Any OpenAI-compatible service at an address you enter, including a model server on your own network once an administrator allows its address
 
 = What the assistant can do =
 
@@ -60,7 +60,7 @@ You bring your own API key from the provider you choose. Requests go straight fr
 
 = Persian and right-to-left =
 
-The interface is fully translated into Persian, mirrors correctly in right-to-left languages, shows dates in the Solar Hijri calendar with Persian digits for Persian users, and ships the Vazirmatn font.
+The interface is ready for translation, mirrors correctly in right-to-left languages, shows dates in the Solar Hijri calendar with Persian digits for Persian users, and ships the Vazirmatn font. A complete Persian translation is maintained with the plugin and delivered through translate.wordpress.org.
 
 = Coming next =
 
@@ -70,7 +70,7 @@ Editor sidebar actions and image generation, scheduled automations with template
 
 This plugin connects to an AI provider only after an administrator adds a connection with an API key, and only when a user sends a message, tests a connection, or refreshes its model list. It does not contact any service on its own, and it does not send telemetry.
 
-**What is sent:** the conversation (your messages, attached images, and earlier replies), the assistant's instructions, the list of tools it can use, the results of tools it ran (for example the title and text of the posts or products it looked up, or order totals from a sales summary), the name of the current admin screen, and an anonymous user identifier (a hash, not your user ID or email). Testing a connection or refreshing models requests the provider's model list. The API key is sent in a request header.
+**What is sent:** the conversation (your messages, attached images, and earlier replies), the assistant's instructions, the list of tools it can use, the results of tools it ran (for example the title and text of the posts or products it looked up, or order totals from a sales summary), the name of the current admin screen, and an anonymous user identifier (a hash, not your user ID or email). Testing a connection or refreshing models requests the provider's model list. The API key is sent in a request header. Requests to Anthropic go through the official Anthropic PHP SDK, which also sends standard headers with the SDK version, the PHP version, and the server's operating system and architecture.
 
 **When:** each time a user sends a message to the assistant, and when an administrator tests a connection or refreshes its models.
 
@@ -79,10 +79,7 @@ The plugin talks to the service of the connection you choose:
 * **Anthropic** (api.anthropic.com), the Claude API. [Commercial Terms](https://www.anthropic.com/legal/commercial-terms), [Privacy Policy](https://www.anthropic.com/legal/privacy).
 * **OpenAI** (api.openai.com). [Business Terms](https://openai.com/policies/business-terms/), [Privacy Policy](https://openai.com/policies/privacy-policy/).
 * **Google Gemini API** (generativelanguage.googleapis.com). [Gemini API Additional Terms](https://ai.google.dev/gemini-api/terms), [Google Privacy Policy](https://policies.google.com/privacy).
-* **OpenRouter** (openrouter.ai), which forwards requests to the model provider you pick there. [Terms](https://openrouter.ai/terms), [Privacy Policy](https://openrouter.ai/privacy).
 * **DeepSeek** (api.deepseek.com). [Open Platform Terms of Service](https://platform.deepseek.com/downloads/DeepSeek%20Open%20Platform%20Terms%20of%20Service.html), [Privacy Policy](https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html).
-* **AvalAI** (api.avalai.ir), a gateway to several model providers. Terms and privacy policy: [avalai.ir](https://avalai.ir/).
-* **GapGPT** (api.gapgpt.app), a gateway to several model providers. [Terms](https://gapgpt.app/terms), [Privacy Policy](https://gapgpt.app/privacy).
 * **A custom address** that you enter. Data goes to that address under the terms of whoever runs it.
 
 == Installation ==
@@ -92,7 +89,7 @@ The plugin talks to the service of the connection you choose:
 3. Open **Mindio AI → Assistant**, or press **Ask AI** in the admin toolbar, and ask a question.
 4. Optional: in **Mindio AI → Settings**, choose which roles may use the assistant, and set budgets under **Usage & budgets**.
 
-To keep a key out of the database, define it in `wp-config.php`, for example `define( 'MINDIO_MAGIC_AI_ANTHROPIC_KEY', 'sk-ant-…' );`. The constants are `MINDIO_MAGIC_AI_ANTHROPIC_KEY`, `MINDIO_MAGIC_AI_OPENAI_KEY`, `MINDIO_MAGIC_AI_GEMINI_KEY`, `MINDIO_MAGIC_AI_OPENROUTER_KEY`, `MINDIO_MAGIC_AI_DEEPSEEK_KEY`, `MINDIO_MAGIC_AI_AVALAI_KEY`, and `MINDIO_MAGIC_AI_GAPGPT_KEY`. A constant key is only ever sent to that provider's own address.
+To keep a key out of the database, define it in `wp-config.php`, for example `define( 'MINDIO_MAGIC_AI_ANTHROPIC_KEY', 'sk-ant-…' );`. The constants are `MINDIO_MAGIC_AI_ANTHROPIC_KEY`, `MINDIO_MAGIC_AI_OPENAI_KEY`, `MINDIO_MAGIC_AI_GEMINI_KEY`, and `MINDIO_MAGIC_AI_DEEPSEEK_KEY`. A constant key is only ever sent to that provider's own address.
 
 == Frequently Asked Questions ==
 
@@ -106,7 +103,7 @@ The plugin is free. You pay your AI provider for what you use, at their prices. 
 
 = Which model should I use? =
 
-Claude Opus 5.5 gives the best results for multi-step work. Claude Haiku 4.5 or a small OpenAI-compatible model is cheaper for simple questions. Each conversation keeps the model it started with.
+Claude Opus 5.5 gives the best results for multi-step work. Claude Haiku 5.5 or a small OpenAI-compatible model is much cheaper for simple questions. Each conversation keeps the model it started with.
 
 = Can I use a model running on my own server? =
 
@@ -134,8 +131,8 @@ Yes. The JavaScript and style sources ship in `assets/src`, and the build setup 
 
 == Screenshots ==
 
-1. The assistant proposes an edit, with a before-and-after view, Apply, and Reject.
-2. The assistant in a side panel, opened from the admin toolbar.
+1. The assistant proposes an edit with a before-and-after view. Nothing is saved until you press Apply.
+2. The assistant in a side panel, opened from the admin toolbar, drafting replies to comments.
 3. Connections to AI providers, with encrypted keys.
 4. Usage, estimated cost, and budgets.
 5. The interface in Persian, right to left.
@@ -144,10 +141,10 @@ Yes. The JavaScript and style sources ship in `assets/src`, and the build setup 
 
 = 0.1.0 =
 * First release: the Assistant page, the toolbar side panel, and the Command Palette command.
-* Connections for Anthropic, OpenAI, Google Gemini, OpenRouter, DeepSeek, AvalAI, GapGPT, and custom compatible gateways.
+* Connections for Anthropic, OpenAI, Google Gemini, DeepSeek, and custom OpenAI-compatible services.
 * Content, comment, SEO, and WooCommerce tools, with proposals, Apply, Reject, and Undo.
 * Usage, budgets, the pause switch, access by role, and the activity log.
-* Persian translation and right-to-left support.
+* Right-to-left support and Solar Hijri dates.
 
 == Upgrade Notice ==
 

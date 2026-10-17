@@ -1,6 +1,6 @@
 {
 	"name": "farvisun/mindio-magic-ai",
-	"description": "Mindio Magic AI is a bring-your-own-key AI assistant, automation suite, and customer chat agent for WordPress and WooCommerce.",
+	"description": "Bring-your-own-key AI assistant for WordPress and WooCommerce admins, with reviewable changes and undo.",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",
 	"require": {

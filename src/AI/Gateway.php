@@ -43,15 +43,19 @@ final class Gateway {
 
 		$input_estimate = $request->estimated_input_tokens();
 		$reserve_tokens = $input_estimate + $request->max_tokens;
-		$reserve_cost   = (int) Pricing::cost_micros(
+		$reserve_cost   = Pricing::cost_micros(
 			$request->model,
 			array(
 				'input'  => $input_estimate,
 				'output' => $request->max_tokens,
 			)
 		);
+		// An unpriced model would always count as free, so a cost budget could never stop it.
+		if ( null === $reserve_cost && Budget::has_cost_limit( $feature ) ) {
+			return new \WP_Error( 'unpriced_model', __( 'This model has no price, so the monthly cost budget cannot be enforced. An administrator can add its price under Usage.', 'mindio-magic-ai' ), array( 'status' => 400 ) );
+		}
 
-		$reservation = Budget::reserve( $feature, $reserve_tokens, $reserve_cost );
+		$reservation = Budget::reserve( $feature, $reserve_tokens, (int) $reserve_cost );
 		if ( is_wp_error( $reservation ) ) {
 			return $reservation;
 		}
